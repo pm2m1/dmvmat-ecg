@@ -1,0 +1,138 @@
+{
+  "dataset": "PTB-XL 1.0.3",
+  "task": "five diagnostic superclasses; multilabel",
+  "classes": [
+    "NORM",
+    "MI",
+    "STTC",
+    "CD",
+    "HYP"
+  ],
+  "seeds": [
+    101,
+    202
+  ],
+  "epochs": 50,
+  "batch_size": 128,
+  "batch_size_fallback_on_training_smoke_oom": 64,
+  "optimizer": "AdamW",
+  "learning_rate": 0.01,
+  "weight_decay": 0.01,
+  "schedule": {
+    "kind": "OneCycleLR",
+    "pct_start": 0.3,
+    "div_factor": 25.0,
+    "final_div_factor": 10000.0,
+    "base_momentum": 0.85,
+    "max_momentum": 0.95
+  },
+  "models": {
+    "xresnet101": {
+      "window": 250,
+      "additional_augmentation": false,
+      "evaluation_windows": [
+        0,
+        125,
+        250,
+        375,
+        500,
+        625,
+        750
+      ],
+      "aggregation": "max probabilities"
+    },
+    "flat_cnn": {
+      "window": 1000,
+      "additional_augmentation": false,
+      "evaluation_windows": [
+        0
+      ],
+      "aggregation": "single full recording"
+    },
+    "multiview": {
+      "window": 1000,
+      "additional_augmentation": false,
+      "evaluation_windows": [
+        0
+      ],
+      "aggregation": "single full recording"
+    },
+    "multiview_aug": {
+      "window": 1000,
+      "additional_augmentation": true,
+      "evaluation_windows": [
+        0
+      ],
+      "aggregation": "single full recording"
+    }
+  },
+  "checkpoint_selection": "validation-record macro AUROC; completed epochs only; earliest exact tie",
+  "reference_final_epoch_alias": true,
+  "thresholds": {
+    "role": "validation",
+    "objective": "per-label F1",
+    "grid_min": 0.05,
+    "grid_max": 0.95,
+    "step": 0.01,
+    "tie": "closest to 0.5 then lower"
+  },
+  "fit_budget": {
+    "full": 8,
+    "training_only_smoke": 3,
+    "shared_failure_reserve": 2,
+    "total_attempts": 13
+  },
+  "smoke": {
+    "records": 512,
+    "maximum_batches": 4,
+    "epochs": 1,
+    "seed": 17
+  },
+  "evaluation": {
+    "primary": "macro AUROC",
+    "secondary": [
+      "macro AP",
+      "micro AP",
+      "per-label metrics",
+      "calibration",
+      "threshold metrics"
+    ],
+    "bootstrap_draws": 2000,
+    "maximum_draw_attempts": 20000,
+    "bootstrap_seed": 70501,
+    "unit": "patient_id cluster",
+    "aggregation": "mean paired-seed metrics, never ensemble predictions",
+    "primary_comparisons": [
+      [
+        "multiview",
+        "flat_cnn"
+      ],
+      [
+        "multiview",
+        "xresnet101"
+      ]
+    ],
+    "primary_auroc_confidence": 0.975,
+    "ordinary_confidence": 0.95,
+    "test_accesses": 1
+  },
+  "augmentations_not_used": [
+    "lead dropout",
+    "baseline wander",
+    "temporal shifting",
+    "cropping for flat/multiview",
+    "test-time augmentation as independent people"
+  ],
+  "transfer_training": false,
+  "adam_betas": [
+    0.9,
+    0.99
+  ],
+  "adam_epsilon": 1e-08,
+  "execution": {
+    "device": "cpu",
+    "threads": 4,
+    "dtype": "float32",
+    "reason": "XResNet synthetic MPS gradient parity exceeded preregistered tolerance; common CPU fallback"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "common_device": true,
+  "cpu_mps_fitted_weight_identity_claimed": false,
+  "device": "cpu",
+  "mps_available": true,
+  "mps_built": true,
+  "python": "3.12.14",
+  "results": [
+    {
+      "MAC_scope": "Conv1d+Linear only, excludes preprocessing/pooling/normalization",
+      "cpu_forward_backward": "passed",
+      "length": 250,
+      "model": "xresnet101",
+      "mps_parity": "failed",
+      "parameters": 1872261,
+      "per_window_macs": 41138176,
+      "reason": "AssertionError: Tensor-likes are not close!\n\nMismatched elements: 1 / 20480 (0.0%)\nGreatest absolute difference: 0.0052895210683345795 at index (55, 40, 1) (up to 0.003 allowed)\nGreatest relative difference: 0.08574912697076797 at index (55, 40, 1) (up to 0.01 allowed)"
+    },
+    {
+      "MAC_scope": "Conv1d+Linear only, excludes preprocessing/pooling/normalization",
+      "cpu_forward_backward": "passed",
+      "length": 1000,
+      "model": "flat_cnn",
+      "mps_parity": "passed",
+      "mps_train_step": "passed",
+      "parameters": 206117,
+      "per_window_macs": 22990144,
+      "warnings": []
+    },
+    {
+      "MAC_scope": "Conv1d+Linear only, excludes preprocessing/pooling/normalization",
+      "cpu_forward_backward": "passed",
+      "length": 1000,
+      "model": "multiview",
+      "mps_parity": "passed",
+      "mps_train_step": "passed",
+      "parameters": 212261,
+      "per_window_macs": 20314816,
+      "warnings": []
+    }
+  ],
+  "silent_fallback": false,
+  "source_hash": "22137020fe2a2df9a17471eaa1198d562fd43d251107f370205ea2c37a99ee63",
+  "synthetic_only": true,
+  "versions": {
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.15.0",
+    "wfdb": "4.3.1"
+  }
+}
