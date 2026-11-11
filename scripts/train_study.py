@@ -11,6 +11,8 @@ from dmvmat_ecg.training.engine import fit
 
 p = argparse.ArgumentParser()
 p.add_argument("--stage", choices=["smoke", "full"], required=True)
+p.add_argument("--seed", type=int, choices=[101, 202])
+p.add_argument("--exclude-reference", action="store_true")
 args = p.parse_args()
 root = Path(__file__).resolve().parents[1]
 config = json.loads((root / "configs/study.json").read_text())
@@ -23,6 +25,12 @@ if study.get("phase") != "development":
     raise PermissionError("Not in the authorized development phase")
 names = ["xresnet101", "flat_cnn", "multiview"] if args.stage == "smoke" else list(config["models"])
 seeds = [config["smoke"]["seed"]] if args.stage == "smoke" else config["seeds"]
+if args.seed is not None:
+    if args.stage != "full":
+        raise ValueError("Seed filter is only for paired full runs")
+    seeds = [args.seed]
+if args.exclude_reference:
+    names = [n for n in names if n != "xresnet101"]
 for name in names:
     for seed in seeds:
         previous = [

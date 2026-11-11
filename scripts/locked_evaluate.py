@@ -16,7 +16,7 @@ from dmvmat_ecg.evaluation.metrics import complete
 from dmvmat_ecg.evaluation.state import Study
 from dmvmat_ecg.models.networks import build
 from dmvmat_ecg.training.engine import dataset, predict
-from dmvmat_ecg.utils.io import digest, sha, write_json
+from dmvmat_ecg.utils.io import digest, sha, source_hash, write_json
 
 root = Path(__file__).resolve().parents[1]
 study = Study(root)
@@ -26,21 +26,72 @@ torch.use_deterministic_algorithms(True, warn_only=True)
 runs = [r for r in study.runs() if r["status"] == "successful" and r["metadata"]["stage"] == "full"]
 if len(runs) != 8:
     raise RuntimeError("Missing registered fits")
+if any(r["status"] != "successful" for r in study.runs()):
+    raise RuntimeError("Incomplete/failed attempt requires explicit review before test access")
+manifest = study.get("dataset")
+for name, checksum in manifest["cache_hashes"].items():
+    if sha(root / "private/cache" / name) != checksum:
+        raise PermissionError("Dataset/preprocessing cache lineage changed")
+raw = root / "data/raw/ptbxl_v1_0_3"
+for file, key in [
+    ("ptbxl_database.csv", "metadata_sha256"),
+    ("scp_statements.csv", "statements_sha256"),
+    ("SHA256SUMS.txt", "publisher_manifest_sha256"),
+]:
+    if sha(raw / file) != manifest[key]:
+        raise PermissionError("Official source identity changed")
+environment = json.loads((root / "results/environment.json").read_text())
+if sha(root / "uv.lock") != environment["uv_lock_sha256"]:
+    raise PermissionError("Dependency lock changed")
 artifacts = [
     root / "uv.lock",
     root / "pyproject.toml",
     root / "docs/EXPERIMENT_PROTOCOL.md",
     root / "private/cache/standardization.json",
     root / "data/manifests/memberships.json",
+    root / "results/environment.json",
+    root / "results/dataset_audit.json",
 ]
 artifacts += [p for p in (root / "scripts").glob("*.py")]
 for r in runs:
     folder = root / "private/runs" / r["id"]
+    saved = json.loads((folder / "completion.json").read_text())
+    if any(r["metadata"].get(k) != v for k, v in saved.items()):
+        raise PermissionError("Completion receipt and durable ledger disagree")
+    if (
+        r["metadata"]["source_hash"] != source_hash(root)
+        or r["metadata"]["configuration_hash"] != sha(root / "configs/study.json")
+        or r["metadata"]["configuration"] != config
+    ):
+        raise PermissionError("Prediction-affecting code/config differs from fitted models")
     for name, key in [("best.pt", "best_hash"), ("final.pt", "final_hash")]:
         if sha(folder / name) != r["metadata"][key]:
             raise PermissionError("Checkpoint differs from completed training receipt")
         artifacts.append(folder / name)
     artifacts.extend([folder / "completion.json", folder / "history.json"])
+lineage = dict(
+    dataset=manifest,
+    environment_sha256=sha(root / "results/environment.json"),
+    configuration_sha256=sha(root / "configs/study.json"),
+    source_sha256=source_hash(root),
+    attempts=[
+        dict(
+            id=r["id"],
+            status=r["status"],
+            stage=r["metadata"]["stage"],
+            model=r["metadata"]["model"],
+            seed=r["metadata"]["seed"],
+            source_sha256=r["metadata"]["source_hash"],
+        )
+        for r in study.runs()
+    ],
+    checkpoint_hashes={
+        r["id"]: dict(best=r["metadata"]["best_hash"], final=r["metadata"]["final_hash"])
+        for r in runs
+    },
+)
+write_json(root / "results/development_lineage.json", lineage)
+artifacts.append(root / "results/development_lineage.json")
 if study.get("phase") != "development":
     raise PermissionError("Fresh lock and single evaluation required; do not rerun")
 study.lock(artifacts)
@@ -117,6 +168,8 @@ for name, scores in all_scores.items():
         ap_ci95=interval(boot[name]["ap"]),
         per_label_auroc=np.mean([m["per_label_auroc"] for m in entries], axis=0).tolist(),
         per_label_ap=np.mean([m["per_label_ap"] for m in entries], axis=0).tolist(),
+        per_label_auroc_ci95=[interval(boot[name]["per_label_auroc"][:, j]) for j in range(5)],
+        per_label_ap_ci95=[interval(boot[name]["per_label_ap"][:, j]) for j in range(5)],
     )
 comparisons = {}
 for a, b in config["evaluation"]["primary_comparisons"] + [["multiview_aug", "multiview"]]:
@@ -130,6 +183,13 @@ for a, b in config["evaluation"]["primary_comparisons"] + [["multiview_aug", "mu
         ),
         ap_ci95=interval(boot[a]["ap"] - boot[b]["ap"]),
         primary=primary,
+        per_label_auroc_ci95=[
+            interval((boot[a]["per_label_auroc"] - boot[b]["per_label_auroc"])[:, j])
+            for j in range(5)
+        ],
+        per_label_ap_ci95=[
+            interval((boot[a]["per_label_ap"] - boot[b]["per_label_ap"])[:, j]) for j in range(5)
+        ],
     )
 write_json(
     root / "results/locked_metrics.json",

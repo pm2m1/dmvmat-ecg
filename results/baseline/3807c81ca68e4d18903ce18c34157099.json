@@ -1,0 +1,49 @@
+{
+  "best_epoch": null,
+  "checkpoint_kind": "fresh scratch training; no exact continuation claimed",
+  "configuration_hash": "f9396b5f587f44b5c841453a12c4a9b124f95c3edcbc5bcf4f2505cbecb061ca",
+  "dataset_manifest_hash": "b7224b92b341511ec3ceb13dc6652079b2c36a06504bcb49506f157f51dc695d",
+  "device": "cpu",
+  "epochs_completed": 1,
+  "final_hash": "f290c1088c737c6f036c9d6acf5126950401e510a604bc1f400d3dc4169f8441",
+  "history": [
+    {
+      "epoch": 1,
+      "examples_per_second": 141.79688571276554,
+      "samples": 512,
+      "train_loss": 0.9883542954921722,
+      "train_metrics": {
+        "macro_ap": 0.29667529663965486,
+        "macro_auroc": 0.5488026061933065,
+        "micro_ap": 0.29320550012348545,
+        "per_label_ap": [
+          0.6456310479897116,
+          0.16064128476378467,
+          0.22918552337956052,
+          0.2888135263301512,
+          0.15910510073506634
+        ],
+        "per_label_auroc": [
+          0.5684917597438099,
+          0.46074249605055284,
+          0.5264566747432791,
+          0.5718198938537922,
+          0.6165022065750979
+        ]
+      },
+      "training_metrics_basis": "online training crops/full records before each optimizer update",
+      "training_seconds": 3.6107986252754927
+    }
+  ],
+  "maximum_mps_driver_bytes": 0,
+  "model": "xresnet101",
+  "parameters": 1872261,
+  "process_peak_rss_bytes": 832290816,
+  "seed": 17,
+  "source_hash": "1919b84d72114a35998c4ed10335ee11164fd394b13f1025ce6d233adda8f135",
+  "source_revision": "4b18037d346f3bd45330d7d68ffdb07637c920b1",
+  "stage": "smoke",
+  "standardization_sha256": "362b91e4468147f34a9978a6ad97dd26b67d9ef6bafd498828cc5da0cbda2ab9",
+  "training_membership_hash": "e98b33296b92b280ae84fdf39e4ed41d1d822476f30ccef4f583e6dc1070caa6",
+  "training_seconds": 3.6107986252754927
+}

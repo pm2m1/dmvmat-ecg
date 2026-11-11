@@ -1,0 +1,16 @@
+{
+  "additional_prediction": false,
+  "additional_training": false,
+  "locked_source_or_scripts_modified": false,
+  "metrics_sha256_preserved": "96d48da251496fc9e7a07d68e3bd6e3c0f4b207486ed3a06121f7a0214c94098",
+  "original_figure_hashes": {
+    "results/figures/locked_confusion_matrices.pdf": "ff6027703f27d3ec0888e239879e3d1fa2a45894c0be96b5af68cbf17c6c6dc0",
+    "results/figures/locked_confusion_matrices.png": "6d6bc4a2b33e7f9ec5b744b66efa6fd7b48584ab8e511a615552a86cf1740ddc"
+  },
+  "reason": "Visual QA found clipped long confusion titles; wrapped labels, unchanged counts. Added explicit conclusion/seed tables from same sealed metrics.",
+  "revised_figure_hashes": {
+    "results/figures/locked_confusion_matrices.pdf": "bda5d9bec25cc696ed1c87c93a3398772148831d4ac943f3597fd550208c3096",
+    "results/figures/locked_confusion_matrices.png": "4f58c1c4acad04fe93336dc232b5482849b55928016cba543faa8ce2dda817c4"
+  },
+  "threshold_changes": false
+}

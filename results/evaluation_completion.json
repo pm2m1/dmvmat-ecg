@@ -1,0 +1,17 @@
+{
+  "access_receipts": [
+    {
+      "detail": {
+        "lock_hash": "ec832433e023cbff689effd868791f7060008ff12e88a6e73e708acbadb5fbdd",
+        "scope": "user-authorized-single-final-PTBXL-evaluation"
+      },
+      "id": "f12a6564e6bb436b8675bcbe5223dea1",
+      "kind": "joint_final_evaluation"
+    }
+  ],
+  "additional_training": false,
+  "attempts": 11,
+  "completed_at": 1794435449.5911438,
+  "prediction_seal_hash": "c0c1c62d97b6ac9274a26c663af0faec0f261cd671bb05082ddb1a7fa4ecd876",
+  "recalibration": false
+}

@@ -1,0 +1,36 @@
+{
+  "all_lock_artifacts_preserved": true,
+  "confusion_counts_consistent": true,
+  "external_transfer_executed": false,
+  "failures": 0,
+  "figure_pairs": 9,
+  "formatting": "32 files passed",
+  "frozen_source_config_preserved": true,
+  "mps": "XResNet synthetic gradient parity failed; common CPU fallback; other two architectures passed",
+  "no_remote": true,
+  "old_repositories": {
+    "cvd-70k-multiview-benchmark": {
+      "head": "928b3994eb77bf0c217dcba3fda8a70eabe44db3",
+      "tracked_files_checked": 1915,
+      "unchanged": true
+    },
+    "cvd-70k-v4-synthetic": {
+      "head": "928b3994eb77bf0c217dcba3fda8a70eabe44db3",
+      "tracked_files_checked": 1915,
+      "unchanged": true
+    }
+  },
+  "predictor_attempts": 11,
+  "raw_records_predictions_checkpoints_excluded": true,
+  "real_training_wall_seconds_from_filesystem_receipts": 15905.936094760895,
+  "registered_prediction_sets": 10,
+  "registered_procedures": 5,
+  "repairs": 0,
+  "ruff": "passed",
+  "single_test_access": true,
+  "successful_full": 8,
+  "successful_smoke": 3,
+  "synthetic_pytest": "26 passed; 7 documented warnings",
+  "training_optimization_seconds_sum": 33531.60872745048,
+  "validation_prediction_seconds_sum": 12453.17960285116
+}
