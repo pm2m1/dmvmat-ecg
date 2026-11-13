@@ -1,0 +1,2925 @@
+{
+  "authorization": {
+    "evaluation": false,
+    "training": false
+  },
+  "blockers": [],
+  "candidate_manifest_hash": "c809d6db691d7ad3094dcd3635546ac58941529d1c6a3d06be35129f8ca0f4c9",
+  "comparison": {
+    "canonical_population_unchanged": true,
+    "domains_unchanged": true,
+    "old_new_same_role_patients": {
+      "A": 2083,
+      "C": 10,
+      "C_reserve": 90,
+      "E": 16,
+      "E_reserve": 102,
+      "O": 790,
+      "d4101:n128:F": 1,
+      "d4101:n128:G": 7,
+      "d4101:n512:F": 30,
+      "d4101:n512:G": 7,
+      "d4102:n128:F": 2,
+      "d4102:n128:G": 8,
+      "d4102:n512:F": 32,
+      "d4102:n512:G": 8,
+      "source_stop": 178,
+      "source_train": 5498
+    },
+    "original_manifest_hash": "b5b3dcd127fa6d15317e82f3d704f25b193f269651db094a85e9fc6429ce644f",
+    "original_role_counts": {
+      "A": {
+        "joint": [
+          2066,
+          1031,
+          1111,
+          0
+        ],
+        "joint_proportions": [
+          0.4909695817490494,
+          0.24500950570342206,
+          0.2640209125475285,
+          0.0
+        ],
+        "negatives": [
+          3177,
+          3097
+        ],
+        "observed": [
+          4208,
+          4208
+        ],
+        "patients": 4208,
+        "positives": [
+          1031,
+          1111
+        ],
+        "prevalence": [
+          0.24500950570342206,
+          0.2640209125475285
+        ],
+        "records": 4208,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "C": {
+        "joint": [
+          71,
+          20,
+          19,
+          18
+        ],
+        "joint_proportions": [
+          0.5546875,
+          0.15625,
+          0.1484375,
+          0.140625
+        ],
+        "negatives": [
+          90,
+          91
+        ],
+        "observed": [
+          128,
+          128
+        ],
+        "patients": 128,
+        "positives": [
+          38,
+          37
+        ],
+        "prevalence": [
+          0.296875,
+          0.2890625
+        ],
+        "records": 128,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "C_reserve": {
+        "joint": [
+          459,
+          135,
+          148,
+          208
+        ],
+        "joint_proportions": [
+          0.4831578947368421,
+          0.14210526315789473,
+          0.15578947368421053,
+          0.21894736842105264
+        ],
+        "negatives": [
+          607,
+          594
+        ],
+        "observed": [
+          950,
+          950
+        ],
+        "patients": 950,
+        "positives": [
+          343,
+          356
+        ],
+        "prevalence": [
+          0.36105263157894735,
+          0.37473684210526315
+        ],
+        "records": 950,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "E": {
+        "joint": [
+          68,
+          19,
+          21,
+          20
+        ],
+        "joint_proportions": [
+          0.53125,
+          0.1484375,
+          0.1640625,
+          0.15625
+        ],
+        "negatives": [
+          89,
+          87
+        ],
+        "observed": [
+          128,
+          128
+        ],
+        "patients": 128,
+        "positives": [
+          39,
+          41
+        ],
+        "prevalence": [
+          0.3046875,
+          0.3203125
+        ],
+        "records": 128,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "E_reserve": {
+        "joint": [
+          459,
+          135,
+          148,
+          209
+        ],
+        "joint_proportions": [
+          0.48264984227129337,
+          0.14195583596214512,
+          0.15562565720294427,
+          0.21976866456361724
+        ],
+        "negatives": [
+          607,
+          594
+        ],
+        "observed": [
+          951,
+          951
+        ],
+        "patients": 951,
+        "positives": [
+          344,
+          357
+        ],
+        "prevalence": [
+          0.3617245005257624,
+          0.3753943217665615
+        ],
+        "records": 951,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "O": {
+        "joint": [
+          1193,
+          637,
+          670,
+          168
+        ],
+        "joint_proportions": [
+          0.4471514242878561,
+          0.23875562218890556,
+          0.25112443778110943,
+          0.06296851574212893
+        ],
+        "negatives": [
+          1863,
+          1830
+        ],
+        "observed": [
+          2668,
+          2668
+        ],
+        "patients": 2668,
+        "positives": [
+          805,
+          838
+        ],
+        "prevalence": [
+          0.3017241379310345,
+          0.3140929535232384
+        ],
+        "records": 2668,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4101:n128:F": {
+        "joint": [
+          63,
+          25,
+          40,
+          0
+        ],
+        "joint_proportions": [
+          0.4921875,
+          0.1953125,
+          0.3125,
+          0.0
+        ],
+        "negatives": [
+          103,
+          88
+        ],
+        "observed": [
+          128,
+          128
+        ],
+        "patients": 128,
+        "positives": [
+          25,
+          40
+        ],
+        "prevalence": [
+          0.1953125,
+          0.3125
+        ],
+        "records": 128,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4101:n128:G": {
+        "joint": [
+          129,
+          59,
+          68,
+          0
+        ],
+        "joint_proportions": [
+          0.50390625,
+          0.23046875,
+          0.265625,
+          0.0
+        ],
+        "negatives": [
+          197,
+          188
+        ],
+        "observed": [
+          256,
+          256
+        ],
+        "patients": 256,
+        "positives": [
+          59,
+          68
+        ],
+        "prevalence": [
+          0.23046875,
+          0.265625
+        ],
+        "records": 256,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4101:n512:F": {
+        "joint": [
+          248,
+          126,
+          138,
+          0
+        ],
+        "joint_proportions": [
+          0.484375,
+          0.24609375,
+          0.26953125,
+          0.0
+        ],
+        "negatives": [
+          386,
+          374
+        ],
+        "observed": [
+          512,
+          512
+        ],
+        "patients": 512,
+        "positives": [
+          126,
+          138
+        ],
+        "prevalence": [
+          0.24609375,
+          0.26953125
+        ],
+        "records": 512,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4101:n512:G": {
+        "joint": [
+          129,
+          59,
+          68,
+          0
+        ],
+        "joint_proportions": [
+          0.50390625,
+          0.23046875,
+          0.265625,
+          0.0
+        ],
+        "negatives": [
+          197,
+          188
+        ],
+        "observed": [
+          256,
+          256
+        ],
+        "patients": 256,
+        "positives": [
+          59,
+          68
+        ],
+        "prevalence": [
+          0.23046875,
+          0.265625
+        ],
+        "records": 256,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4102:n128:F": {
+        "joint": [
+          63,
+          24,
+          41,
+          0
+        ],
+        "joint_proportions": [
+          0.4921875,
+          0.1875,
+          0.3203125,
+          0.0
+        ],
+        "negatives": [
+          104,
+          87
+        ],
+        "observed": [
+          128,
+          128
+        ],
+        "patients": 128,
+        "positives": [
+          24,
+          41
+        ],
+        "prevalence": [
+          0.1875,
+          0.3203125
+        ],
+        "records": 128,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4102:n128:G": {
+        "joint": [
+          137,
+          58,
+          61,
+          0
+        ],
+        "joint_proportions": [
+          0.53515625,
+          0.2265625,
+          0.23828125,
+          0.0
+        ],
+        "negatives": [
+          198,
+          195
+        ],
+        "observed": [
+          256,
+          256
+        ],
+        "patients": 256,
+        "positives": [
+          58,
+          61
+        ],
+        "prevalence": [
+          0.2265625,
+          0.23828125
+        ],
+        "records": 256,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4102:n512:F": {
+        "joint": [
+          262,
+          109,
+          141,
+          0
+        ],
+        "joint_proportions": [
+          0.51171875,
+          0.212890625,
+          0.275390625,
+          0.0
+        ],
+        "negatives": [
+          403,
+          371
+        ],
+        "observed": [
+          512,
+          512
+        ],
+        "patients": 512,
+        "positives": [
+          109,
+          141
+        ],
+        "prevalence": [
+          0.212890625,
+          0.275390625
+        ],
+        "records": 512,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "d4102:n512:G": {
+        "joint": [
+          137,
+          58,
+          61,
+          0
+        ],
+        "joint_proportions": [
+          0.53515625,
+          0.2265625,
+          0.23828125,
+          0.0
+        ],
+        "negatives": [
+          198,
+          195
+        ],
+        "observed": [
+          256,
+          256
+        ],
+        "patients": 256,
+        "positives": [
+          58,
+          61
+        ],
+        "prevalence": [
+          0.2265625,
+          0.23828125
+        ],
+        "records": 256,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "source_stop": {
+        "joint": [
+          919,
+          52,
+          59,
+          142
+        ],
+        "joint_proportions": [
+          0.7841296928327645,
+          0.04436860068259386,
+          0.050341296928327645,
+          0.12116040955631399
+        ],
+        "negatives": [
+          978,
+          971
+        ],
+        "observed": [
+          1172,
+          1172
+        ],
+        "patients": 1172,
+        "positives": [
+          194,
+          201
+        ],
+        "prevalence": [
+          0.16552901023890784,
+          0.17150170648464164
+        ],
+        "records": 1172,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "source_train": {
+        "joint": [
+          4718,
+          851,
+          878,
+          19
+        ],
+        "joint_proportions": [
+          0.7296628518403959,
+          0.13161150634085989,
+          0.1357871945561398,
+          0.002938447262604392
+        ],
+        "negatives": [
+          5596,
+          5569
+        ],
+        "observed": [
+          6466,
+          6466
+        ],
+        "patients": 6466,
+        "positives": [
+          870,
+          897
+        ],
+        "prevalence": [
+          0.13454995360346428,
+          0.1387256418187442
+        ],
+        "records": 6466,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      }
+    }
+  },
+  "context": {
+    "code_hash": "9e17224a2c5f2e8282405ec2846d03e396b3355b7a5a019b6040c3fdfe478e8a",
+    "dataset": {
+      "annotation_policy": "all diagnostic keys, including likelihood0; no numeric likelihood threshold",
+      "known_original_physical_duplicate_detections": 0,
+      "metadata_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+      "near_duplicate_search": "not performed by this metadata-only sprint",
+      "publisher_manifest_sha256": "b7224b92b341511ec3ceb13dc6652079b2c36a06504bcb49506f157f51dc695d",
+      "release": "1.0.3",
+      "statements_sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f",
+      "train_meta_sha256": "f6a951bf329522eca415da4c8cfbae4c207659bd7b8406e72be1ca96f2deee4a",
+      "validation_meta_sha256": "5bde468990544df0489ffcd5b5a06080e8bf62a3560ed7b1d0f2411dca27863c"
+    },
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "domain_definition": {
+      "source_age": [
+        18,
+        59
+      ],
+      "target_age": [
+        60,
+        89
+      ]
+    },
+    "evaluation_accesses": 0,
+    "evaluation_authorization": false,
+    "fit_matrix_hash": "601a491275e93c66449a46fc9d4737abff2bfb835ce0c808cb613a43f21faee8",
+    "labels": [
+      "CD",
+      "STTC"
+    ],
+    "manifest_hash": "c809d6db691d7ad3094dcd3635546ac58941529d1c6a3d06be35129f8ca0f4c9",
+    "method_policy": "unchanged Phase2 EvidenceConfig A/B",
+    "namespace": "draft:phase2c-joint-pattern-v1",
+    "patient_manifest_hash": "d502b22f00c790e31e02c80d65c7847a5b52b02f597ed512cc9efcf9b28e6cb0",
+    "predictor_attempts": 0,
+    "preprocessing_policy": "fresh source_train scalar normalization only; no historical artifacts",
+    "role_hashes": {
+      "A": "0decf7fb4f8bd16ebf7c09fd317b5d6b1ab76e9cdf689b2b40bbf2a736744cbc",
+      "C": "6492720b9ed23151f7cb89bc50140f7934a02b3fb71f72ec00ba8dd847a1b42b",
+      "C_reserve": "4085a7c4e655d9c01021cec7c1a472cb8007eeff68a4deaeaa8bbc19238ad79a",
+      "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+      "E_reserve": "83139defeb469225827805fe923b5091cff0bfb92ab0816fb76d232673128005",
+      "O": "5c4028aad32457e8f0a54ca6d4ed3af02c9446053fb153e0f0a12e89da9d5c23",
+      "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+      "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571",
+      "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+      "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571",
+      "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+      "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3",
+      "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+      "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3",
+      "source_stop": "b8cf3b2667d585c7268895ce7cfbcea0584b11870cb56273a624fa3550fe85bf",
+      "source_train": "a409d1cfedc20d23c59a96d22e35829385b01425e9e4f1f6c079a9d11cdc95c1"
+    },
+    "spec_hash": "28ec8f4d748cea15ca049ca6ba48efa8040428b1d18b3c436daaebc442f84484",
+    "split_version": "joint-pattern-hamilton-v1",
+    "status": "draft",
+    "training_authorization": false
+  },
+  "contract_hash": "28ec8f4d748cea15ca049ca6ba48efa8040428b1d18b3c436daaebc442f84484",
+  "denied_operations": [
+    [
+      "source_train",
+      "fit"
+    ],
+    [
+      "source_train",
+      "preprocess_fit"
+    ],
+    [
+      "E",
+      "stop"
+    ],
+    [
+      "A",
+      "evidence"
+    ],
+    [
+      "C",
+      "calibrate"
+    ],
+    [
+      "O",
+      "evaluate_predict"
+    ],
+    [
+      "O",
+      "evaluate_labels"
+    ]
+  ],
+  "deviations_pp": {
+    "A": {
+      "joint_pp": [
+        -0.005971935641441162,
+        0.002516002450675403,
+        -0.008698254086439428,
+        0.012154187277201023
+      ],
+      "marginal_pp": [
+        0.014670189727872263,
+        0.0034559331907602076
+      ]
+    },
+    "C_reserve": {
+      "joint_pp": [
+        0.01790764482548224,
+        0.015234474655881347,
+        0.026082873984942245,
+        -0.05922499346630444
+      ],
+      "marginal_pp": [
+        -0.04399051881042726,
+        -0.03314211948136636
+      ]
+    },
+    "E_reserve": {
+      "joint_pp": [
+        0.01790764482548224,
+        0.015234474655881347,
+        0.026082873984942245,
+        -0.05922499346630444
+      ],
+      "marginal_pp": [
+        -0.04399051881042726,
+        -0.03314211948136636
+      ]
+    },
+    "O": {
+      "joint_pp": [
+        -0.00199049400643192,
+        -0.014353192650698454,
+        -0.002899197791972341,
+        0.019242884449097164
+      ],
+      "marginal_pp": [
+        0.00488969179839871,
+        0.0163436866571276
+      ]
+    },
+    "source_stop": {
+      "joint_pp": [
+        0.019947109314266687,
+        -0.04236190225505171,
+        0.03605559965397659,
+        -0.013640806713196077
+      ],
+      "marginal_pp": [
+        -0.05600270896824744,
+        0.02241479294078086
+      ]
+    },
+    "source_train": {
+      "joint_pp": [
+        -0.003521162549935397,
+        0.007477932837998691,
+        -0.006364713062761984,
+        0.002407942774695568
+      ],
+      "marginal_pp": [
+        0.009885875612694606,
+        -0.003956770288068845
+      ]
+    }
+  },
+  "domains": {
+    "complete_eligible": {
+      "joint": [
+        9814,
+        2841,
+        3014,
+        746
+      ],
+      "joint_proportions": [
+        0.5978678038379531,
+        0.17307340846786476,
+        0.1836125494974109,
+        0.045446238196771245
+      ],
+      "negatives": [
+        12828,
+        12655
+      ],
+      "observed": [
+        16415,
+        16415
+      ],
+      "patients": 16415,
+      "positives": [
+        3587,
+        3760
+      ],
+      "prevalence": [
+        0.218519646664636,
+        0.22905878769418214
+      ],
+      "records": 16415,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "source": {
+      "joint": [
+        5637,
+        903,
+        937,
+        161
+      ],
+      "joint_proportions": [
+        0.7380204241948154,
+        0.11822466614296936,
+        0.12267609321811992,
+        0.021078816444095313
+      ],
+      "negatives": [
+        6574,
+        6540
+      ],
+      "observed": [
+        7638,
+        7638
+      ],
+      "patients": 7638,
+      "positives": [
+        1064,
+        1098
+      ],
+      "prevalence": [
+        0.13930348258706468,
+        0.14375490966221524
+      ],
+      "records": 7638,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "target": {
+      "joint": [
+        4177,
+        1938,
+        2077,
+        585
+      ],
+      "joint_proportions": [
+        0.47590292810755386,
+        0.22080437507120884,
+        0.2366412213740458,
+        0.06665147544719152
+      ],
+      "negatives": [
+        6254,
+        6115
+      ],
+      "observed": [
+        8777,
+        8777
+      ],
+      "patients": 8777,
+      "positives": [
+        2523,
+        2662
+      ],
+      "prevalence": [
+        0.2874558505184004,
+        0.30329269682123733
+      ],
+      "records": 8777,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    }
+  },
+  "draw_support_risk": {
+    "expected_joint_counts": [
+      121.8158614402917,
+      56.53236098450319,
+      60.55788514129444,
+      17.093892433910664
+    ],
+    "feasible": true,
+    "interpretation": "Bounds for uniform sampling without replacement; source anchor/geometry/bootstrap failures are additional, not included",
+    "joint_order": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "minimum": 10,
+    "probability_any_cell_below_minimum_bounds": [
+      0.018716588828328648,
+      0.018716588828328655
+    ],
+    "probability_cell_below_minimum": [
+      1.6097186547077184e-59,
+      5.760136156330374e-18,
+      5.686299351907844e-20,
+      0.018716588828328648
+    ],
+    "sample": 256
+  },
+  "environment": {
+    "device": "cpu",
+    "dtype": "float32",
+    "max_workers": 2,
+    "python": "3.12.14",
+    "threads_per_fit": 4,
+    "uv_lock_sha256": "a69f264030cf30ee4392cabc05e72a2184a9441ff5fd50e92092015f65b4bed3",
+    "versions": {
+      "httpx": "0.28.1",
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "pytest": "9.2.0",
+      "ruff": "0.17.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "torch": "2.15.0",
+      "wfdb": "4.3.1"
+    }
+  },
+  "evaluation_replacement_reason": "Correct within-domain joint-pattern allocation after metadata-only co-occurrence audit; no performance feedback",
+  "evidence_support": {
+    "4101": {
+      "A_support_pass": true,
+      "B_support_pass": true,
+      "G_summary": {
+        "joint": [
+          141,
+          48,
+          50,
+          17
+        ],
+        "joint_proportions": [
+          0.55078125,
+          0.1875,
+          0.1953125,
+          0.06640625
+        ],
+        "negatives": [
+          191,
+          189
+        ],
+        "observed": [
+          256,
+          256
+        ],
+        "patients": 256,
+        "positives": [
+          65,
+          67
+        ],
+        "prevalence": [
+          0.25390625,
+          0.26171875
+        ],
+        "records": 256,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "applies_to_F_sizes": [
+        128,
+        512
+      ],
+      "geometry_validity": "not measured: source D, scatter, bootstrap uncertainty require later authorized representations"
+    },
+    "4102": {
+      "A_support_pass": true,
+      "B_support_pass": true,
+      "G_summary": {
+        "joint": [
+          122,
+          51,
+          62,
+          21
+        ],
+        "joint_proportions": [
+          0.4765625,
+          0.19921875,
+          0.2421875,
+          0.08203125
+        ],
+        "negatives": [
+          184,
+          173
+        ],
+        "observed": [
+          256,
+          256
+        ],
+        "patients": 256,
+        "positives": [
+          72,
+          83
+        ],
+        "prevalence": [
+          0.28125,
+          0.32421875
+        ],
+        "records": 256,
+        "unknown": [
+          0,
+          0
+        ],
+        "unknown_joint": 0
+      },
+      "applies_to_F_sizes": [
+        128,
+        512
+      ],
+      "geometry_validity": "not measured: source D, scatter, bootstrap uncertainty require later authorized representations"
+    }
+  },
+  "fit_matrix": {
+    "attempts_reserved": 0,
+    "ceiling": 36,
+    "matrix": [
+      {
+        "job": "source",
+        "role_hashes": {
+          "source_stop": "b8cf3b2667d585c7268895ce7cfbcea0584b11870cb56273a624fa3550fe85bf",
+          "source_train": "a409d1cfedc20d23c59a96d22e35829385b01425e9e4f1f6c079a9d11cdc95c1"
+        },
+        "spec": {
+          "epochs": 50,
+          "fit_roles": [
+            "source_train"
+          ],
+          "fresh": true,
+          "kind": "source",
+          "seed": 3101,
+          "stop_role": "source_stop"
+        },
+        "target_labels_before_C": 0,
+        "target_labels_with_C": 128
+      },
+      {
+        "job": "d4101:n128:head_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_f",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 256,
+        "target_labels_with_C": 384
+      },
+      {
+        "job": "d4101:n128:head_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+          "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F",
+            "d4101:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_cost",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4101:n128:full_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_f",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 256,
+        "target_labels_with_C": 384
+      },
+      {
+        "job": "d4101:n128:full_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+          "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F",
+            "d4101:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_cost",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4101:n128:random_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+          "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n128:G",
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "random_a",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4101:n128:selective_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+          "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n128:G",
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_a",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4101:n128:selective_b",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+          "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n128:G",
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_b",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4101:n128:target_only",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+          "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F",
+            "d4101:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "target_only",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4101:n512:head_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_f",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 640,
+        "target_labels_with_C": 768
+      },
+      {
+        "job": "d4101:n512:head_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+          "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F",
+            "d4101:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_cost",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4101:n512:full_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_f",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 640,
+        "target_labels_with_C": 768
+      },
+      {
+        "job": "d4101:n512:full_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+          "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F",
+            "d4101:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_cost",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4101:n512:random_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+          "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n512:G",
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "random_a",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4101:n512:selective_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+          "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n512:G",
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_a",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4101:n512:selective_b",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+          "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n512:G",
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_b",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4101:n512:target_only",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+          "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F",
+            "d4101:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "target_only",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4102:n128:head_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_f",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 256,
+        "target_labels_with_C": 384
+      },
+      {
+        "job": "d4102:n128:head_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+          "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F",
+            "d4102:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_cost",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4102:n128:full_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_f",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 256,
+        "target_labels_with_C": 384
+      },
+      {
+        "job": "d4102:n128:full_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+          "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F",
+            "d4102:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_cost",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4102:n128:random_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+          "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n128:G",
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "random_a",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4102:n128:selective_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+          "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n128:G",
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_a",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4102:n128:selective_b",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+          "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n128:G",
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_b",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4102:n128:target_only",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+          "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F",
+            "d4102:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "target_only",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_labels_before_C": 512,
+        "target_labels_with_C": 640
+      },
+      {
+        "job": "d4102:n512:head_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_f",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 640,
+        "target_labels_with_C": 768
+      },
+      {
+        "job": "d4102:n512:head_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+          "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F",
+            "d4102:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_cost",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4102:n512:full_f",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_f",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 640,
+        "target_labels_with_C": 768
+      },
+      {
+        "job": "d4102:n512:full_cost",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+          "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F",
+            "d4102:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_cost",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4102:n512:random_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+          "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n512:G",
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "random_a",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4102:n512:selective_a",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+          "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n512:G",
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_a",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4102:n512:selective_b",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+          "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n512:G",
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_b",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      },
+      {
+        "job": "d4102:n512:target_only",
+        "role_hashes": {
+          "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+          "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+          "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F",
+            "d4102:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "target_only",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_labels_before_C": 896,
+        "target_labels_with_C": 1024
+      }
+    ],
+    "planned": 33,
+    "reserve": 3
+  },
+  "labels": [
+    "CD",
+    "STTC"
+  ],
+  "new_learned_representations": 0,
+  "old_ledger_after": {
+    "attempts": 0,
+    "evaluation_accesses": 0,
+    "identity": {
+      "code_hash": "72bd895da6e54c60e13872044a5e30c812a2d7d6a4d70a976d666892995b297d",
+      "contract_hash": "2f0530ed3c2890235ef78da8225edd12bc0c5ebca015b17144330cc6f1fa77da",
+      "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+      "manifest_hash": "4f789e2f3635a4c2c89f877dfff09af58210aaf21d5a58d668d98a8001bbf1f5",
+      "namespace": "real:phase2b-internal"
+    },
+    "phase": "draft"
+  },
+  "old_ledger_before": {
+    "attempts": 0,
+    "evaluation_accesses": 0,
+    "identity": {
+      "code_hash": "72bd895da6e54c60e13872044a5e30c812a2d7d6a4d70a976d666892995b297d",
+      "contract_hash": "2f0530ed3c2890235ef78da8225edd12bc0c5ebca015b17144330cc6f1fa77da",
+      "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+      "manifest_hash": "4f789e2f3635a4c2c89f877dfff09af58210aaf21d5a58d668d98a8001bbf1f5",
+      "namespace": "real:phase2b-internal"
+    },
+    "phase": "draft"
+  },
+  "original_objective_trace": {
+    "source": {
+      "first_joint_objective_deltas": {
+        "source_stop": -0.02634339157353871,
+        "source_train": -0.004660007442858216
+      },
+      "first_pattern": [
+        1,
+        1
+      ],
+      "joint_assignments": {
+        "source_stop": 142,
+        "source_train": 19
+      },
+      "pattern_frequencies": {
+        "00": 5637,
+        "01": 937,
+        "10": 903,
+        "11": 161
+      },
+      "role_counts": {
+        "source_stop": {
+          "joint": [
+            919,
+            52,
+            59,
+            142
+          ],
+          "joint_proportions": [
+            0.7841296928327645,
+            0.04436860068259386,
+            0.050341296928327645,
+            0.12116040955631399
+          ],
+          "negatives": [
+            978,
+            971
+          ],
+          "observed": [
+            1172,
+            1172
+          ],
+          "patients": 1172,
+          "positives": [
+            194,
+            201
+          ],
+          "prevalence": [
+            0.16552901023890784,
+            0.17150170648464164
+          ],
+          "records": 1172,
+          "unknown": [
+            0,
+            0
+          ],
+          "unknown_joint": 0
+        },
+        "source_train": {
+          "joint": [
+            4718,
+            851,
+            878,
+            19
+          ],
+          "joint_proportions": [
+            0.7296628518403959,
+            0.13161150634085989,
+            0.1357871945561398,
+            0.002938447262604392
+          ],
+          "negatives": [
+            5596,
+            5569
+          ],
+          "observed": [
+            6466,
+            6466
+          ],
+          "patients": 6466,
+          "positives": [
+            870,
+            897
+          ],
+          "prevalence": [
+            0.13454995360346428,
+            0.1387256418187442
+          ],
+          "records": 6466,
+          "unknown": [
+            0,
+            0
+          ],
+          "unknown_joint": 0
+        }
+      }
+    },
+    "target": {
+      "first_joint_objective_deltas": {
+        "A": -0.0035425355930875924,
+        "C_reserve": -0.01768778231690593,
+        "E_reserve": -0.01768778231690593,
+        "O": -0.005902842896894356
+      },
+      "first_pattern": [
+        1,
+        1
+      ],
+      "joint_assignments": {
+        "A": 0,
+        "C_reserve": 208,
+        "E_reserve": 209,
+        "O": 168
+      },
+      "pattern_frequencies": {
+        "00": 4177,
+        "01": 2077,
+        "10": 1938,
+        "11": 585
+      },
+      "role_counts": {
+        "A": {
+          "joint": [
+            2066,
+            1031,
+            1111,
+            0
+          ],
+          "joint_proportions": [
+            0.4909695817490494,
+            0.24500950570342206,
+            0.2640209125475285,
+            0.0
+          ],
+          "negatives": [
+            3177,
+            3097
+          ],
+          "observed": [
+            4208,
+            4208
+          ],
+          "patients": 4208,
+          "positives": [
+            1031,
+            1111
+          ],
+          "prevalence": [
+            0.24500950570342206,
+            0.2640209125475285
+          ],
+          "records": 4208,
+          "unknown": [
+            0,
+            0
+          ],
+          "unknown_joint": 0
+        },
+        "C_reserve": {
+          "joint": [
+            459,
+            135,
+            148,
+            208
+          ],
+          "joint_proportions": [
+            0.4831578947368421,
+            0.14210526315789473,
+            0.15578947368421053,
+            0.21894736842105264
+          ],
+          "negatives": [
+            607,
+            594
+          ],
+          "observed": [
+            950,
+            950
+          ],
+          "patients": 950,
+          "positives": [
+            343,
+            356
+          ],
+          "prevalence": [
+            0.36105263157894735,
+            0.37473684210526315
+          ],
+          "records": 950,
+          "unknown": [
+            0,
+            0
+          ],
+          "unknown_joint": 0
+        },
+        "E_reserve": {
+          "joint": [
+            459,
+            135,
+            148,
+            209
+          ],
+          "joint_proportions": [
+            0.48264984227129337,
+            0.14195583596214512,
+            0.15562565720294427,
+            0.21976866456361724
+          ],
+          "negatives": [
+            607,
+            594
+          ],
+          "observed": [
+            951,
+            951
+          ],
+          "patients": 951,
+          "positives": [
+            344,
+            357
+          ],
+          "prevalence": [
+            0.3617245005257624,
+            0.3753943217665615
+          ],
+          "records": 951,
+          "unknown": [
+            0,
+            0
+          ],
+          "unknown_joint": 0
+        },
+        "O": {
+          "joint": [
+            1193,
+            637,
+            670,
+            168
+          ],
+          "joint_proportions": [
+            0.4471514242878561,
+            0.23875562218890556,
+            0.25112443778110943,
+            0.06296851574212893
+          ],
+          "negatives": [
+            1863,
+            1830
+          ],
+          "observed": [
+            2668,
+            2668
+          ],
+          "patients": 2668,
+          "positives": [
+            805,
+            838
+          ],
+          "prevalence": [
+            0.3017241379310345,
+            0.3140929535232384
+          ],
+          "records": 2668,
+          "unknown": [
+            0,
+            0
+          ],
+          "unknown_joint": 0
+        }
+      }
+    }
+  },
+  "parent_contract_hash": "2f0530ed3c2890235ef78da8225edd12bc0c5ebca015b17144330cc6f1fa77da",
+  "population": {
+    "additional_eligible_records": 2442,
+    "age_eligible_records": 18857,
+    "canonical_membership_hash": "d502b22f00c790e31e02c80d65c7847a5b52b02f597ed512cc9efcf9b28e6cb0",
+    "canonical_patients": 16415,
+    "development_patients": 16740,
+    "development_records": 19230,
+    "differing_joint_status_patients": 625,
+    "differing_observed_annotations_by_label": [
+      290,
+      437
+    ],
+    "eligible_cross_age_boundary_patients": 10,
+    "grouping_policy": "one lowest eligible ECG ID per true patient; no OR or adjudication",
+    "incomplete_annotation_records": 0,
+    "multiple_record_patients": 1784,
+    "multiple_record_patients_with_incomplete_annotations": 0,
+    "native_hash_duplicate_groups": 0
+  },
+  "provenance": {
+    "annotation_policy": "all diagnostic keys, including likelihood0; no numeric likelihood threshold",
+    "known_original_physical_duplicate_detections": 0,
+    "metadata_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+    "near_duplicate_search": "not performed by this metadata-only sprint",
+    "publisher_manifest_sha256": "b7224b92b341511ec3ceb13dc6652079b2c36a06504bcb49506f157f51dc695d",
+    "release": "1.0.3",
+    "statements_sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f",
+    "train_meta_sha256": "f6a951bf329522eca415da4c8cfbae4c207659bd7b8406e72be1ca96f2deee4a",
+    "validation_meta_sha256": "5bde468990544df0489ffcd5b5a06080e8bf62a3560ed7b1d0f2411dca27863c"
+  },
+  "real_evaluations": 0,
+  "real_predictions": 0,
+  "real_predictor_attempts": 0,
+  "real_preprocessing_fits": 0,
+  "real_waveform_reads": 0,
+  "role_hashes": {
+    "A": "0decf7fb4f8bd16ebf7c09fd317b5d6b1ab76e9cdf689b2b40bbf2a736744cbc",
+    "C": "6492720b9ed23151f7cb89bc50140f7934a02b3fb71f72ec00ba8dd847a1b42b",
+    "C_reserve": "4085a7c4e655d9c01021cec7c1a472cb8007eeff68a4deaeaa8bbc19238ad79a",
+    "E": "e0e69223a04e36c4ede998d9a8dc1b0214187e03bd6dfb4ad9edf0666f5ca218",
+    "E_reserve": "83139defeb469225827805fe923b5091cff0bfb92ab0816fb76d232673128005",
+    "O": "5c4028aad32457e8f0a54ca6d4ed3af02c9446053fb153e0f0a12e89da9d5c23",
+    "d4101:n128:F": "e049ea7ee60ae4b75e7d9edc19f892864e7b694802b27e10953c2ca42fe2df0a",
+    "d4101:n128:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571",
+    "d4101:n512:F": "291b3a0ae6d9cd3cac3f2c2528ef7e68190384588560b59923dc81b3df82382e",
+    "d4101:n512:G": "b2bef6df053fea084c7c86f6b9127ed13d28477adff93440e861dac79580f571",
+    "d4102:n128:F": "0f7f09b7e8d378a3dc296bd70c72e48ee1f7eb67210f33b46f65bf47e19248d7",
+    "d4102:n128:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3",
+    "d4102:n512:F": "250efaf423561d4cc6fdfa6e4d00ee77f9d78b46ecaeb7da6ab339cef01d9c9a",
+    "d4102:n512:G": "fb3fbc8f8719156c99f83639c42248bcb4d0dbb9ca6e718c203bd6de9949a0f3",
+    "source_stop": "b8cf3b2667d585c7268895ce7cfbcea0584b11870cb56273a624fa3550fe85bf",
+    "source_train": "a409d1cfedc20d23c59a96d22e35829385b01425e9e4f1f6c079a9d11cdc95c1"
+  },
+  "source_anchors": [
+    {
+      "A_support_pass": true,
+      "B_support_pass": true,
+      "joint": [
+        228,
+        218,
+        28,
+        38
+      ],
+      "joint_proportions": [
+        0.4453125,
+        0.42578125,
+        0.0546875,
+        0.07421875
+      ],
+      "label": 0,
+      "membership_hash": "8fce9fc311f0a140e86ae13dfc84064183048a7d1cb001d3a4ba6b7cd865cd41",
+      "negatives": [
+        256,
+        446
+      ],
+      "observed": [
+        512,
+        512
+      ],
+      "patients": 512,
+      "positives": [
+        256,
+        66
+      ],
+      "prevalence": [
+        0.5,
+        0.12890625
+      ],
+      "records": 512,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    {
+      "A_support_pass": true,
+      "B_support_pass": true,
+      "joint": [
+        227,
+        29,
+        218,
+        38
+      ],
+      "joint_proportions": [
+        0.443359375,
+        0.056640625,
+        0.42578125,
+        0.07421875
+      ],
+      "label": 1,
+      "membership_hash": "4be142af99a7ddcfa2354631a753a105dead7fda61985f66d08d03e247fe63f9",
+      "negatives": [
+        445,
+        256
+      ],
+      "observed": [
+        512,
+        512
+      ],
+      "patients": 512,
+      "positives": [
+        67,
+        256
+      ],
+      "prevalence": [
+        0.130859375,
+        0.5
+      ],
+      "records": 512,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    }
+  ],
+  "spec_hash": "28ec8f4d748cea15ca049ca6ba48efa8040428b1d18b3c436daaebc442f84484",
+  "split_version": "joint-pattern-hamilton-v1",
+  "status": "DRAFT",
+  "summary": {
+    "A": {
+      "joint": [
+        2088,
+        969,
+        1038,
+        293
+      ],
+      "joint_proportions": [
+        0.47584320875113945,
+        0.2208295350957156,
+        0.2365542388331814,
+        0.06677301731996353
+      ],
+      "negatives": [
+        3126,
+        3057
+      ],
+      "observed": [
+        4388,
+        4388
+      ],
+      "patients": 4388,
+      "positives": [
+        1262,
+        1331
+      ],
+      "prevalence": [
+        0.2876025524156791,
+        0.30332725615314493
+      ],
+      "records": 4388,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "C": {
+      "joint": [
+        60,
+        25,
+        36,
+        7
+      ],
+      "joint_proportions": [
+        0.46875,
+        0.1953125,
+        0.28125,
+        0.0546875
+      ],
+      "negatives": [
+        96,
+        85
+      ],
+      "observed": [
+        128,
+        128
+      ],
+      "patients": 128,
+      "positives": [
+        32,
+        43
+      ],
+      "prevalence": [
+        0.25,
+        0.3359375
+      ],
+      "records": 128,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "C_reserve": {
+      "joint": [
+        418,
+        194,
+        208,
+        58
+      ],
+      "joint_proportions": [
+        0.4760820045558087,
+        0.22095671981776766,
+        0.23690205011389523,
+        0.06605922551252848
+      ],
+      "negatives": [
+        626,
+        612
+      ],
+      "observed": [
+        878,
+        878
+      ],
+      "patients": 878,
+      "positives": [
+        252,
+        266
+      ],
+      "prevalence": [
+        0.2870159453302961,
+        0.30296127562642367
+      ],
+      "records": 878,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "E": {
+      "joint": [
+        56,
+        29,
+        37,
+        6
+      ],
+      "joint_proportions": [
+        0.4375,
+        0.2265625,
+        0.2890625,
+        0.046875
+      ],
+      "negatives": [
+        93,
+        85
+      ],
+      "observed": [
+        128,
+        128
+      ],
+      "patients": 128,
+      "positives": [
+        35,
+        43
+      ],
+      "prevalence": [
+        0.2734375,
+        0.3359375
+      ],
+      "records": 128,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "E_reserve": {
+      "joint": [
+        418,
+        194,
+        208,
+        58
+      ],
+      "joint_proportions": [
+        0.4760820045558087,
+        0.22095671981776766,
+        0.23690205011389523,
+        0.06605922551252848
+      ],
+      "negatives": [
+        626,
+        612
+      ],
+      "observed": [
+        878,
+        878
+      ],
+      "patients": 878,
+      "positives": [
+        252,
+        266
+      ],
+      "prevalence": [
+        0.2870159453302961,
+        0.30296127562642367
+      ],
+      "records": 878,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "O": {
+      "joint": [
+        1253,
+        581,
+        623,
+        176
+      ],
+      "joint_proportions": [
+        0.47588302316748954,
+        0.22066084314470186,
+        0.23661222939612608,
+        0.0668439042916825
+      ],
+      "negatives": [
+        1876,
+        1834
+      ],
+      "observed": [
+        2633,
+        2633
+      ],
+      "patients": 2633,
+      "positives": [
+        757,
+        799
+      ],
+      "prevalence": [
+        0.2875047474363844,
+        0.3034561336878086
+      ],
+      "records": 2633,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4101:n128:F": {
+      "joint": [
+        64,
+        25,
+        30,
+        9
+      ],
+      "joint_proportions": [
+        0.5,
+        0.1953125,
+        0.234375,
+        0.0703125
+      ],
+      "negatives": [
+        94,
+        89
+      ],
+      "observed": [
+        128,
+        128
+      ],
+      "patients": 128,
+      "positives": [
+        34,
+        39
+      ],
+      "prevalence": [
+        0.265625,
+        0.3046875
+      ],
+      "records": 128,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4101:n128:G": {
+      "joint": [
+        141,
+        48,
+        50,
+        17
+      ],
+      "joint_proportions": [
+        0.55078125,
+        0.1875,
+        0.1953125,
+        0.06640625
+      ],
+      "negatives": [
+        191,
+        189
+      ],
+      "observed": [
+        256,
+        256
+      ],
+      "patients": 256,
+      "positives": [
+        65,
+        67
+      ],
+      "prevalence": [
+        0.25390625,
+        0.26171875
+      ],
+      "records": 256,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4101:n512:F": {
+      "joint": [
+        243,
+        112,
+        128,
+        29
+      ],
+      "joint_proportions": [
+        0.474609375,
+        0.21875,
+        0.25,
+        0.056640625
+      ],
+      "negatives": [
+        371,
+        355
+      ],
+      "observed": [
+        512,
+        512
+      ],
+      "patients": 512,
+      "positives": [
+        141,
+        157
+      ],
+      "prevalence": [
+        0.275390625,
+        0.306640625
+      ],
+      "records": 512,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4101:n512:G": {
+      "joint": [
+        141,
+        48,
+        50,
+        17
+      ],
+      "joint_proportions": [
+        0.55078125,
+        0.1875,
+        0.1953125,
+        0.06640625
+      ],
+      "negatives": [
+        191,
+        189
+      ],
+      "observed": [
+        256,
+        256
+      ],
+      "patients": 256,
+      "positives": [
+        65,
+        67
+      ],
+      "prevalence": [
+        0.25390625,
+        0.26171875
+      ],
+      "records": 256,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4102:n128:F": {
+      "joint": [
+        62,
+        29,
+        31,
+        6
+      ],
+      "joint_proportions": [
+        0.484375,
+        0.2265625,
+        0.2421875,
+        0.046875
+      ],
+      "negatives": [
+        93,
+        91
+      ],
+      "observed": [
+        128,
+        128
+      ],
+      "patients": 128,
+      "positives": [
+        35,
+        37
+      ],
+      "prevalence": [
+        0.2734375,
+        0.2890625
+      ],
+      "records": 128,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4102:n128:G": {
+      "joint": [
+        122,
+        51,
+        62,
+        21
+      ],
+      "joint_proportions": [
+        0.4765625,
+        0.19921875,
+        0.2421875,
+        0.08203125
+      ],
+      "negatives": [
+        184,
+        173
+      ],
+      "observed": [
+        256,
+        256
+      ],
+      "patients": 256,
+      "positives": [
+        72,
+        83
+      ],
+      "prevalence": [
+        0.28125,
+        0.32421875
+      ],
+      "records": 256,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4102:n512:F": {
+      "joint": [
+        242,
+        113,
+        125,
+        32
+      ],
+      "joint_proportions": [
+        0.47265625,
+        0.220703125,
+        0.244140625,
+        0.0625
+      ],
+      "negatives": [
+        367,
+        355
+      ],
+      "observed": [
+        512,
+        512
+      ],
+      "patients": 512,
+      "positives": [
+        145,
+        157
+      ],
+      "prevalence": [
+        0.283203125,
+        0.306640625
+      ],
+      "records": 512,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "d4102:n512:G": {
+      "joint": [
+        122,
+        51,
+        62,
+        21
+      ],
+      "joint_proportions": [
+        0.4765625,
+        0.19921875,
+        0.2421875,
+        0.08203125
+      ],
+      "negatives": [
+        184,
+        173
+      ],
+      "observed": [
+        256,
+        256
+      ],
+      "patients": 256,
+      "positives": [
+        72,
+        83
+      ],
+      "prevalence": [
+        0.28125,
+        0.32421875
+      ],
+      "records": 256,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "source_stop": {
+      "joint": [
+        846,
+        135,
+        141,
+        24
+      ],
+      "joint_proportions": [
+        0.7382198952879581,
+        0.11780104712041885,
+        0.12303664921465969,
+        0.020942408376963352
+      ],
+      "negatives": [
+        987,
+        981
+      ],
+      "observed": [
+        1146,
+        1146
+      ],
+      "patients": 1146,
+      "positives": [
+        159,
+        165
+      ],
+      "prevalence": [
+        0.1387434554973822,
+        0.14397905759162305
+      ],
+      "records": 1146,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    },
+    "source_train": {
+      "joint": [
+        4791,
+        768,
+        796,
+        137
+      ],
+      "joint_proportions": [
+        0.737985212569316,
+        0.11829944547134935,
+        0.1226124460874923,
+        0.02110289587184227
+      ],
+      "negatives": [
+        5587,
+        5559
+      ],
+      "observed": [
+        6492,
+        6492
+      ],
+      "patients": 6492,
+      "positives": [
+        905,
+        933
+      ],
+      "prevalence": [
+        0.13940234134319163,
+        0.14371534195933455
+      ],
+      "records": 6492,
+      "unknown": [
+        0,
+        0
+      ],
+      "unknown_joint": 0
+    }
+  }
+}

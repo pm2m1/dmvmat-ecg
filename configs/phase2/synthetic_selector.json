@@ -1,0 +1,23 @@
+{
+  "scope": "synthetic-verification-only",
+  "real_execution_authorized": false,
+  "original_study_mutation_authorized": false,
+  "device": "cpu",
+  "default_formulation": "A",
+  "secondary_formulation": "B",
+  "B_label_count": 2,
+  "permutations": 999,
+  "bootstraps": 4999,
+  "mmd_cap": 256,
+  "source_class_cap": 256,
+  "minimum": 10,
+  "alpha": 0.05,
+  "source_d_floor": 0.1,
+  "uncertainty_cutoff": 0.75,
+  "retention_cutoff": 0.8,
+  "confidence_cutoff": 1.0,
+  "mmd_seed": 24007,
+  "geometry_seed": 24011,
+  "alignment_loss": false,
+  "transfer_weights": "never discover or load historical checkpoints in synthetic tests"
+}

@@ -1,0 +1,86 @@
+{
+  "candidate_auditor_hash": "c809d6db691d7ad3094dcd3635546ac58941529d1c6a3d06be35129f8ca0f4c9",
+  "decisions": {
+    "33_plus_3_ceiling": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "A_B_validity_and_abstention": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "age_domains_and_eligibility": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "calibration_failure_identity_and_threshold_point5": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "canonical_exact_record_policy": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "endpoint_annotation_semantics": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "internal_exploratory_limits": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "joint_pattern_seed44301": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "matched_labels_and_updates": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "replaced_O_and_audit_history": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    },
+    "stopping_20_post_update_looks_plus_epoch_zero": {
+      "approved": null,
+      "date": null,
+      "notes": null,
+      "reviewer": null,
+      "reviewer_role": null
+    }
+  },
+  "evaluation_authorization": false,
+  "execution_contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+  "status": "UNSIGNED \u2014 NOT ADOPTED",
+  "training_authorization": false
+}

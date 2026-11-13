@@ -1,0 +1,1270 @@
+{
+  "audit_manifest_hash": "b5b3dcd127fa6d15317e82f3d704f25b193f269651db094a85e9fc6429ce644f",
+  "denied_operations": [
+    "source_train:fit",
+    "source_train:evidence",
+    "C:calibrate",
+    "O:evaluate_predict",
+    "O:evaluate_labels",
+    "predictor_reservation",
+    "evaluation_lease"
+  ],
+  "dry_run": {
+    "ceiling": 36,
+    "matrix": [
+      {
+        "fit_records": 6466,
+        "job": "source",
+        "role_hashes": {
+          "source_stop": "6faee770d170aa0aced83ecf1dec329aed116f669d1dbe42be6372f9ad245c70",
+          "source_train": "73b1cabe1ca51eafc8ca5b6d655a1a3b125c8f367368ea415c9eb743a56e48bf"
+        },
+        "spec": {
+          "epochs": 50,
+          "fit_roles": [
+            "source_train"
+          ],
+          "fresh": true,
+          "kind": "source",
+          "seed": 3101,
+          "stop_role": "source_stop"
+        },
+        "target_label_records_before_C": 0,
+        "target_label_records_with_C": 128
+      },
+      {
+        "fit_records": 128,
+        "job": "d4101:n128:head_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_f",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 256,
+        "target_label_records_with_C": 384
+      },
+      {
+        "fit_records": 384,
+        "job": "d4101:n128:head_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+          "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F",
+            "d4101:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_cost",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4101:n128:full_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_f",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 256,
+        "target_label_records_with_C": 384
+      },
+      {
+        "fit_records": 384,
+        "job": "d4101:n128:full_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+          "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F",
+            "d4101:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_cost",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4101:n128:random_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+          "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n128:G",
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "random_a",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4101:n128:selective_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+          "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n128:G",
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_a",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4101:n128:selective_b",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+          "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n128:G",
+          "fit_roles": [
+            "d4101:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_b",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 384,
+        "job": "d4101:n128:target_only",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+          "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n128:F",
+            "d4101:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "target_only",
+          "n_fit": 128,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 512,
+        "job": "d4101:n512:head_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_f",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 640,
+        "target_label_records_with_C": 768
+      },
+      {
+        "fit_records": 768,
+        "job": "d4101:n512:head_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+          "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F",
+            "d4101:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_cost",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4101:n512:full_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_f",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 640,
+        "target_label_records_with_C": 768
+      },
+      {
+        "fit_records": 768,
+        "job": "d4101:n512:full_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+          "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F",
+            "d4101:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_cost",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4101:n512:random_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+          "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n512:G",
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "random_a",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4101:n512:selective_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+          "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n512:G",
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_a",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4101:n512:selective_b",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+          "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4101:n512:G",
+          "fit_roles": [
+            "d4101:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_b",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 768,
+        "job": "d4101:n512:target_only",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+          "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7"
+        },
+        "spec": {
+          "draw": 4101,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4101:n512:F",
+            "d4101:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "target_only",
+          "n_fit": 512,
+          "seed": 5101,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 128,
+        "job": "d4102:n128:head_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_f",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 256,
+        "target_label_records_with_C": 384
+      },
+      {
+        "fit_records": 384,
+        "job": "d4102:n128:head_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+          "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F",
+            "d4102:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "head_cost",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4102:n128:full_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_f",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 256,
+        "target_label_records_with_C": 384
+      },
+      {
+        "fit_records": 384,
+        "job": "d4102:n128:full_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+          "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F",
+            "d4102:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "full_cost",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4102:n128:random_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+          "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n128:G",
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "random_a",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4102:n128:selective_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+          "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n128:G",
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_a",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 128,
+        "job": "d4102:n128:selective_b",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+          "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n128:G",
+          "fit_roles": [
+            "d4102:n128:F"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "selective_b",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 384,
+        "job": "d4102:n128:target_only",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+          "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n128:F",
+            "d4102:n128:G"
+          ],
+          "kind": "target",
+          "look_every": 2,
+          "method": "target_only",
+          "n_fit": 128,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 40
+        },
+        "target_label_records_before_C": 512,
+        "target_label_records_with_C": 640
+      },
+      {
+        "fit_records": 512,
+        "job": "d4102:n512:head_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_f",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 640,
+        "target_label_records_with_C": 768
+      },
+      {
+        "fit_records": 768,
+        "job": "d4102:n512:head_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+          "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F",
+            "d4102:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "head_cost",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4102:n512:full_f",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_f",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 640,
+        "target_label_records_with_C": 768
+      },
+      {
+        "fit_records": 768,
+        "job": "d4102:n512:full_cost",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+          "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F",
+            "d4102:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "full_cost",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4102:n512:random_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+          "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n512:G",
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "random_a",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4102:n512:selective_a",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+          "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n512:G",
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_a",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 512,
+        "job": "d4102:n512:selective_b",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+          "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": true,
+          "evidence_role": "d4102:n512:G",
+          "fit_roles": [
+            "d4102:n512:F"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "selective_b",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      },
+      {
+        "fit_records": 768,
+        "job": "d4102:n512:target_only",
+        "role_hashes": {
+          "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+          "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+          "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035"
+        },
+        "spec": {
+          "draw": 4102,
+          "epoch_zero_eligible": false,
+          "evidence_role": null,
+          "fit_roles": [
+            "d4102:n512:F",
+            "d4102:n512:G"
+          ],
+          "kind": "target",
+          "look_every": 8,
+          "method": "target_only",
+          "n_fit": 512,
+          "seed": 5102,
+          "stop_role": "E",
+          "updates": 160
+        },
+        "target_label_records_before_C": 896,
+        "target_label_records_with_C": 1024
+      }
+    ],
+    "planned": 33,
+    "reserve": 3,
+    "training_started": false
+  },
+  "environment": {
+    "device": "cpu",
+    "dtype": "float32",
+    "max_workers": 2,
+    "python": "3.12.14",
+    "threads_per_fit": 4,
+    "uv_lock_sha256": "a69f264030cf30ee4392cabc05e72a2184a9441ff5fd50e92092015f65b4bed3",
+    "versions": {
+      "httpx": "0.28.1",
+      "matplotlib": "3.11.2",
+      "numpy": "2.5.4",
+      "pandas": "3.1.1",
+      "pytest": "9.2.0",
+      "ruff": "0.17.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "torch": "2.15.0",
+      "wfdb": "4.3.1"
+    }
+  },
+  "identity": {
+    "code_hash": "72bd895da6e54c60e13872044a5e30c812a2d7d6a4d70a976d666892995b297d",
+    "contract_hash": "2f0530ed3c2890235ef78da8225edd12bc0c5ebca015b17144330cc6f1fa77da",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "manifest_hash": "4f789e2f3635a4c2c89f877dfff09af58210aaf21d5a58d668d98a8001bbf1f5",
+    "namespace": "real:phase2b-internal"
+  },
+  "new_real_evaluations": 0,
+  "new_real_predictions": 0,
+  "population": {
+    "age_eligible_records": 18857,
+    "canonical_patients": 16415,
+    "development_records": 19230,
+    "source": 7638,
+    "target": 8777
+  },
+  "real_calibration_fits": 0,
+  "real_ledger": {
+    "attempts": 0,
+    "development_authorized": false,
+    "evaluation_accesses": 0,
+    "evaluation_authorized": false,
+    "identity": {
+      "code_hash": "72bd895da6e54c60e13872044a5e30c812a2d7d6a4d70a976d666892995b297d",
+      "contract_hash": "2f0530ed3c2890235ef78da8225edd12bc0c5ebca015b17144330cc6f1fa77da",
+      "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+      "manifest_hash": "4f789e2f3635a4c2c89f877dfff09af58210aaf21d5a58d668d98a8001bbf1f5",
+      "namespace": "real:phase2b-internal"
+    },
+    "phase": "draft",
+    "preflight_blockers": [
+      "Target A has zero joint CD/STTC positives despite positives in the target; formulation B must abstain for every planned G draw. Prospective split review required.",
+      "Source stopping contains more joint positives than the 85% source-training role; review rare-pattern-first marginal stratification before fitting."
+    ],
+    "statuses": {}
+  },
+  "real_predictor_fits": 0,
+  "real_preprocessing_fits": 0,
+  "real_waveform_reads": 0,
+  "role_counts": {
+    "A": {
+      "joint": [
+        2066,
+        1111,
+        1031,
+        0
+      ],
+      "negatives": [
+        3177,
+        3097
+      ],
+      "patients": 4208,
+      "positives": [
+        1031,
+        1111
+      ],
+      "records": 4208
+    },
+    "C": {
+      "joint": [
+        71,
+        19,
+        20,
+        18
+      ],
+      "negatives": [
+        90,
+        91
+      ],
+      "patients": 128,
+      "positives": [
+        38,
+        37
+      ],
+      "records": 128
+    },
+    "C_reserve": {
+      "joint": [
+        459,
+        148,
+        135,
+        208
+      ],
+      "negatives": [
+        607,
+        594
+      ],
+      "patients": 950,
+      "positives": [
+        343,
+        356
+      ],
+      "records": 950
+    },
+    "E": {
+      "joint": [
+        68,
+        21,
+        19,
+        20
+      ],
+      "negatives": [
+        89,
+        87
+      ],
+      "patients": 128,
+      "positives": [
+        39,
+        41
+      ],
+      "records": 128
+    },
+    "E_reserve": {
+      "joint": [
+        459,
+        148,
+        135,
+        209
+      ],
+      "negatives": [
+        607,
+        594
+      ],
+      "patients": 951,
+      "positives": [
+        344,
+        357
+      ],
+      "records": 951
+    },
+    "O": {
+      "joint": [
+        1193,
+        670,
+        637,
+        168
+      ],
+      "negatives": [
+        1863,
+        1830
+      ],
+      "patients": 2668,
+      "positives": [
+        805,
+        838
+      ],
+      "records": 2668
+    },
+    "d4101:n128:F": {
+      "joint": [
+        63,
+        40,
+        25,
+        0
+      ],
+      "negatives": [
+        103,
+        88
+      ],
+      "patients": 128,
+      "positives": [
+        25,
+        40
+      ],
+      "records": 128
+    },
+    "d4101:n128:G": {
+      "joint": [
+        129,
+        68,
+        59,
+        0
+      ],
+      "negatives": [
+        197,
+        188
+      ],
+      "patients": 256,
+      "positives": [
+        59,
+        68
+      ],
+      "records": 256
+    },
+    "d4101:n512:F": {
+      "joint": [
+        248,
+        138,
+        126,
+        0
+      ],
+      "negatives": [
+        386,
+        374
+      ],
+      "patients": 512,
+      "positives": [
+        126,
+        138
+      ],
+      "records": 512
+    },
+    "d4101:n512:G": {
+      "joint": [
+        129,
+        68,
+        59,
+        0
+      ],
+      "negatives": [
+        197,
+        188
+      ],
+      "patients": 256,
+      "positives": [
+        59,
+        68
+      ],
+      "records": 256
+    },
+    "d4102:n128:F": {
+      "joint": [
+        63,
+        41,
+        24,
+        0
+      ],
+      "negatives": [
+        104,
+        87
+      ],
+      "patients": 128,
+      "positives": [
+        24,
+        41
+      ],
+      "records": 128
+    },
+    "d4102:n128:G": {
+      "joint": [
+        137,
+        61,
+        58,
+        0
+      ],
+      "negatives": [
+        198,
+        195
+      ],
+      "patients": 256,
+      "positives": [
+        58,
+        61
+      ],
+      "records": 256
+    },
+    "d4102:n512:F": {
+      "joint": [
+        262,
+        141,
+        109,
+        0
+      ],
+      "negatives": [
+        403,
+        371
+      ],
+      "patients": 512,
+      "positives": [
+        109,
+        141
+      ],
+      "records": 512
+    },
+    "d4102:n512:G": {
+      "joint": [
+        137,
+        61,
+        58,
+        0
+      ],
+      "negatives": [
+        198,
+        195
+      ],
+      "patients": 256,
+      "positives": [
+        58,
+        61
+      ],
+      "records": 256
+    },
+    "source_stop": {
+      "joint": [
+        919,
+        59,
+        52,
+        142
+      ],
+      "negatives": [
+        978,
+        971
+      ],
+      "patients": 1172,
+      "positives": [
+        194,
+        201
+      ],
+      "records": 1172
+    },
+    "source_train": {
+      "joint": [
+        4718,
+        878,
+        851,
+        19
+      ],
+      "negatives": [
+        5596,
+        5569
+      ],
+      "patients": 6466,
+      "positives": [
+        870,
+        897
+      ],
+      "records": 6466
+    }
+  },
+  "role_hashes": {
+    "A": "b74854ae84fd046527448928abebbc0704d29d6286130e092570f03c5378cc74",
+    "C": "747e8ff63cd8e2dfa044166cf8744396304f0779d50c1ddde18f814fb1dd51dd",
+    "C_reserve": "d5a4cacdf69f1b6759609d971130b4a2d78cfa4606582d8f215a85c6cd37d392",
+    "E": "4bef6b2e5f32af7e2983cd1e4a9a5c4ce2f62423ffe0bb51bd43397fa56913cc",
+    "E_reserve": "97924821dc1d47820804896a2ded4de0ad3c60cfe1af990aa762ee45d6a3bca6",
+    "O": "51de765013d210b47db80c3330d8d0edf0c7d2fc9393963d6b9c210198973cc6",
+    "d4101:n128:F": "47fb1bbbbc731adbe1cde26a04c321b0362a9223f282a7aaaf534f7fcbea9c16",
+    "d4101:n128:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7",
+    "d4101:n512:F": "29d7dfaa4ec2f748621f9d275f3c3e62b504eaddab5904b4ce05dcc135ad4301",
+    "d4101:n512:G": "c2b3c1e14e1369bdb303782ec6e006ad8b847b72901167bee742e3f82cbc37c7",
+    "d4102:n128:F": "b2c5abab1addefa39b678d1f822e60eb17bced584d2ff543906dcf76edf6a56f",
+    "d4102:n128:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035",
+    "d4102:n512:F": "8f478f0723ec45695213612c464b441b535964879218ebaa5638486135bdda87",
+    "d4102:n512:G": "40098d52ee1b77d5425aae5e0785fdb33ecb0444a08da3c8840a2246e7a07035",
+    "source_stop": "6faee770d170aa0aced83ecf1dec329aed116f669d1dbe42be6372f9ad245c70",
+    "source_train": "73b1cabe1ca51eafc8ca5b6d655a1a3b125c8f367368ea415c9eb743a56e48bf"
+  },
+  "scientific_review_flags": [
+    "Target A has zero joint CD/STTC positives despite positives in the target; formulation B must abstain for every planned G draw. Prospective split review required.",
+    "Source stopping contains more joint positives than the 85% source-training role; review rare-pattern-first marginal stratification before fitting."
+  ],
+  "scope": "metadata preflight and synthetic verification only",
+  "source_provenance": {
+    "annotation_policy": "all diagnostic keys, including likelihood0; no numeric likelihood threshold",
+    "known_original_physical_duplicate_detections": 0,
+    "metadata_sha256": "7600de9c1b27d181d850b3c6038a35d7c3ddb6bb33b702e3a20252a6859d216b",
+    "near_duplicate_search": "not performed by this metadata-only sprint",
+    "publisher_manifest_sha256": "b7224b92b341511ec3ceb13dc6652079b2c36a06504bcb49506f157f51dc695d",
+    "release": "1.0.3",
+    "statements_sha256": "ad05b0b1fcae83bb1230755ad9cfc7c96f303feddc08a4a9ad5bdc9ca63bac8f",
+    "train_meta_sha256": "f6a951bf329522eca415da4c8cfbae4c207659bd7b8406e72be1ca96f2deee4a",
+    "validation_meta_sha256": "5bde468990544df0489ffcd5b5a06080e8bf62a3560ed7b1d0f2411dca27863c"
+  },
+  "status": "BLOCKED",
+  "tests": {
+    "existing_warnings": 7,
+    "failed": 0,
+    "format": "passed",
+    "lint": "passed",
+    "phase2b": 33,
+    "skipped": 0,
+    "total": 142
+  },
+  "worker_manifest_hash": "4f789e2f3635a4c2c89f877dfff09af58210aaf21d5a58d668d98a8001bbf1f5"
+}

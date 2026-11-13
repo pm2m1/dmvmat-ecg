@@ -20,3 +20,13 @@ __pycache__/
 *.log
 .env*
 .DS_Store
+
+# Local databases, checkpoint formats and exported per-record tables.
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.db
+*.ckpt
+*_predictions.csv
+*_predictions.tsv
+*_predictions.parquet

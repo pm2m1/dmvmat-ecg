@@ -1,0 +1,100 @@
+{
+  "C_seed": 33005,
+  "C_size": 128,
+  "E_seed": 33003,
+  "E_size": 128,
+  "F_sizes": [
+    128,
+    512
+  ],
+  "G_size": 256,
+  "adoption_criteria": [
+    "all identity/group/budget checks pass",
+    "marginal floors pass for primary A; geometry remains untested",
+    "document B per-draw support and retain abstention; no support enrichment",
+    "human review of amendment including changed exploratory evaluation membership; no prediction feedback",
+    "separate explicit training authorization required"
+  ],
+  "algorithm": "within each fixed age domain and observed joint-pattern stratum: Hamilton largest-remainder allocation; one canonical eligible recording per patient; seed-hash patient order and quota ties; no seed search",
+  "attempt_ceiling": 36,
+  "calibration_floor": 20,
+  "candidate_generations": 1,
+  "canonical_policy": "lowest ecg_id among age-eligible original diagnostic records per patient; preserve other recordings as excluded, no OR/adjudication",
+  "draw_seeds": [
+    4101,
+    4102
+  ],
+  "evaluation_authorization": false,
+  "evidence_minimum": 10,
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "geometry_seed": 24011,
+  "labels": [
+    "CD",
+    "STTC"
+  ],
+  "marginal_floors": {
+    "E": 10,
+    "O": 50,
+    "source_stop": 20,
+    "source_train": 200
+  },
+  "method_policy": "phase2 EvidenceConfig A/B unchanged; MMD evidence only",
+  "pattern_order": [
+    "00",
+    "10",
+    "01",
+    "11"
+  ],
+  "predictor_fits": 33,
+  "preprocessing_policy": "fresh source-only normalization; no waveform preprocessing during Phase2C",
+  "primary": "Selective A minus Full-cost at F512, mean of paired draws; raw macro AP",
+  "protocol_approval": false,
+  "reserve": 3,
+  "role_count_tolerance": "sum of per-pattern integer rounding errors; each fully observed joint cell within one patient of its natural fractional quota; no matching of source to target prevalence",
+  "sampling": "label-independent E/C hashes and G/F permutations after role stratification; no G enrichment",
+  "seed": 44301,
+  "source_age": [
+    18,
+    59
+  ],
+  "source_class_cap": 256,
+  "source_fractions": [
+    "0.85",
+    "0.15"
+  ],
+  "source_roles": [
+    "source_train",
+    "source_stop"
+  ],
+  "split_version": "joint-pattern-hamilton-v1",
+  "status": "DRAFT \u2014 metadata-only candidate, not adopted",
+  "target_age": [
+    60,
+    89
+  ],
+  "target_fractions": [
+    "0.30",
+    "0.10",
+    "0.10",
+    "0.50"
+  ],
+  "target_roles": [
+    "O",
+    "E_reserve",
+    "C_reserve",
+    "A"
+  ],
+  "training_authorization": false,
+  "unchanged_parent_contract_hash": "2f0530ed3c2890235ef78da8225edd12bc0c5ebca015b17144330cc6f1fa77da",
+  "unknown_strata": "separate observed-status patterns; never infer negative; unknowns require review for pilot adoption"
+}

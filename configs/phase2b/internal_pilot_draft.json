@@ -1,0 +1,592 @@
+{
+  "C_seed": 33005,
+  "C_size": 128,
+  "E_seed": 33003,
+  "E_size": 128,
+  "G_size": 256,
+  "device": "cpu",
+  "evaluation_authorization": false,
+  "evidence_level": "internal exploratory",
+  "folds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "labels": [
+    "CD",
+    "STTC"
+  ],
+  "observation_semantics": "recorded superclass annotations; not clinical absence",
+  "planned_jobs": {
+    "d4101:n128:full_cost": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n128:F",
+        "d4101:n128:G"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "full_cost",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:full_f": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "full_f",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:head_cost": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n128:F",
+        "d4101:n128:G"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "head_cost",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:head_f": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "head_f",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:random_a": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4101:n128:G",
+      "fit_roles": [
+        "d4101:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "random_a",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:selective_a": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4101:n128:G",
+      "fit_roles": [
+        "d4101:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "selective_a",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:selective_b": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4101:n128:G",
+      "fit_roles": [
+        "d4101:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "selective_b",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n128:target_only": {
+      "draw": 4101,
+      "epoch_zero_eligible": false,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n128:F",
+        "d4101:n128:G"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "target_only",
+      "n_fit": 128,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4101:n512:full_cost": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n512:F",
+        "d4101:n512:G"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "full_cost",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:full_f": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "full_f",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:head_cost": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n512:F",
+        "d4101:n512:G"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "head_cost",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:head_f": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "head_f",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:random_a": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4101:n512:G",
+      "fit_roles": [
+        "d4101:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "random_a",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:selective_a": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4101:n512:G",
+      "fit_roles": [
+        "d4101:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "selective_a",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:selective_b": {
+      "draw": 4101,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4101:n512:G",
+      "fit_roles": [
+        "d4101:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "selective_b",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4101:n512:target_only": {
+      "draw": 4101,
+      "epoch_zero_eligible": false,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4101:n512:F",
+        "d4101:n512:G"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "target_only",
+      "n_fit": 512,
+      "seed": 5101,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n128:full_cost": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n128:F",
+        "d4102:n128:G"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "full_cost",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:full_f": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "full_f",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:head_cost": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n128:F",
+        "d4102:n128:G"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "head_cost",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:head_f": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "head_f",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:random_a": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4102:n128:G",
+      "fit_roles": [
+        "d4102:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "random_a",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:selective_a": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4102:n128:G",
+      "fit_roles": [
+        "d4102:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "selective_a",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:selective_b": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4102:n128:G",
+      "fit_roles": [
+        "d4102:n128:F"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "selective_b",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n128:target_only": {
+      "draw": 4102,
+      "epoch_zero_eligible": false,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n128:F",
+        "d4102:n128:G"
+      ],
+      "kind": "target",
+      "look_every": 2,
+      "method": "target_only",
+      "n_fit": 128,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 40
+    },
+    "d4102:n512:full_cost": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n512:F",
+        "d4102:n512:G"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "full_cost",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:full_f": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "full_f",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:head_cost": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n512:F",
+        "d4102:n512:G"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "head_cost",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:head_f": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "head_f",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:random_a": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4102:n512:G",
+      "fit_roles": [
+        "d4102:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "random_a",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:selective_a": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4102:n512:G",
+      "fit_roles": [
+        "d4102:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "selective_a",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:selective_b": {
+      "draw": 4102,
+      "epoch_zero_eligible": true,
+      "evidence_role": "d4102:n512:G",
+      "fit_roles": [
+        "d4102:n512:F"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "selective_b",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "d4102:n512:target_only": {
+      "draw": 4102,
+      "epoch_zero_eligible": false,
+      "evidence_role": null,
+      "fit_roles": [
+        "d4102:n512:F",
+        "d4102:n512:G"
+      ],
+      "kind": "target",
+      "look_every": 8,
+      "method": "target_only",
+      "n_fit": 512,
+      "seed": 5102,
+      "stop_role": "E",
+      "updates": 160
+    },
+    "source": {
+      "epochs": 50,
+      "fit_roles": [
+        "source_train"
+      ],
+      "fresh": true,
+      "kind": "source",
+      "seed": 3101,
+      "stop_role": "source_stop"
+    }
+  },
+  "predictor_attempt_ceiling": 36,
+  "primary": "mean_draw_macro_AP(selective_a - full_cost), n_fit=512",
+  "protocol_approval": false,
+  "reserve": 3,
+  "source_age": [
+    18,
+    59
+  ],
+  "source_fraction": [
+    0.85,
+    0.15
+  ],
+  "source_model_parameters": 212066,
+  "source_optimizer": {
+    "batch_size": 128,
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "eps": 1e-08,
+    "lr": 0.01,
+    "name": "AdamW",
+    "weight_decay": 0.01
+  },
+  "source_schedule": {
+    "anneal_strategy": "cos",
+    "base_momentum": 0.85,
+    "cycle_momentum": true,
+    "div_factor": 25.0,
+    "final_div_factor": 10000.0,
+    "max_lr": 0.01,
+    "max_momentum": 0.95,
+    "name": "OneCycleLR",
+    "pct_start": 0.3,
+    "three_phase": false
+  },
+  "source_split_seed": 33002,
+  "status": "draft",
+  "target_age": [
+    60,
+    89
+  ],
+  "target_fraction": [
+    0.3,
+    0.1,
+    0.1,
+    0.5
+  ],
+  "target_optimizer": {
+    "batch_size": 64,
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "eps": 1e-08,
+    "lr": 0.0003,
+    "name": "AdamW",
+    "patience": 5,
+    "weight_decay": 0.01
+  },
+  "target_split_seed": 33001,
+  "training_authorization": false
+}
