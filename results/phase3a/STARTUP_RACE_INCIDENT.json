@@ -1,0 +1,10 @@
+{
+  "incident": "Completion watcher began during curl pre-start checksum scan and saw the previous stopped aria2 status",
+  "effects": "Premature incomplete-download verification only; no target model inference/audit/split/clinical labels accessed",
+  "preserved_artifacts": [
+    "docs/phase3/DOWNLOAD_STARTUP_RACE_CHECK.md",
+    "results/phase3a/DOWNLOAD_VERIFICATION_PREMATURE_CHECK.json",
+    "data/raw/cinc2021_v1_0_3/DOWNLOAD_VERIFICATION_PREMATURE_CHECK.json"
+  ],
+  "resolution": "Archive the premature diagnostic; restart watcher only after curl status explicitly confirms running; move future curl running-status write before checksum scan"
+}

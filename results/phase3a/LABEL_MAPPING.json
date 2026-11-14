@@ -1,0 +1,828 @@
+{
+  "clinical_equivalence_established": false,
+  "conditions": {
+    "IAVB": {
+      "label": "CD",
+      "scp": [
+        "1AVB"
+      ],
+      "snomed": [
+        "270492004"
+      ]
+    },
+    "IVCD": {
+      "label": "CD",
+      "scp": [
+        "IVCD"
+      ],
+      "snomed": [
+        "698252002"
+      ]
+    },
+    "LAFB": {
+      "label": "CD",
+      "scp": [
+        "LAFB"
+      ],
+      "snomed": [
+        "445118002"
+      ]
+    },
+    "RBBB_family": {
+      "label": "CD",
+      "scp": [
+        "IRBBB",
+        "CRBBB"
+      ],
+      "snomed": [
+        "59118001",
+        "713426002",
+        "713427006"
+      ]
+    },
+    "ST_depression": {
+      "label": "STTC",
+      "scp": [
+        "STD_"
+      ],
+      "snomed": [
+        "429622005"
+      ]
+    },
+    "ST_elevation": {
+      "label": "STTC",
+      "scp": [
+        "STE_"
+      ],
+      "snomed": [
+        "164930006"
+      ]
+    },
+    "T_abnormality": {
+      "label": "STTC",
+      "scp": [
+        "TAB_",
+        "NT_",
+        "NDT"
+      ],
+      "snomed": [
+        "164934002"
+      ]
+    },
+    "T_inversion": {
+      "label": "STTC",
+      "scp": [
+        "INVT"
+      ],
+      "snomed": [
+        "59931005"
+      ]
+    },
+    "complete_LBBB": {
+      "label": "CD",
+      "scp": [
+        "CLBBB"
+      ],
+      "snomed": [
+        "733534002"
+      ]
+    },
+    "nonspecific_ST_T": {
+      "label": "STTC",
+      "scp": [
+        "NST_",
+        "NT_",
+        "NDT"
+      ],
+      "snomed": [
+        "428750005"
+      ]
+    }
+  },
+  "endpoint": "recorded-code annotation-union proxies, ordered CD/STTC",
+  "entries": {
+    "10370003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "106068003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "111288001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "11157007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "111975006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "13640000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164861001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164865005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164867002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164873001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164884008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164889003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Atrial fibrillation: no matching model output; not a CD/STTC subtype"
+    },
+    "164890007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Atrial flutter: no matching model output; do not confuse abbreviation AF"
+    },
+    "164895002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164896001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164909002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: documented LBBB/LFBBB conversion collision; no specific subtype inferred"
+    },
+    "164912004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164917005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164921003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164930006": {
+      "label": "STTC",
+      "meaning": "ST elevation",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "164931005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164934002": {
+      "label": "STTC",
+      "meaning": "T-wave abnormality",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "164937009": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164942001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "164947007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Prolonged PR alone is not automatically an AV-block diagnosis"
+    },
+    "17338001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "17366009": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "195042002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "195060002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "195080001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "195101003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "195126007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "233892002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "233897008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "233917008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Generic AV block: excluded from this restricted proxy; no degree guessed"
+    },
+    "251120003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251139008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251146004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251164006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251166008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251170000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251173003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251180001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251187003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251198002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251199005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251205003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251223006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251259000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251266004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "251268003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "253339007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "253352002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "266249003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "270492004": {
+      "label": "CD",
+      "meaning": "first-degree atrioventricular block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "27885002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "284470004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "29320008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "365413008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "370365005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "39732003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "413444003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "413844008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "418818005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "425419005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "425623009": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "425856008": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426177001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426183003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426434006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426627000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426648003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426664006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426749004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426761007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "426783006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Sinus rhythm is not a completely normal ECG or confirmed CD/STTC negative"
+    },
+    "426995002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "427084000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "427172004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "427393009": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "428417006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "428750005": {
+      "label": "STTC",
+      "meaning": "nonspecific ST-T abnormality",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "429622005": {
+      "label": "STTC",
+      "meaning": "ST depression",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "445118002": {
+      "label": "CD",
+      "meaning": "left anterior fascicular block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "445211001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "446358003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "446813000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "47665007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "49578007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "50799005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "54016002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "54329005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "55827005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "55930002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "5609005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "57054005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "59118001": {
+      "label": "CD",
+      "meaning": "unspecified right bundle branch block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "59931005": {
+      "label": "STTC",
+      "meaning": "T-wave inversion",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "61277005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "61721007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "63593006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "6374002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "65778007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "67741000119109": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "67751000119106": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "698252002": {
+      "label": "CD",
+      "meaning": "nonspecific intraventricular conduction block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "704997005": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "713422000": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "713426002": {
+      "label": "CD",
+      "meaning": "incomplete right bundle branch block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "713427006": {
+      "label": "CD",
+      "meaning": "complete right bundle branch block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "733534002": {
+      "label": "CD",
+      "meaning": "complete left bundle branch block",
+      "reason": "Documented positive category correspondence; subtype equivalence not assumed"
+    },
+    "74390002": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "74615001": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "75532003": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "77867006": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "81898007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "82226007": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    },
+    "89792004": {
+      "label": null,
+      "meaning": null,
+      "reason": "Excluded: no verified local mapping to requested outputs; no diagnosis guessed"
+    }
+  },
+  "negative_semantics": "No included code recorded, not confirmed clinical absence",
+  "per_code_descriptive_tasks": {
+    "164930006": {
+      "label": "STTC",
+      "name": "ST elevation",
+      "scp": [
+        "STE_"
+      ]
+    },
+    "164934002": {
+      "label": "STTC",
+      "name": "T-wave abnormality",
+      "scp": [
+        "TAB_",
+        "NT_",
+        "NDT"
+      ]
+    },
+    "270492004": {
+      "label": "CD",
+      "name": "IAVB",
+      "scp": [
+        "1AVB"
+      ]
+    },
+    "428750005": {
+      "label": "STTC",
+      "name": "nonspecific ST/T annotation",
+      "scp": [
+        "NST_",
+        "NT_",
+        "NDT"
+      ]
+    },
+    "429622005": {
+      "label": "STTC",
+      "name": "ST depression",
+      "scp": [
+        "STD_"
+      ]
+    },
+    "445118002": {
+      "label": "CD",
+      "name": "LAFB",
+      "scp": [
+        "LAFB"
+      ]
+    },
+    "59118001": {
+      "label": "CD",
+      "limitation": "Source reference includes specified RBBB subtypes; descriptive family proxy",
+      "name": "recorded unspecified RBBB",
+      "scp": [
+        "IRBBB",
+        "CRBBB"
+      ]
+    },
+    "59931005": {
+      "label": "STTC",
+      "name": "T-wave inversion",
+      "scp": [
+        "INVT"
+      ]
+    },
+    "698252002": {
+      "label": "CD",
+      "name": "IVCD",
+      "scp": [
+        "IVCD"
+      ]
+    },
+    "713426002": {
+      "label": "CD",
+      "name": "IRBBB",
+      "scp": [
+        "IRBBB"
+      ]
+    },
+    "713427006": {
+      "label": "CD",
+      "name": "CRBBB",
+      "scp": [
+        "CRBBB"
+      ]
+    },
+    "733534002": {
+      "label": "CD",
+      "name": "complete LBBB",
+      "scp": [
+        "CLBBB"
+      ]
+    }
+  },
+  "per_code_scoring": "Human-authorized descriptive AUROC uses the existing CD/STTC score; not a dedicated per-code output or probability. AF is not evaluable. 164909002 is excluded from per-code LBBB inference due conversion ambiguity.",
+  "proxy_scp": {
+    "CD": [
+      "1AVB",
+      "CLBBB",
+      "CRBBB",
+      "IRBBB",
+      "IVCD",
+      "LAFB"
+    ],
+    "STTC": [
+      "INVT",
+      "NDT",
+      "NST_",
+      "NT_",
+      "STD_",
+      "STE_",
+      "TAB_"
+    ]
+  },
+  "proxy_snomed": {
+    "CD": [
+      "270492004",
+      "445118002",
+      "59118001",
+      "698252002",
+      "713426002",
+      "713427006",
+      "733534002"
+    ],
+    "STTC": [
+      "164930006",
+      "164934002",
+      "428750005",
+      "429622005",
+      "59931005"
+    ]
+  },
+  "source": "docs/phase2/DIAGNOSTIC_LABEL_CROSSWALK.md; offline local dictionary evidence only",
+  "source_semantic_limit": "Partial target unions do not exhaust PTB-XL SCP CD/STTC; reporting practice can cause apparent drop"
+}

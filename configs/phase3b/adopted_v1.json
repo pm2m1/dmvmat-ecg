@@ -1,0 +1,79 @@
+{
+  "adopted_date": "2026-11-14",
+  "attempt_ceiling": 144,
+  "batch_size": 32,
+  "budgets": [
+    64,
+    128,
+    256
+  ],
+  "calibration": false,
+  "device": "cpu",
+  "draw_seeds": [
+    16101,
+    16102,
+    16103
+  ],
+  "dtype": "float32",
+  "faithful_arm": "deferred-phase3c",
+  "gradient_roles": [
+    "F",
+    "G"
+  ],
+  "labels": [
+    "CD-proxy-v1",
+    "STTC-proxy-v1"
+  ],
+  "methods": [
+    "head_cost",
+    "full_cost",
+    "random_a",
+    "selective_a",
+    "target_only_cost"
+  ],
+  "optimizer": {
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "eps": 1e-08,
+    "lr": 0.0003,
+    "weight_decay": 0.01
+  },
+  "planned_fits": 138,
+  "primary_budget": 128,
+  "protocol_owner": "Parth Mishra",
+  "real_data_preparation_authorized": false,
+  "real_evaluation_authorized": false,
+  "real_training_authorized": false,
+  "source_batch_size": 128,
+  "source_epochs": 50,
+  "source_optimizer": {
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "eps": 1e-08,
+    "lr": 0.01,
+    "weight_decay": 0.01
+  },
+  "source_schedule": {
+    "base_momentum": 0.85,
+    "div_factor": 25,
+    "final_div_factor": 10000,
+    "max_momentum": 0.95,
+    "pct_start": 0.3
+  },
+  "source_seeds": [
+    15101,
+    15102,
+    15103
+  ],
+  "target_checkpoint": "fixed-update-200",
+  "target_stopping": false,
+  "target_updates": 200,
+  "technical_reserves": 6,
+  "torch_threads": 4,
+  "version": "phase3b-adopted-v1",
+  "xresnet": false
+}

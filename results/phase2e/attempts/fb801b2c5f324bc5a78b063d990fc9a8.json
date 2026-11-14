@@ -1,0 +1,228 @@
+{
+  "attempt": "fb801b2c5f324bc5a78b063d990fc9a8",
+  "calibration": {
+    "fit_role": "C",
+    "job_id": "d4101:n512:head_cost",
+    "label_cost": {
+      "by_role": {
+        "C": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "E": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "d4101:n512:F": {
+          "observed_labels": 1024,
+          "records": 512
+        },
+        "d4101:n512:G": {
+          "observed_labels": 512,
+          "records": 256
+        }
+      },
+      "evaluation_records": 0,
+      "target_observed_labels": 2048,
+      "target_records": 1024
+    },
+    "labels": [
+      "CD",
+      "STTC"
+    ],
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "mappings": [
+      {
+        "a": -0.0862781203542465,
+        "b": 0.09969177157234603,
+        "status": "fitted",
+        "threshold": 0.37
+      },
+      {
+        "a": 0.2566533103776937,
+        "b": 0.14400341212951628,
+        "status": "fitted",
+        "threshold": 0.46
+      }
+    ],
+    "membership_hash": "9270a53e9bbb64ec6c748ce346f585b96a75f5c223675932132661befcd43e04",
+    "namespace": "real:phase2d-joint44301-v1",
+    "preprocessing_hash": "4651a624c594642636bc53c5e46024da3ce8eb2500897b59a52d68a5158589dd"
+  },
+  "checkpoint_sha256": "cb29b5ec87d479d3a64d091db17842e2c9dda36b2a6075f01ce6982b49a5d6ec",
+  "history": [
+    {
+      "ap": 0.7833462018038091,
+      "bce": 0.41463497281074524,
+      "eligible": true,
+      "look": 0
+    },
+    {
+      "ap": 0.7829933585152639,
+      "bce": 0.41420114040374756,
+      "eligible": true,
+      "look": 8
+    },
+    {
+      "ap": 0.7826865141582716,
+      "bce": 0.41351741552352905,
+      "eligible": true,
+      "look": 16
+    },
+    {
+      "ap": 0.7839626878913131,
+      "bce": 0.4130074083805084,
+      "eligible": true,
+      "look": 24
+    },
+    {
+      "ap": 0.7841602775797539,
+      "bce": 0.41256090998649597,
+      "eligible": true,
+      "look": 32
+    },
+    {
+      "ap": 0.7831272197190516,
+      "bce": 0.41228967905044556,
+      "eligible": true,
+      "look": 40
+    },
+    {
+      "ap": 0.7832138036733535,
+      "bce": 0.41207581758499146,
+      "eligible": true,
+      "look": 48
+    },
+    {
+      "ap": 0.781150166246424,
+      "bce": 0.4118996560573578,
+      "eligible": true,
+      "look": 56
+    },
+    {
+      "ap": 0.7807135452334633,
+      "bce": 0.41155728697776794,
+      "eligible": true,
+      "look": 64
+    },
+    {
+      "ap": 0.7803034108143001,
+      "bce": 0.41128385066986084,
+      "eligible": true,
+      "look": 72
+    }
+  ],
+  "identity": {
+    "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+    "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+    "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "namespace": "real:phase2d-joint44301-v1"
+  },
+  "initial_state_hash": "358601f862321ab2860937c0df985d66a171acc5f8e524c8e9b160cf897b4b33",
+  "job": "d4101:n512:head_cost",
+  "label_cost_before_C": {
+    "by_role": {
+      "E": {
+        "observed_labels": 256,
+        "records": 128
+      },
+      "d4101:n512:F": {
+        "observed_labels": 1024,
+        "records": 512
+      },
+      "d4101:n512:G": {
+        "observed_labels": 512,
+        "records": 256
+      }
+    },
+    "evaluation_records": 0,
+    "target_observed_labels": 1792,
+    "target_records": 896
+  },
+  "launcher_sha256": "36d166dfc66c245fd360cf56e668e0e534720cd1e1d379625f9c02cbdf82f6a7",
+  "mask": {
+    "fusion_1": "SHARE",
+    "fusion_2": "SHARE",
+    "view_1": "SHARE",
+    "view_2": "SHARE",
+    "view_3": "SHARE",
+    "view_4": "SHARE",
+    "view_5": "SHARE"
+  },
+  "metrics": {
+    "labels": {
+      "CD": {
+        "ap": 0.838577909599578,
+        "auroc": 0.9238095238095239,
+        "balanced_accuracy": 0.8159754224270354,
+        "brier": 0.1035962700843811,
+        "confusion": {
+          "fn": 11,
+          "fp": 5,
+          "tn": 88,
+          "tp": 24
+        },
+        "ece10_equal_width": 0.07086780772078782,
+        "f1": 0.75,
+        "log_loss": 0.33514268904487554,
+        "patients": 128,
+        "positive": 35,
+        "precision": 0.8275862068965517,
+        "prevalence": 0.2734375,
+        "recall": 0.6857142857142857,
+        "specificity": 0.946236559139785
+      },
+      "STTC": {
+        "ap": 0.7297426455599298,
+        "auroc": 0.8300957592339261,
+        "balanced_accuracy": 0.720109439124487,
+        "brier": 0.15337930619716644,
+        "confusion": {
+          "fn": 18,
+          "fp": 12,
+          "tn": 73,
+          "tp": 25
+        },
+        "ece10_equal_width": 0.12312055000802502,
+        "f1": 0.625,
+        "log_loss": 0.489979157462082,
+        "patients": 128,
+        "positive": 43,
+        "precision": 0.6756756756756757,
+        "prevalence": 0.3359375,
+        "recall": 0.5813953488372093,
+        "specificity": 0.8588235294117647
+      }
+    },
+    "macro_ap": 0.7841602775797539,
+    "macro_auroc": 0.876952641521725,
+    "threshold": 0.5
+  },
+  "parameter_drift": {
+    "fusion_1": 0.0,
+    "fusion_2": 0.0,
+    "prediction_head": 0.05563846230506897,
+    "view_1": 0.0,
+    "view_2": 0.0,
+    "view_3": 0.0,
+    "view_4": 0.0,
+    "view_5": 0.0
+  },
+  "parameters": 212066,
+  "preprocessing_hash": "4651a624c594642636bc53c5e46024da3ce8eb2500897b59a52d68a5158589dd",
+  "random_mask_matching": null,
+  "reporting_inference_seconds": 0.23266137531027198,
+  "retained_state_hash": "253087af331a965a2c859b2588dcddcac8fe3b086bcdeb379561deae81846ebb",
+  "scope": "DEVELOPMENT ONLY \u2014 checkpoint-selection role, optimistic; no O",
+  "selected_update": 32,
+  "selector_seconds": 0.0,
+  "source_revision": "c7b795553ee9806caeb1835e7a829dc0469872eb",
+  "stopping_membership_hash": "8f5913ab428554a64aae3ed818cb2661e8fc695179c7305bfb0832f41fd2f309",
+  "stopping_role": "E",
+  "trainable_parameters": 130,
+  "training_elapsed_seconds": 11.165542415808886,
+  "updates": 72
+}

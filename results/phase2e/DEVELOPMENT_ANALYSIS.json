@@ -1,0 +1,275 @@
+{
+  "calibration_status": {
+    "fitted": 66
+  },
+  "confidence_intervals_computed": false,
+  "epoch_zero_retained_pretrained": 13,
+  "hypothesis_tests_computed": false,
+  "means_by_budget": {
+    "128": {
+      "full_cost": {
+        "macro_ap": 0.7847946945816356,
+        "macro_auroc": 0.8778911114333205
+      },
+      "full_f": {
+        "macro_ap": 0.7841130037353883,
+        "macro_auroc": 0.8770030742979862
+      },
+      "head_cost": {
+        "macro_ap": 0.7836854632040654,
+        "macro_auroc": 0.8766022387949928
+      },
+      "head_f": {
+        "macro_ap": 0.7836167051494787,
+        "macro_auroc": 0.8764654398893841
+      },
+      "random_a": {
+        "macro_ap": 0.7835108899020984,
+        "macro_auroc": 0.8766106442577031
+      },
+      "selective_a": {
+        "macro_ap": 0.7833462018038091,
+        "macro_auroc": 0.8763886349738695
+      },
+      "selective_b": {
+        "macro_ap": 0.7838803354800202,
+        "macro_auroc": 0.8769178639197615
+      },
+      "target_only": {
+        "macro_ap": 0.6122308412630157,
+        "macro_auroc": 0.7583612289627029
+      }
+    },
+    "512": {
+      "full_cost": {
+        "macro_ap": 0.7886219177291625,
+        "macro_auroc": 0.8815667152082138
+      },
+      "full_f": {
+        "macro_ap": 0.7891409960746646,
+        "macro_auroc": 0.8849171326445057
+      },
+      "head_cost": {
+        "macro_ap": 0.7840539208451243,
+        "macro_auroc": 0.876807437153406
+      },
+      "head_f": {
+        "macro_ap": 0.7834248671372768,
+        "macro_auroc": 0.876517028416768
+      },
+      "random_a": {
+        "macro_ap": 0.7833462018038091,
+        "macro_auroc": 0.8763886349738695
+      },
+      "selective_a": {
+        "macro_ap": 0.7860954414429704,
+        "macro_auroc": 0.8804662300028789
+      },
+      "selective_b": {
+        "macro_ap": 0.787261819588485,
+        "macro_auroc": 0.8795002322009073
+      },
+      "target_only": {
+        "macro_ap": 0.6736219900065513,
+        "macro_auroc": 0.7942516091207676
+      }
+    }
+  },
+  "predictor_elapsed_seconds_sum": 1414.2931939586997,
+  "pretrained_adaptation_episodes": 28,
+  "primary_descriptive_contrast": {
+    "macro_ap": {
+      "by_draw": [
+        0.005498479278322588,
+        -0.010551431850706616
+      ],
+      "mean": -0.0025264762861920143
+    },
+    "macro_auroc": {
+      "by_draw": [
+        0.00815519005801868,
+        -0.01035616046868848
+      ],
+      "mean": -0.0011004852053349001
+    }
+  },
+  "scope": "DEVELOPMENT ONLY \u2014 E is reused for checkpoint selection; no O",
+  "selector_elapsed_seconds_sum": 391.26957404147834,
+  "source_E": {
+    "C_selected_thresholds": [
+      0.37,
+      0.47
+    ],
+    "E_membership_hash": "8f5913ab428554a64aae3ed818cb2661e8fc695179c7305bfb0832f41fd2f309",
+    "calibrated": {
+      "labels": {
+        "CD": {
+          "ap": 0.8385889656556818,
+          "auroc": 0.9235023041474655,
+          "balanced_accuracy": 0.8248847926267281,
+          "brier": 0.10202422738075256,
+          "confusion": {
+            "fn": 10,
+            "fp": 6,
+            "tn": 87,
+            "tp": 25
+          },
+          "ece10_equal_width": 0.06865385081619024,
+          "f1": 0.7575757575757576,
+          "log_loss": 0.32877387041354245,
+          "patients": 128,
+          "positive": 35,
+          "precision": 0.8064516129032258,
+          "prevalence": 0.2734375,
+          "recall": 0.7142857142857143,
+          "specificity": 0.9354838709677419
+        },
+        "STTC": {
+          "ap": 0.7281034379519363,
+          "auroc": 0.8292749658002736,
+          "balanced_accuracy": 0.7258549931600546,
+          "brier": 0.1568794846534729,
+          "confusion": {
+            "fn": 17,
+            "fp": 13,
+            "tn": 72,
+            "tp": 26
+          },
+          "ece10_equal_width": 0.12652554060332477,
+          "f1": 0.6341463414634146,
+          "log_loss": 0.5255985019087537,
+          "patients": 128,
+          "positive": 43,
+          "precision": 0.6666666666666666,
+          "prevalence": 0.3359375,
+          "recall": 0.6046511627906976,
+          "specificity": 0.8470588235294118
+        }
+      },
+      "macro_ap": 0.7833462018038091,
+      "macro_auroc": 0.8763886349738695,
+      "threshold": 0.5
+    },
+    "calibration_sha256": "65a42fa37b6849c09e23f6073fc0361c5fa2b53951ffd87656ce24431b23d17a",
+    "identity": {
+      "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+      "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+      "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+      "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+      "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+      "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+      "namespace": "real:phase2d-joint44301-v1"
+    },
+    "label_accounting": {
+      "E_is_shared_with_target_checkpoint_selection": true,
+      "source_only_raw_is_not_adapted_using_E_labels": true,
+      "target_calibration_fitting": 128,
+      "target_development_assessment_E": 128,
+      "target_predictor_fitting": 0
+    },
+    "procedure": "source-only",
+    "raw": {
+      "labels": {
+        "CD": {
+          "ap": 0.8385889656556818,
+          "auroc": 0.9235023041474655,
+          "balanced_accuracy": 0.8159754224270354,
+          "brier": 0.10440268367528915,
+          "confusion": {
+            "fn": 11,
+            "fp": 5,
+            "tn": 88,
+            "tp": 24
+          },
+          "ece10_equal_width": 0.08073576225433499,
+          "f1": 0.75,
+          "log_loss": 0.33943961337865713,
+          "patients": 128,
+          "positive": 35,
+          "precision": 0.8275862068965517,
+          "prevalence": 0.2734375,
+          "recall": 0.6857142857142857,
+          "specificity": 0.946236559139785
+        },
+        "STTC": {
+          "ap": 0.7281034379519363,
+          "auroc": 0.8292749658002736,
+          "balanced_accuracy": 0.7142270861833105,
+          "brier": 0.15343192219734192,
+          "confusion": {
+            "fn": 18,
+            "fp": 13,
+            "tn": 72,
+            "tp": 25
+          },
+          "ece10_equal_width": 0.12618662184104323,
+          "f1": 0.6172839506172839,
+          "log_loss": 0.4898303954582595,
+          "patients": 128,
+          "positive": 43,
+          "precision": 0.6578947368421053,
+          "prevalence": 0.3359375,
+          "recall": 0.5813953488372093,
+          "specificity": 0.8470588235294118
+        }
+      },
+      "macro_ap": 0.7833462018038091,
+      "macro_auroc": 0.8763886349738695,
+      "threshold": 0.5
+    },
+    "reporter_sha256": "8f41176e4503991847eb481023bb8ab50af692173137ee5ab327bb7a35db3f28",
+    "scope": "DEVELOPMENT ONLY \u2014 target stopping E; no O",
+    "source_attempt": "44ac8372b25640ab937aadb254dda2bb",
+    "source_checkpoint_sha256": "f406a8d01c39f6a0c81367239af610a60561bed9416bef5a368f661084bae68b",
+    "stopping_access_bound_to_registered_target_attempt": "7683437f4d0b4f52ae192c5fa92e0883"
+  },
+  "source_stopping": {
+    "labels": {
+      "CD": {
+        "ap": 0.7957135480994878,
+        "auroc": 0.9181816443960162,
+        "balanced_accuracy": 0.7717688440289805,
+        "brier": 0.05612201988697052,
+        "confusion": {
+          "fn": 70,
+          "fp": 16,
+          "tn": 971,
+          "tp": 89
+        },
+        "ece10_equal_width": 0.01917930712588587,
+        "f1": 0.6742424242424242,
+        "log_loss": 0.2020584490479319,
+        "patients": 1146,
+        "positive": 159,
+        "precision": 0.8476190476190476,
+        "prevalence": 0.13874346017837524,
+        "recall": 0.559748427672956,
+        "specificity": 0.983789260385005
+      },
+      "STTC": {
+        "ap": 0.7184952550785764,
+        "auroc": 0.9261297995242949,
+        "balanced_accuracy": 0.8083310165878973,
+        "brier": 0.07165386527776718,
+        "confusion": {
+          "fn": 54,
+          "fp": 55,
+          "tn": 926,
+          "tp": 111
+        },
+        "ece10_equal_width": 0.044860622099556845,
+        "f1": 0.6706948640483383,
+        "log_loss": 0.2362488173938,
+        "patients": 1146,
+        "positive": 165,
+        "precision": 0.6686746987951807,
+        "prevalence": 0.1439790576696396,
+        "recall": 0.6727272727272727,
+        "specificity": 0.9439347604485219
+      }
+    },
+    "macro_ap": 0.757104401589032,
+    "macro_auroc": 0.9221557219601555,
+    "threshold": 0.5
+  }
+}

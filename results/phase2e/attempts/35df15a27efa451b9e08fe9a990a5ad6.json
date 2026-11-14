@@ -1,0 +1,294 @@
+{
+  "attempt": "35df15a27efa451b9e08fe9a990a5ad6",
+  "calibration": {
+    "fit_role": "C",
+    "job_id": "d4102:n128:target_only",
+    "label_cost": {
+      "by_role": {
+        "C": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "E": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "d4102:n128:F": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "d4102:n128:G": {
+          "observed_labels": 512,
+          "records": 256
+        }
+      },
+      "evaluation_records": 0,
+      "target_observed_labels": 1280,
+      "target_records": 640
+    },
+    "labels": [
+      "CD",
+      "STTC"
+    ],
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "mappings": [
+      {
+        "a": 0.220051464209247,
+        "b": 1.2784835388153957,
+        "status": "fitted",
+        "threshold": 0.29
+      },
+      {
+        "a": -0.507656826369034,
+        "b": -0.42953201595564766,
+        "status": "fitted",
+        "threshold": 0.23
+      }
+    ],
+    "membership_hash": "9270a53e9bbb64ec6c748ce346f585b96a75f5c223675932132661befcd43e04",
+    "namespace": "real:phase2d-joint44301-v1",
+    "preprocessing_hash": "cee2db318125e51d8b52890d08074359a67571e2ef622cdc1e67e472e87b0762"
+  },
+  "checkpoint_sha256": "db074cbf4bf70710c257009b63538a29300ad953e92b6fcb2855fd48918b034f",
+  "history": [
+    {
+      "ap": 0.2662984908736009,
+      "bce": 0.7726724743843079,
+      "eligible": false,
+      "look": 0
+    },
+    {
+      "ap": 0.36042610244789164,
+      "bce": 0.6189014911651611,
+      "eligible": true,
+      "look": 2
+    },
+    {
+      "ap": 0.42424609132902846,
+      "bce": 0.6099346280097961,
+      "eligible": true,
+      "look": 4
+    },
+    {
+      "ap": 0.48478659798093626,
+      "bce": 0.594879686832428,
+      "eligible": true,
+      "look": 6
+    },
+    {
+      "ap": 0.5013495085040365,
+      "bce": 0.5766326189041138,
+      "eligible": true,
+      "look": 8
+    },
+    {
+      "ap": 0.5090854177035162,
+      "bce": 0.5753089785575867,
+      "eligible": true,
+      "look": 10
+    },
+    {
+      "ap": 0.5235341009202905,
+      "bce": 0.584101676940918,
+      "eligible": true,
+      "look": 12
+    },
+    {
+      "ap": 0.5370323687646855,
+      "bce": 0.5857296586036682,
+      "eligible": true,
+      "look": 14
+    },
+    {
+      "ap": 0.5386123459816371,
+      "bce": 0.5883251428604126,
+      "eligible": true,
+      "look": 16
+    },
+    {
+      "ap": 0.5398619594838145,
+      "bce": 0.5866885781288147,
+      "eligible": true,
+      "look": 18
+    },
+    {
+      "ap": 0.5380435294651056,
+      "bce": 0.5761422514915466,
+      "eligible": true,
+      "look": 20
+    },
+    {
+      "ap": 0.5504391910811506,
+      "bce": 0.5627297163009644,
+      "eligible": true,
+      "look": 22
+    },
+    {
+      "ap": 0.5545543544281966,
+      "bce": 0.5585400462150574,
+      "eligible": true,
+      "look": 24
+    },
+    {
+      "ap": 0.5622643959461687,
+      "bce": 0.561732828617096,
+      "eligible": true,
+      "look": 26
+    },
+    {
+      "ap": 0.5722633108948406,
+      "bce": 0.5637836456298828,
+      "eligible": true,
+      "look": 28
+    },
+    {
+      "ap": 0.5751875095613053,
+      "bce": 0.5585501194000244,
+      "eligible": true,
+      "look": 30
+    },
+    {
+      "ap": 0.5849706367436187,
+      "bce": 0.5564787983894348,
+      "eligible": true,
+      "look": 32
+    },
+    {
+      "ap": 0.5882375244159612,
+      "bce": 0.555149495601654,
+      "eligible": true,
+      "look": 34
+    },
+    {
+      "ap": 0.589480481654111,
+      "bce": 0.5651393532752991,
+      "eligible": true,
+      "look": 36
+    },
+    {
+      "ap": 0.5867512013277145,
+      "bce": 0.5538762807846069,
+      "eligible": true,
+      "look": 38
+    },
+    {
+      "ap": 0.5854709002402709,
+      "bce": 0.5389971733093262,
+      "eligible": true,
+      "look": 40
+    }
+  ],
+  "identity": {
+    "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+    "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+    "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "namespace": "real:phase2d-joint44301-v1"
+  },
+  "initial_state_hash": "e57441f6d9194949cebd5696e16a19b4f86b902633c6b93a22eca6f8bd08bcff",
+  "job": "d4102:n128:target_only",
+  "label_cost_before_C": {
+    "by_role": {
+      "E": {
+        "observed_labels": 256,
+        "records": 128
+      },
+      "d4102:n128:F": {
+        "observed_labels": 256,
+        "records": 128
+      },
+      "d4102:n128:G": {
+        "observed_labels": 512,
+        "records": 256
+      }
+    },
+    "evaluation_records": 0,
+    "target_observed_labels": 1024,
+    "target_records": 512
+  },
+  "launcher_sha256": "36d166dfc66c245fd360cf56e668e0e534720cd1e1d379625f9c02cbdf82f6a7",
+  "mask": {
+    "fusion_1": "ADAPT",
+    "fusion_2": "ADAPT",
+    "view_1": "ADAPT",
+    "view_2": "ADAPT",
+    "view_3": "ADAPT",
+    "view_4": "ADAPT",
+    "view_5": "ADAPT"
+  },
+  "metrics": {
+    "labels": {
+      "CD": {
+        "ap": 0.6295494164731097,
+        "auroc": 0.8101382488479263,
+        "balanced_accuracy": 0.5749615975422427,
+        "brier": 0.17678949236869812,
+        "confusion": {
+          "fn": 29,
+          "fp": 2,
+          "tn": 91,
+          "tp": 6
+        },
+        "ece10_equal_width": 0.14007319591473788,
+        "f1": 0.27906976744186046,
+        "log_loss": 0.5431253486975917,
+        "patients": 128,
+        "positive": 35,
+        "precision": 0.75,
+        "prevalence": 0.2734375,
+        "recall": 0.17142857142857143,
+        "specificity": 0.978494623655914
+      },
+      "STTC": {
+        "ap": 0.5494115468351124,
+        "auroc": 0.7149110807113542,
+        "balanced_accuracy": 0.6562243502051983,
+        "brier": 0.1992526352405548,
+        "confusion": {
+          "fn": 24,
+          "fp": 11,
+          "tn": 74,
+          "tp": 19
+        },
+        "ece10_equal_width": 0.09423462254926562,
+        "f1": 0.5205479452054794,
+        "log_loss": 0.5871533442496875,
+        "patients": 128,
+        "positive": 43,
+        "precision": 0.6333333333333333,
+        "prevalence": 0.3359375,
+        "recall": 0.4418604651162791,
+        "specificity": 0.8705882352941177
+      }
+    },
+    "macro_ap": 0.589480481654111,
+    "macro_auroc": 0.7625246647796402,
+    "threshold": 0.5
+  },
+  "parameter_drift": {
+    "fusion_1": 0.375652939081192,
+    "fusion_2": 0.19939768314361572,
+    "prediction_head": 0.026053592562675476,
+    "view_1": 0.45809778571128845,
+    "view_2": 0.3998851180076599,
+    "view_3": 0.41771307587623596,
+    "view_4": 0.43128639459609985,
+    "view_5": 0.454352468252182
+  },
+  "parameters": 212066,
+  "preprocessing_hash": "cee2db318125e51d8b52890d08074359a67571e2ef622cdc1e67e472e87b0762",
+  "random_mask_matching": null,
+  "reporting_inference_seconds": 0.20834745792672038,
+  "retained_state_hash": "34387401c74a27dc750250d12cdcb13265d08d2e67f84a22fc457311f6f2d6bd",
+  "scope": "DEVELOPMENT ONLY \u2014 checkpoint-selection role, optimistic; no O",
+  "selected_update": 36,
+  "selector_seconds": 0.0,
+  "source_revision": "c7b795553ee9806caeb1835e7a829dc0469872eb",
+  "stopping_membership_hash": "8f5913ab428554a64aae3ed818cb2661e8fc695179c7305bfb0832f41fd2f309",
+  "stopping_role": "E",
+  "trainable_parameters": 212066,
+  "training_elapsed_seconds": 11.59377604117617,
+  "updates": 40
+}

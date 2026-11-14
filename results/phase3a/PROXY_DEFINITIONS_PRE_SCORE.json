@@ -1,0 +1,237 @@
+{
+  "clinical_equivalence_established": false,
+  "conditions": {
+    "IAVB": {
+      "label": "CD",
+      "scp": [
+        "1AVB"
+      ],
+      "snomed": [
+        "270492004"
+      ]
+    },
+    "IVCD": {
+      "label": "CD",
+      "scp": [
+        "IVCD"
+      ],
+      "snomed": [
+        "698252002"
+      ]
+    },
+    "LAFB": {
+      "label": "CD",
+      "scp": [
+        "LAFB"
+      ],
+      "snomed": [
+        "445118002"
+      ]
+    },
+    "RBBB_family": {
+      "label": "CD",
+      "scp": [
+        "IRBBB",
+        "CRBBB"
+      ],
+      "snomed": [
+        "59118001",
+        "713426002",
+        "713427006"
+      ]
+    },
+    "ST_depression": {
+      "label": "STTC",
+      "scp": [
+        "STD_"
+      ],
+      "snomed": [
+        "429622005"
+      ]
+    },
+    "ST_elevation": {
+      "label": "STTC",
+      "scp": [
+        "STE_"
+      ],
+      "snomed": [
+        "164930006"
+      ]
+    },
+    "T_abnormality": {
+      "label": "STTC",
+      "scp": [
+        "TAB_",
+        "NT_",
+        "NDT"
+      ],
+      "snomed": [
+        "164934002"
+      ]
+    },
+    "T_inversion": {
+      "label": "STTC",
+      "scp": [
+        "INVT"
+      ],
+      "snomed": [
+        "59931005"
+      ]
+    },
+    "complete_LBBB": {
+      "label": "CD",
+      "scp": [
+        "CLBBB"
+      ],
+      "snomed": [
+        "733534002"
+      ]
+    },
+    "nonspecific_ST_T": {
+      "label": "STTC",
+      "scp": [
+        "NST_",
+        "NT_",
+        "NDT"
+      ],
+      "snomed": [
+        "428750005"
+      ]
+    }
+  },
+  "endpoint": "recorded-code annotation-union proxies, ordered CD/STTC",
+  "entries": {},
+  "negative_semantics": "No included code recorded, not confirmed clinical absence",
+  "per_code_descriptive_tasks": {
+    "164930006": {
+      "label": "STTC",
+      "name": "ST elevation",
+      "scp": [
+        "STE_"
+      ]
+    },
+    "164934002": {
+      "label": "STTC",
+      "name": "T-wave abnormality",
+      "scp": [
+        "TAB_",
+        "NT_",
+        "NDT"
+      ]
+    },
+    "270492004": {
+      "label": "CD",
+      "name": "IAVB",
+      "scp": [
+        "1AVB"
+      ]
+    },
+    "428750005": {
+      "label": "STTC",
+      "name": "nonspecific ST/T annotation",
+      "scp": [
+        "NST_",
+        "NT_",
+        "NDT"
+      ]
+    },
+    "429622005": {
+      "label": "STTC",
+      "name": "ST depression",
+      "scp": [
+        "STD_"
+      ]
+    },
+    "445118002": {
+      "label": "CD",
+      "name": "LAFB",
+      "scp": [
+        "LAFB"
+      ]
+    },
+    "59118001": {
+      "label": "CD",
+      "limitation": "Source reference includes specified RBBB subtypes; descriptive family proxy",
+      "name": "recorded unspecified RBBB",
+      "scp": [
+        "IRBBB",
+        "CRBBB"
+      ]
+    },
+    "59931005": {
+      "label": "STTC",
+      "name": "T-wave inversion",
+      "scp": [
+        "INVT"
+      ]
+    },
+    "698252002": {
+      "label": "CD",
+      "name": "IVCD",
+      "scp": [
+        "IVCD"
+      ]
+    },
+    "713426002": {
+      "label": "CD",
+      "name": "IRBBB",
+      "scp": [
+        "IRBBB"
+      ]
+    },
+    "713427006": {
+      "label": "CD",
+      "name": "CRBBB",
+      "scp": [
+        "CRBBB"
+      ]
+    },
+    "733534002": {
+      "label": "CD",
+      "name": "complete LBBB",
+      "scp": [
+        "CLBBB"
+      ]
+    }
+  },
+  "per_code_scoring": "Human-authorized descriptive AUROC uses the existing CD/STTC score; not a dedicated per-code output or probability. AF is not evaluable. 164909002 is excluded from per-code LBBB inference due conversion ambiguity.",
+  "proxy_scp": {
+    "CD": [
+      "1AVB",
+      "CLBBB",
+      "CRBBB",
+      "IRBBB",
+      "IVCD",
+      "LAFB"
+    ],
+    "STTC": [
+      "INVT",
+      "NDT",
+      "NST_",
+      "NT_",
+      "STD_",
+      "STE_",
+      "TAB_"
+    ]
+  },
+  "proxy_snomed": {
+    "CD": [
+      "270492004",
+      "445118002",
+      "59118001",
+      "698252002",
+      "713426002",
+      "713427006",
+      "733534002"
+    ],
+    "STTC": [
+      "164930006",
+      "164934002",
+      "428750005",
+      "429622005",
+      "59931005"
+    ]
+  },
+  "source": "docs/phase2/DIAGNOSTIC_LABEL_CROSSWALK.md; offline local dictionary evidence only",
+  "source_semantic_limit": "Partial target unions do not exhaust PTB-XL SCP CD/STTC; reporting practice can cause apparent drop"
+}

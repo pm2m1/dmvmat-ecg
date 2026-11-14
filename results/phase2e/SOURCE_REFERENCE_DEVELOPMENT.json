@@ -1,0 +1,128 @@
+{
+  "C_selected_thresholds": [
+    0.37,
+    0.47
+  ],
+  "E_membership_hash": "8f5913ab428554a64aae3ed818cb2661e8fc695179c7305bfb0832f41fd2f309",
+  "calibrated": {
+    "labels": {
+      "CD": {
+        "ap": 0.8385889656556818,
+        "auroc": 0.9235023041474655,
+        "balanced_accuracy": 0.8248847926267281,
+        "brier": 0.10202422738075256,
+        "confusion": {
+          "fn": 10,
+          "fp": 6,
+          "tn": 87,
+          "tp": 25
+        },
+        "ece10_equal_width": 0.06865385081619024,
+        "f1": 0.7575757575757576,
+        "log_loss": 0.32877387041354245,
+        "patients": 128,
+        "positive": 35,
+        "precision": 0.8064516129032258,
+        "prevalence": 0.2734375,
+        "recall": 0.7142857142857143,
+        "specificity": 0.9354838709677419
+      },
+      "STTC": {
+        "ap": 0.7281034379519363,
+        "auroc": 0.8292749658002736,
+        "balanced_accuracy": 0.7258549931600546,
+        "brier": 0.1568794846534729,
+        "confusion": {
+          "fn": 17,
+          "fp": 13,
+          "tn": 72,
+          "tp": 26
+        },
+        "ece10_equal_width": 0.12652554060332477,
+        "f1": 0.6341463414634146,
+        "log_loss": 0.5255985019087537,
+        "patients": 128,
+        "positive": 43,
+        "precision": 0.6666666666666666,
+        "prevalence": 0.3359375,
+        "recall": 0.6046511627906976,
+        "specificity": 0.8470588235294118
+      }
+    },
+    "macro_ap": 0.7833462018038091,
+    "macro_auroc": 0.8763886349738695,
+    "threshold": 0.5
+  },
+  "calibration_sha256": "65a42fa37b6849c09e23f6073fc0361c5fa2b53951ffd87656ce24431b23d17a",
+  "identity": {
+    "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+    "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+    "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "namespace": "real:phase2d-joint44301-v1"
+  },
+  "label_accounting": {
+    "E_is_shared_with_target_checkpoint_selection": true,
+    "source_only_raw_is_not_adapted_using_E_labels": true,
+    "target_calibration_fitting": 128,
+    "target_development_assessment_E": 128,
+    "target_predictor_fitting": 0
+  },
+  "procedure": "source-only",
+  "raw": {
+    "labels": {
+      "CD": {
+        "ap": 0.8385889656556818,
+        "auroc": 0.9235023041474655,
+        "balanced_accuracy": 0.8159754224270354,
+        "brier": 0.10440268367528915,
+        "confusion": {
+          "fn": 11,
+          "fp": 5,
+          "tn": 88,
+          "tp": 24
+        },
+        "ece10_equal_width": 0.08073576225433499,
+        "f1": 0.75,
+        "log_loss": 0.33943961337865713,
+        "patients": 128,
+        "positive": 35,
+        "precision": 0.8275862068965517,
+        "prevalence": 0.2734375,
+        "recall": 0.6857142857142857,
+        "specificity": 0.946236559139785
+      },
+      "STTC": {
+        "ap": 0.7281034379519363,
+        "auroc": 0.8292749658002736,
+        "balanced_accuracy": 0.7142270861833105,
+        "brier": 0.15343192219734192,
+        "confusion": {
+          "fn": 18,
+          "fp": 13,
+          "tn": 72,
+          "tp": 25
+        },
+        "ece10_equal_width": 0.12618662184104323,
+        "f1": 0.6172839506172839,
+        "log_loss": 0.4898303954582595,
+        "patients": 128,
+        "positive": 43,
+        "precision": 0.6578947368421053,
+        "prevalence": 0.3359375,
+        "recall": 0.5813953488372093,
+        "specificity": 0.8470588235294118
+      }
+    },
+    "macro_ap": 0.7833462018038091,
+    "macro_auroc": 0.8763886349738695,
+    "threshold": 0.5
+  },
+  "reporter_sha256": "8f41176e4503991847eb481023bb8ab50af692173137ee5ab327bb7a35db3f28",
+  "scope": "DEVELOPMENT ONLY \u2014 target stopping E; no O",
+  "source_attempt": "44ac8372b25640ab937aadb254dda2bb",
+  "source_checkpoint_sha256": "f406a8d01c39f6a0c81367239af610a60561bed9416bef5a368f661084bae68b",
+  "stopping_access_bound_to_registered_target_attempt": "7683437f4d0b4f52ae192c5fa92e0883"
+}

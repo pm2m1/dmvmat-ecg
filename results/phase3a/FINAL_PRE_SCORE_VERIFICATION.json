@@ -1,0 +1,33 @@
+{
+  "code_sha256": {
+    "scripts/phase3/curl_fallback.py": "c42dcc7e3ef231bac0322111c5bdf6cb4aa776b364bf22b5e57bd0f88c3b2fe7",
+    "scripts/phase3/download_cinc.py": "73008365ca6e0c48fb821a3b528ef5718c81931a32e3adc3e5032a5529e3f6cb",
+    "scripts/phase3/finish_after_download.py": "993abe2ac60b2118a19af324b6c5bd05a4858765644bede6575f651d693c8295",
+    "scripts/phase3/integrity_check.py": "1a04e6137b3c1fc2d83a0f667283f315975495513fe92d428086ab742222010b",
+    "scripts/phase3/offline_feasibility.py": "9f95aac2b297a9bbf7541c91b99406abbbcfd47d15931c09c55c85ba13bede53",
+    "src/dmvmat_ecg/phase3/__init__.py": "c8f8effd5254f706014676c63fb86fb11b4f9a74f237bfdb69b6e5ff23145870",
+    "src/dmvmat_ecg/phase3/curl_fallback.py": "7de96f8049adb74717251507c8231502e1b5debbb6c01c50a87f39abac12761d",
+    "src/dmvmat_ecg/phase3/download.py": "b0d70d5951d6e2560c12680b1d0f80145137aaca3a487b34c00863770ed47477",
+    "src/dmvmat_ecg/phase3/inference.py": "97e205fcb322f84013ace526aad19ea701a4b6acfafac34bc6ea9a525a2d4fae",
+    "src/dmvmat_ecg/phase3/labels.py": "32dfd6e21bb96b1e28127b03a8eee7cae72f62ba0166069022ab832a467f931f",
+    "src/dmvmat_ecg/phase3/prepare.py": "bf0ca3927f3d3b39d1a2d7d248fde3a9b7729530e5ccd096319f81d13614cb26",
+    "src/dmvmat_ecg/phase3/report.py": "28ae5e56796de9601b4a0690f6bdff98f917f37964eca4a4dcb5e82186715c9f",
+    "src/dmvmat_ecg/phase3/run.py": "e94254cba24463061da1b679922b455360ae48d6cdc3d89527f40d3fcda6115b",
+    "src/dmvmat_ecg/phase3/signals.py": "79f1f590fb46e021c129bd6b069c877316f4c367316210aca29610e2e797ae63",
+    "src/dmvmat_ecg/phase3/splits.py": "7771361e71dec8b5ad91c17790ffbc00e21f2904b19434c5f5d2569a01f23611",
+    "src/dmvmat_ecg/phase3/statistics.py": "c4dd3d0963c6076fcf8f8614e462e3e77e6716d49b747f822dc54b53276ffd13",
+    "tests/phase3/test_phase3.py": "852a48188d5cc0b96380f91a02f8729dbed3e04dd2e2b1a7eac5268cb41e1255"
+  },
+  "failed": 0,
+  "format_all_passed_files": 132,
+  "full_suite_passed": 224,
+  "historical_files_preserved": 169,
+  "log": "/tmp/dmvmat-phase3-tests-final.log",
+  "prefreeze_consistency_fixes": [
+    "Record both source and target bootstrap seeds",
+    "Implement previously declared expected-support tie-break for target recommendation"
+  ],
+  "real_target_scores_generated": false,
+  "ruff_all_passed": true,
+  "warnings": 7
+}

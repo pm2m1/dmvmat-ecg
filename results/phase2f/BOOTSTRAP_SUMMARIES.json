@@ -1,0 +1,4424 @@
+{
+  "interpretation": "Conditional on fitted source/models, split and overlapping draws; not independent external confirmation",
+  "metadata": {
+    "conditional_on_fitted_models_and_split": true,
+    "draws": 10000,
+    "estimand": "arithmetic mean of draw-specific label-macro metrics; not pooled scores",
+    "patients": 2633,
+    "records": 2633,
+    "resampling": "unstratified, shared multiplicities across all methods/labels/episodes",
+    "seed": 64001,
+    "undefined_by_label": {
+      "CD": 0,
+      "STTC": 0
+    },
+    "undefined_replicates_redrawn": false,
+    "unit": "patient cluster; complete two-label vectors and paired predictions retained",
+    "weight_matrix_sha256": "db30e803e16aa281c3c3cb495aaba54f913918db8850d8cbaf387afd192fb836"
+  },
+  "multiplicity": {
+    "Bonferroni_confidence": 0.99,
+    "ordinary_confidence": 0.95,
+    "secondary_AP_family": 5
+  },
+  "primary": {
+    "ap": {
+      "ci95": {
+        "conclusive_interpretation_allowed": true,
+        "confidence": 0.95,
+        "lower": -0.00900938422001486,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "upper": -0.003350188406001367
+      },
+      "ci99": {
+        "conclusive_interpretation_allowed": true,
+        "confidence": 0.99,
+        "lower": -0.009854688044513435,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "upper": -0.002451133350096263
+      },
+      "difference": -0.00627930105040575
+    },
+    "auroc": {
+      "ci95": {
+        "conclusive_interpretation_allowed": true,
+        "confidence": 0.95,
+        "lower": -0.0046439895587583714,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "upper": -0.001697613098031074
+      },
+      "ci99": {
+        "conclusive_interpretation_allowed": true,
+        "confidence": 0.99,
+        "lower": -0.005084167918754231,
+        "undefined": 0,
+        "undefined_fraction": 0.0,
+        "upper": -0.0012267564810840015
+      },
+      "difference": -0.0031618581731869266
+    },
+    "by_draw": {
+      "4101": {
+        "ap": 0.0019846114157825445,
+        "auroc": 0.0010623994503798917
+      },
+      "4102": {
+        "ap": -0.014543213516593934,
+        "auroc": -0.007386115796753856
+      }
+    },
+    "per_label": {
+      "CD": {
+        "ap": {
+          "ci95": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": -0.0029785463262959134,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.0014178133751646998
+          },
+          "point": -0.0007857111789357774,
+          "scope": "exploratory label-specific contrast"
+        },
+        "auroc": {
+          "ci95": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": -0.0018021162721857202,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.001372914303869302
+          },
+          "point": -0.000233429005191077,
+          "scope": "exploratory label-specific contrast"
+        }
+      },
+      "STTC": {
+        "ap": {
+          "ci95": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": -0.016695009053450192,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": -0.006338766026184119
+          },
+          "point": -0.011772890921875612,
+          "scope": "exploratory label-specific contrast"
+        },
+        "auroc": {
+          "ci95": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": -0.008574036777228731,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": -0.0036035947160826093
+          },
+          "point": -0.006090287341182998,
+          "scope": "exploratory label-specific contrast"
+        }
+      }
+    }
+  },
+  "procedures": {
+    "d4101:n128:full_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7782992504028635,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8186928023904413
+        },
+        "point": 0.7983236260525883
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8755619827024818,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8970767926750578
+        },
+        "point": 0.8864902690386149
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8199318181782334,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8665049143795834
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8807591632069967,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9116357336201114
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7203510414189389,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.78527351306085
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8627435061790865,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8903587861542536
+          }
+        }
+      }
+    },
+    "d4101:n128:full_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7782992504028635,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8186928023904413
+        },
+        "point": 0.7983236260525883
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8755619827024818,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8970767926750578
+        },
+        "point": 0.8864902690386149
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8199318181782334,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8665049143795834
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8807591632069967,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9116357336201114
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7203510414189389,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.78527351306085
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8627435061790865,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8903587861542536
+          }
+        }
+      }
+    },
+    "d4101:n128:full_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772050284532803,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.81726918005849
+        },
+        "point": 0.7970490289866484
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8738268070353078,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955078763968567
+        },
+        "point": 0.8848736970459157
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8208825114309051,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.867102074208734
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8807092586374097,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9114308877650753
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7169578953289162,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819924739106235
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8590400475885598,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8873570485325324
+          }
+        }
+      }
+    },
+    "d4101:n128:full_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772050284532803,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.81726918005849
+        },
+        "point": 0.7970490289866484
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8738268070353078,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955078763968567
+        },
+        "point": 0.8848736970459157
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8208825114309051,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.867102074208734
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8807092586374097,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9114308877650753
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7169578953289162,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819924739106235
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8590400475885598,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8873570485325324
+          }
+        }
+      }
+    },
+    "d4101:n128:head_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n128:head_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n128:head_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777364348123941,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176168714618739
+        },
+        "point": 0.7974683937969702
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8740901527619483,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957335353572334
+        },
+        "point": 0.8851004554733589
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211270695764842,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674229634041811
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809202078355004,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115730674837956
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7175871936004122,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7826534485049155
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8593444241531532,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8875238265798591
+          }
+        }
+      }
+    },
+    "d4101:n128:head_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777364348123941,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176168714618739
+        },
+        "point": 0.7974683937969702
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8740901527619483,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957335353572334
+        },
+        "point": 0.8851004554733589
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211270695764842,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674229634041811
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809202078355004,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115730674837956
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7175871936004122,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7826534485049155
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8593444241531532,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8875238265798591
+          }
+        }
+      }
+    },
+    "d4101:n128:random_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7769656984910482,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8170946925319496
+        },
+        "point": 0.796820532872313
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8736059095295511,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8953678813578715
+        },
+        "point": 0.884738668201803
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8209522253749391,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8671478790083291
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8805077442654473,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9113168465256456
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7164412152184435,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7817269661999207
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8589289003998113,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.887170412688101
+          }
+        }
+      }
+    },
+    "d4101:n128:random_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7769656984910482,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8170946925319496
+        },
+        "point": 0.796820532872313
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8736059095295511,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8953678813578715
+        },
+        "point": 0.884738668201803
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8209522253749391,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8671478790083291
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8805077442654473,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9113168465256456
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7164412152184435,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7817269661999207
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8589289003998113,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.887170412688101
+          }
+        }
+      }
+    },
+    "d4101:n128:selective_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n128:selective_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n128:selective_b::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777616533405677,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176793606991647
+        },
+        "point": 0.7974985562084782
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8738950184341169,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8956377261611017
+        },
+        "point": 0.8849633060765705
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210705500251569,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674244517679367
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8810341060701623,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9117789259090529
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7173681658036898,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7828603292882027
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8588491226160003,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8872152914784663
+          }
+        }
+      }
+    },
+    "d4101:n128:selective_b::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777616533405677,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176793606991647
+        },
+        "point": 0.7974985562084782
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8738950184341169,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8956377261611017
+        },
+        "point": 0.8849633060765705
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210705500251569,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674244517679367
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8810341060701623,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9117789259090529
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7173681658036898,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7828603292882027
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8588491226160003,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8872152914784663
+          }
+        }
+      }
+    },
+    "d4101:n128:target_only::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.5721399235102376,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.6191722270852499
+        },
+        "point": 0.5953121585933797
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7259240901004834,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.757036476340962
+        },
+        "point": 0.7417662394267434
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6910442893522581,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7521027718176666
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7940646568481864,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8338111210848018
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.4336644620285678,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.5053737066075117
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6465584731937976,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.6915377095410902
+          }
+        }
+      }
+    },
+    "d4101:n128:target_only::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.5721399235102376,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.6191722270852499
+        },
+        "point": 0.5953121585933797
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7259240901004834,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.757036476340962
+        },
+        "point": 0.7417662394267434
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6910442893522581,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7521027718176666
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7940646568481864,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8338111210848018
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.4336644620285678,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.5053737066075117
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6465584731937976,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.6915377095410902
+          }
+        }
+      }
+    },
+    "d4101:n512:full_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n512:full_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n512:full_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7832896722475959,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8230208471809443
+        },
+        "point": 0.8028194720577966
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8776761302217035,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8990514979671728
+        },
+        "point": 0.8885235481663476
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.825793043919662,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8696603718450014
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8801593682954302,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9111391097531546
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7251321230461738,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7901775952197669
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.867390418005182,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8945275392639125
+          }
+        }
+      }
+    },
+    "d4101:n512:full_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7832896722475959,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8230208471809443
+        },
+        "point": 0.8028194720577966
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8776761302217035,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8990514979671728
+        },
+        "point": 0.8885235481663476
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.825793043919662,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8696603718450014
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8801593682954302,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9111391097531546
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7251321230461738,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7901775952197669
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.867390418005182,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8945275392639125
+          }
+        }
+      }
+    },
+    "d4101:n512:head_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7778243207321985,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8177182420734757
+        },
+        "point": 0.7975614447947261
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.874181401225679,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8958112339962412
+        },
+        "point": 0.8851869384805164
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211193310317715,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674589064068198
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809089054225534,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115587073642542
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.717687807796922,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7827778037302124
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8595348997593815,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8877160602708986
+          }
+        }
+      }
+    },
+    "d4101:n512:head_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7778243207321985,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8177182420734757
+        },
+        "point": 0.7975614447947261
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.874181401225679,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8958112339962412
+        },
+        "point": 0.8851869384805164
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211193310317715,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674589064068198
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809089054225534,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115587073642542
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.717687807796922,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7827778037302124
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8595348997593815,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8877160602708986
+          }
+        }
+      }
+    },
+    "d4101:n512:head_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n512:head_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n512:random_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n512:random_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4101:n512:selective_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7794355964588487,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8192937349994194
+        },
+        "point": 0.7990515933959328
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8748198894585022,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8965927682146961
+        },
+        "point": 0.8858896747843145
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8240128928079948,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8687194024496181
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8802079120642957,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9111951801025167
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7189192293859917,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7841620173142224
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8615141925459493,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8895150705309536
+          }
+        }
+      }
+    },
+    "d4101:n512:selective_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7794355964588487,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8192937349994194
+        },
+        "point": 0.7990515933959328
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8748198894585022,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8965927682146961
+        },
+        "point": 0.8858896747843145
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8240128928079948,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8687194024496181
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8802079120642957,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9111951801025167
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7189192293859917,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7841620173142224
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8615141925459493,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8895150705309536
+          }
+        }
+      }
+    },
+    "d4101:n512:selective_b::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7801651655272591,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8198765166560459
+        },
+        "point": 0.7997605217799345
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8748674030563238,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8966009279513283
+        },
+        "point": 0.8858891281385612
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8238415215148134,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8689617733089433
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8812197609091527,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9119467321311121
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7207424994876239,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7852044190441444
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8604497689263882,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8887400057204297
+          }
+        }
+      }
+    },
+    "d4101:n512:selective_b::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7801651655272591,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8198765166560459
+        },
+        "point": 0.7997605217799345
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.874867394439675,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8966009279513283
+        },
+        "point": 0.8858889575327193
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8238415215148134,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8689617733089433
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8812197609091527,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9119467321311121
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7207424994876239,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7852044190441444
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8604497689263882,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8887393341134912
+          }
+        }
+      }
+    },
+    "d4101:n512:target_only::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.6388950756378758,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.6858011569802356
+        },
+        "point": 0.6623316289607286
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7793331156186746,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8074041121044577
+        },
+        "point": 0.7934653494089499
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7433277280599777,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7977981650992415
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8303008120548482,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.865856198312986
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.5148720628021562,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.591628034180355
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7171101910632428,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7591363701112203
+          }
+        }
+      }
+    },
+    "d4101:n512:target_only::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.6388950756378758,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.6858011569802356
+        },
+        "point": 0.6623316289607286
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7793331156186746,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8074041121044577
+        },
+        "point": 0.7934653494089499
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7433277280599777,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7977981650992415
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8303008120548482,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.865856198312986
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.5148720628021562,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.591628034180355
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7171101910632428,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7591363701112203
+          }
+        }
+      }
+    },
+    "d4102:n128:full_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:full_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:full_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7773892400786443,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8173548400153037
+        },
+        "point": 0.7971425157532983
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8735971476434695,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8952580591761333
+        },
+        "point": 0.8846364477433822
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210072924681909,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8671182945977988
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8804546658165572,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9111634362339236
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7172206663581264,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7821825452906715
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8589592009406379,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8871222027305021
+          }
+        }
+      }
+    },
+    "d4102:n128:full_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7773892400786443,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8173548400153037
+        },
+        "point": 0.7971425157532983
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8735971476434695,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8952580591761333
+        },
+        "point": 0.8846364477433822
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210072924681909,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8671182945977988
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8804546658165572,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9111634362339236
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7172206663581264,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7821825452906715
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8589592009406379,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8871222027305021
+          }
+        }
+      }
+    },
+    "d4102:n128:head_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777756335027345,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176370867799164
+        },
+        "point": 0.7975074091565018
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8741257283204767,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957642126908704
+        },
+        "point": 0.8851265157032255
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210985061296779,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674493565463195
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809146141554728,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115447699085912
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7176322641601764,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7827226083820416
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8594686349083169,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8876017991587346
+          }
+        }
+      }
+    },
+    "d4102:n128:head_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777756335027345,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176370867799164
+        },
+        "point": 0.7975074091565018
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8741257283204767,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957642126908704
+        },
+        "point": 0.8851265157032255
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210985061296779,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674493565463195
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809146141554728,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115447699085912
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7176322641601764,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7827226083820416
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8594686349083169,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8876017991587346
+          }
+        }
+      }
+    },
+    "d4102:n128:head_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:head_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:random_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:random_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:selective_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:selective_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:selective_b::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:selective_b::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n128:target_only::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.5916930218182792,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.6387019396785247
+        },
+        "point": 0.6150704991866858
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7438762723510793,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.7733307898632862
+        },
+        "point": 0.7589181144415419
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6812296577671317,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7437715339099279
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7898739171802103,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8300807995402462
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.4801014839392472,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.5533696365621157
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6860229325652298,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7281273451279322
+          }
+        }
+      }
+    },
+    "d4102:n128:target_only::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.5916930218182792,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.6387019396785247
+        },
+        "point": 0.6150704991866858
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7438762723510793,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.7733307898632862
+        },
+        "point": 0.7589181144415419
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6812296577671317,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7437715339099279
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7898739171802103,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8300807995402462
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.4801014839392472,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.5533696365621157
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.6860229325652298,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7281273451279322
+          }
+        }
+      }
+    },
+    "d4102:n512:full_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7929871288288443,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8304947163088685
+        },
+        "point": 0.8116101954967442
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8817903539588199,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.9024062269404907
+        },
+        "point": 0.8922133911306884
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8261994498915121,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8699031705690142
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809584984413767,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9114875547705521
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7439743917263895,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8046610774873727
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8748254925863953,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9005569006469287
+          }
+        }
+      }
+    },
+    "d4102:n512:full_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7929871288288443,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8304947163088685
+        },
+        "point": 0.8116101954967442
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8817903539588199,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.9024062269404907
+        },
+        "point": 0.8922133911306884
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8261994498915121,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8699031705690142
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809584984413767,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9114875547705521
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7439743917263895,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8046610774873727
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8748254925863953,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9005569006469287
+          }
+        }
+      }
+    },
+    "d4102:n512:full_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7878455974746553,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8264146352894323
+        },
+        "point": 0.8070552840667967
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.879040904166219,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.9000550884132701
+        },
+        "point": 0.889714945869438
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8232293685135185,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8681782024858771
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8799093681885277,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9106227001744682
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7369195226570289,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7986314898743706
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8703372888777482,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8970784485000302
+          }
+        }
+      }
+    },
+    "d4102:n512:full_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7878455974746553,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8264146352894323
+        },
+        "point": 0.8070552840667967
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.879040904166219,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.9000550884132701
+        },
+        "point": 0.889714945869438
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8232293685135185,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8681782024858771
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8799093681885277,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9106227001744682
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7369195226570289,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7986314898743706
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8703372888777482,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8970784485000302
+          }
+        }
+      }
+    },
+    "d4102:n512:head_cost::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777946609096013,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176438789996423
+        },
+        "point": 0.7975140988578515
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8741220397735959,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957735832581679
+        },
+        "point": 0.8851450498167803
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211343233456591,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674779728584444
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809068514732923,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115506845453416
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7176029462953526,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7827080372136327
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8594859868079193,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8876410620470596
+          }
+        }
+      }
+    },
+    "d4102:n512:head_cost::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7777946609096013,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8176438789996423
+        },
+        "point": 0.7975140988578515
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8741220397735959,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957735832581679
+        },
+        "point": 0.8851450498167803
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211343233456591,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674779728584444
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809068514732923,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115506845453416
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7176029462953526,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7827080372136327
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8594859868079193,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8876410620470596
+          }
+        }
+      }
+    },
+    "d4102:n512:head_f::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7779046774633885,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8177473847081167
+        },
+        "point": 0.7976255857232474
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8741483102598523,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957684360691051
+        },
+        "point": 0.885169132281632
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210965992900462,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674113346009233
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8808583889372924,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9114740150848527
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7179423299707167,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7828651416874769
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8596031785317029,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8877126115006532
+          }
+        }
+      }
+    },
+    "d4102:n512:head_f::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7779046774633885,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8177473847081167
+        },
+        "point": 0.7976255857232474
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.8741483102598523,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8957684360691051
+        },
+        "point": 0.885169132281632
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8210965992900462,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674113346009233
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8808583889372924,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9114740150848527
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7179423299707167,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7828651416874769
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8596031785317029,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8877126115006532
+          }
+        }
+      }
+    },
+    "d4102:n512:random_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n512:random_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n512:selective_a::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n512:selective_a::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n512:selective_b::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n512:selective_b::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "d4102:n512:target_only::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.6565517607323771,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.7028955097351314
+        },
+        "point": 0.6796782606052774
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7899699366380727,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8169702111838937
+        },
+        "point": 0.803675783286427
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7205965656885998,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.781154680622109
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211572322108253,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8580451237379262
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.5709870666246628,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.6427943532658031
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.747184202729593,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7868330168447796
+          }
+        }
+      }
+    },
+    "d4102:n512:target_only::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.6565517607323771,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.7028955097351314
+        },
+        "point": 0.6796782606052774
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7899699366380727,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8169702111838937
+        },
+        "point": 0.803675783286427
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7205965656885998,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.781154680622109
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8211572322108253,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8580451237379262
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.5709870666246628,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.6427943532658031
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.747184202729593,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7868330168447796
+          }
+        }
+      }
+    },
+    "source::calibrated": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    },
+    "source::raw": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.7772703933458421,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8172570202214768
+        },
+        "point": 0.7970669819801502
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": 0.873769830521828,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.8955242575501876
+        },
+        "point": 0.8848272753339346
+      },
+      "per_label_ci95": {
+        "CD": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.821023754043632,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8674078059200462
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8809495385334776,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.9115896324052016
+          }
+        },
+        "STTC": {
+          "ap": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.7166027079051335,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.7819704392927427
+          },
+          "auroc": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": 0.8587651308830092,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": 0.8870765867464911
+          }
+        }
+      }
+    }
+  },
+  "secondary": {
+    "A_minus_Full_F": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.01069932562123401,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": -0.0028434998324365153
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.01189117012865376,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": -0.0015588541978224103
+        },
+        "difference": -0.00687809037425513
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.005805088464231392,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": -0.0017445832330375529
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0064413983147423165,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": -0.0010307689849046724
+        },
+        "difference": -0.0037607719587682276
+      }
+    },
+    "A_minus_Head_cost": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.0010682582843853756,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0021834542258773347
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0015637860200402856,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.00273419847541939
+        },
+        "difference": 0.0005215158617526416
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.0006696331288161411,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.001051188196440217
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0009180806086065269,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.001304533296899709
+        },
+        "difference": 0.00019248091047618932
+      }
+    },
+    "A_minus_Random_A": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.00043495100251396684,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.002494188440461772
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0008878557412018526,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0029992738755134246
+        },
+        "difference": 0.0009923057078912167
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.00035340980984039093,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.001409067872121752
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0006039035633996763,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0017199746694999477
+        },
+        "difference": 0.0005311997251900014
+      }
+    },
+    "A_minus_raw_Source_only": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.00043495100251396684,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.002494188440461772
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0008878557412018526,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0029992738755134246
+        },
+        "difference": 0.0009923057078912167
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.00035340980984039093,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.001409067872121752
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0006039035633996763,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0017199746694999477
+        },
+        "difference": 0.0005311997251900014
+      }
+    },
+    "B_minus_A": {
+      "ap": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.0005501946805263502,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0012430045399707866
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.000810490592372538,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0015158051565236292
+        },
+        "difference": 0.00035446419200091395
+      },
+      "auroc": {
+        "ci95": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.95,
+          "lower": -0.0005202375803253416,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0005291523045589802
+        },
+        "ci99": {
+          "conclusive_interpretation_allowed": true,
+          "confidence": 0.99,
+          "lower": -0.0007030066627167047,
+          "undefined": 0,
+          "undefined_fraction": 0.0,
+          "upper": 0.0007027878189157407
+        },
+        "difference": -3.586257976140317e-07
+      }
+    }
+  }
+}

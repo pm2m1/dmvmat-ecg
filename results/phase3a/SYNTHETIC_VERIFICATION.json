@@ -1,0 +1,45 @@
+{
+  "format": {
+    "command": ".venv/bin/ruff format --check .",
+    "files": 129,
+    "passed": true
+  },
+  "full_suite": {
+    "command": ".venv/bin/python -B -m pytest -q",
+    "failed": 0,
+    "log": "/tmp/dmvmat-phase3-tests.log",
+    "passed": 222,
+    "warnings": 7
+  },
+  "historical_files_preserved": 169,
+  "new_code_hashes": {
+    "scripts/phase3/download_cinc.py": "73008365ca6e0c48fb821a3b528ef5718c81931a32e3adc3e5032a5529e3f6cb",
+    "scripts/phase3/finish_after_download.py": "993abe2ac60b2118a19af324b6c5bd05a4858765644bede6575f651d693c8295",
+    "scripts/phase3/integrity_check.py": "1a04e6137b3c1fc2d83a0f667283f315975495513fe92d428086ab742222010b",
+    "scripts/phase3/offline_feasibility.py": "9f95aac2b297a9bbf7541c91b99406abbbcfd47d15931c09c55c85ba13bede53",
+    "src/dmvmat_ecg/phase3/__init__.py": "c8f8effd5254f706014676c63fb86fb11b4f9a74f237bfdb69b6e5ff23145870",
+    "src/dmvmat_ecg/phase3/download.py": "98e6ab06eedca45964feb122a21a3bd13d535ec9374c0eef3ecb9ea79d58d89e",
+    "src/dmvmat_ecg/phase3/inference.py": "97e205fcb322f84013ace526aad19ea701a4b6acfafac34bc6ea9a525a2d4fae",
+    "src/dmvmat_ecg/phase3/labels.py": "32dfd6e21bb96b1e28127b03a8eee7cae72f62ba0166069022ab832a467f931f",
+    "src/dmvmat_ecg/phase3/prepare.py": "bf0ca3927f3d3b39d1a2d7d248fde3a9b7729530e5ccd096319f81d13614cb26",
+    "src/dmvmat_ecg/phase3/report.py": "5eb1cd47ea997e0bc9305cbd44abeea863af67db1165dc26af04ee9d9007460e",
+    "src/dmvmat_ecg/phase3/run.py": "bbbd4a9c9921d17fc1906ad79daaf50aecd109393aa2f58ba83ca225525d3fd4",
+    "src/dmvmat_ecg/phase3/signals.py": "79f1f590fb46e021c129bd6b069c877316f4c367316210aca29610e2e797ae63",
+    "src/dmvmat_ecg/phase3/splits.py": "7771361e71dec8b5ad91c17790ffbc00e21f2904b19434c5f5d2569a01f23611",
+    "src/dmvmat_ecg/phase3/statistics.py": "c4dd3d0963c6076fcf8f8614e462e3e77e6716d49b747f822dc54b53276ffd13",
+    "tests/phase3/test_phase3.py": "8231acbc7afdbc3f816a6881173577d4a755830248c355e2210e026cc01ddf6e"
+  },
+  "new_phase3_suite": {
+    "command": ".venv/bin/python -B -m pytest tests/phase3 -q",
+    "failed": 0,
+    "includes": "fictional four-model inference, prediction sealing, metrics, MMD and report integration",
+    "passed": 16
+  },
+  "real_data_predictor_fits": 0,
+  "real_target_inference_started": false,
+  "ruff": {
+    "command": ".venv/bin/ruff check .",
+    "passed": true
+  },
+  "test_data_scope": "Synthetic fictional fixtures only. Historical full-suite tests include tiny fictional training fixtures; no real ECG model training."
+}

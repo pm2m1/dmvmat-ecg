@@ -1,0 +1,20 @@
+{
+  "HEAD": "c7b795553ee9806caeb1835e7a829dc0469872eb",
+  "branch": "phase3-cross-hospital",
+  "changed_historical_files": [],
+  "data_ignored": true,
+  "git_status": "?? docs/phase2/INTERNAL_PILOT_DEVELOPMENT_RESULTS.md\n?? docs/phase2/INTERNAL_PILOT_EVALUATION_READINESS.md\n?? docs/phase2/INTERNAL_PILOT_INTEGRITY_REPORT.md\n?? docs/phase2/INTERNAL_PILOT_LOCKED_EVALUATION_RESULTS.md\n?? docs/phase3/\n?? results/phase2e/\n?? results/phase2f/\n?? results/phase3a/\n?? scripts/phase3/\n?? src/dmvmat_ecg/phase3/\n?? tests/phase3/\n",
+  "historical_tracked_files_checked": 169,
+  "no_commits_or_publication": true,
+  "passed": true,
+  "protected_namespaces_not_opened": [
+    "private/phase2d*",
+    "private/phase2e*",
+    "results/phase2e",
+    "results/phase2f",
+    "Phase2 O",
+    "PTBXL fold10"
+  ],
+  "scope": "Hash comparison covers historical tracked assets only; protected private Phase2 assets were neither opened nor written",
+  "staged_files": []
+}

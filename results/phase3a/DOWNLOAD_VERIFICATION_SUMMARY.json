@@ -1,0 +1,43 @@
+{
+  "complete": true,
+  "excluded_sources": [
+    "ptb",
+    "ptb-xl",
+    "st_petersburg_incart"
+  ],
+  "failed_file_count": 0,
+  "release": "1.0.3",
+  "shasum_returncode": 0,
+  "sources": {
+    "chapman_shaoxing": {
+      "bytes": 1237621878,
+      "downloaded_files": 20505,
+      "expected_files": 20505,
+      "mismatches": 0
+    },
+    "cpsc_2018": {
+      "bytes": 1321038090,
+      "downloaded_files": 13762,
+      "expected_files": 13762,
+      "mismatches": 0
+    },
+    "cpsc_2018_extra": {
+      "bytes": 661708575,
+      "downloaded_files": 6910,
+      "expected_files": 6910,
+      "mismatches": 0
+    },
+    "georgia": {
+      "bytes": 1245971648,
+      "downloaded_files": 20699,
+      "expected_files": 20699,
+      "mismatches": 0
+    },
+    "ningbo": {
+      "bytes": 4215789066,
+      "downloaded_files": 69845,
+      "expected_files": 69845,
+      "mismatches": 0
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "sources": {
+    "chapman_shaoxing": {
+      "records_checked": 1,
+      "native_fs": 500,
+      "wfdb_vs_mat_max_abs_mV_difference": 0.0,
+      "resampled_shape": [
+        12,
+        1000
+      ],
+      "finite_normalized_views": true,
+      "normalization": "frozen source-only scalar statistics",
+      "membership": "FEAS only"
+    },
+    "ningbo": {
+      "records_checked": 1,
+      "native_fs": 500,
+      "wfdb_vs_mat_max_abs_mV_difference": 0.0,
+      "resampled_shape": [
+        12,
+        1000
+      ],
+      "finite_normalized_views": true,
+      "normalization": "frozen source-only scalar statistics",
+      "membership": "FEAS only"
+    },
+    "cpsc_2018": {
+      "records_checked": 1,
+      "native_fs": 500,
+      "wfdb_vs_mat_max_abs_mV_difference": 0.0,
+      "resampled_shape": [
+        12,
+        1000
+      ],
+      "finite_normalized_views": true,
+      "normalization": "frozen source-only scalar statistics",
+      "membership": "FEAS only"
+    },
+    "cpsc_2018_extra": {
+      "records_checked": 1,
+      "native_fs": 500,
+      "wfdb_vs_mat_max_abs_mV_difference": 0.0,
+      "resampled_shape": [
+        12,
+        1000
+      ],
+      "finite_normalized_views": true,
+      "normalization": "frozen source-only scalar statistics",
+      "membership": "FEAS only"
+    },
+    "georgia": {
+      "records_checked": 1,
+      "native_fs": 500,
+      "wfdb_vs_mat_max_abs_mV_difference": 0.0,
+      "resampled_shape": [
+        12,
+        1000
+      ],
+      "finite_normalized_views": true,
+      "normalization": "frozen source-only scalar statistics",
+      "membership": "FEAS only"
+    }
+  },
+  "protocol_sha256": "d0ff7d6b0d4d49f8c1ee1655bf1710e8bd3255f1e1592f9bc534fd8bf638299b",
+  "no_model_inference": true
+}

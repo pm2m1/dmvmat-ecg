@@ -1,0 +1,959 @@
+{
+  "15101/16101/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16101/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16101/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16101/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16101/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16101/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16101/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16101/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16102/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16102/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16102/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16102/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16102/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16102/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16102/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16103/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16103/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16103/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16103/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15101
+  },
+  "15101/16103/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15101
+  },
+  "15101/16103/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15101
+  },
+  "15101/16103/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15101
+  },
+  "15102/16101/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16101/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16101/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16101/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16101/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16101/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16101/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16101/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16102/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16102/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16102/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16102/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16102/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16102/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16102/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16103/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16103/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16103/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16103/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15102
+  },
+  "15102/16103/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15102
+  },
+  "15102/16103/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15102
+  },
+  "15102/16103/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15102
+  },
+  "15103/16101/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16101/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16101/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16101/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16101/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16101/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16101/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16101/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16101,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16102/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16102/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16102/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16102/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16102/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16102/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16102/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16102,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B128/full_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B128/head_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B128/random_a": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16103/B128/selective_a": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16103/B128/target_only_cost": {
+    "budget": 128,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B256/full_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B256/head_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B256/random_a": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16103/B256/selective_a": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16103/B256/target_only_cost": {
+    "budget": 256,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B64/full_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "full_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B64/head_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "head_cost",
+    "source_seed": 15103
+  },
+  "15103/16103/B64/random_a": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "random_a",
+    "source_seed": 15103
+  },
+  "15103/16103/B64/selective_a": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "selective_a",
+    "source_seed": 15103
+  },
+  "15103/16103/B64/target_only_cost": {
+    "budget": 64,
+    "draw_seed": 16103,
+    "kind": "target",
+    "method": "target_only_cost",
+    "source_seed": 15103
+  },
+  "source/15101": {
+    "kind": "source",
+    "source_seed": 15101
+  },
+  "source/15102": {
+    "kind": "source",
+    "source_seed": 15102
+  },
+  "source/15103": {
+    "kind": "source",
+    "source_seed": 15103
+  }
+}

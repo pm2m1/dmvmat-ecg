@@ -1,0 +1,24 @@
+{
+  "all_20_sealed_artifacts_match": true,
+  "all_downloaded_files_git_ignored": 131721,
+  "exact_frozen_phase3_code_inventory_matches": true,
+  "external_clinical_validation": false,
+  "final_outcome": "FEASIBLE \u2014 PROCEED TO PHASE 3B DESIGN",
+  "format_all_passed_final_files": 134,
+  "four_checkpoint_hashes_match": true,
+  "historical_tracked_hashes_preserved": 169,
+  "main_report_hash_matches": true,
+  "new_adaptation_training": false,
+  "passed": true,
+  "real_predictor_fits": 0,
+  "ruff_all_passed": true,
+  "staged_files": 0,
+  "tests": {
+    "command": ".venv/bin/python -B -m pytest -q",
+    "failed": 0,
+    "log": "/tmp/dmvmat-phase3-tests-alias.log",
+    "passed": 226,
+    "seconds": 37.89,
+    "warnings": 7
+  }
+}

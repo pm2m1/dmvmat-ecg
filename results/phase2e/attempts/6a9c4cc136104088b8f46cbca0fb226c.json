@@ -1,0 +1,266 @@
+{
+  "attempt": "6a9c4cc136104088b8f46cbca0fb226c",
+  "calibration": {
+    "fit_role": "C",
+    "job_id": "d4101:n512:selective_a",
+    "label_cost": {
+      "by_role": {
+        "C": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "E": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "d4101:n512:F": {
+          "observed_labels": 1024,
+          "records": 512
+        },
+        "d4101:n512:G": {
+          "observed_labels": 512,
+          "records": 256
+        },
+        "source_train": {
+          "observed_labels": 12984,
+          "records": 6492
+        }
+      },
+      "evaluation_records": 0,
+      "target_observed_labels": 2048,
+      "target_records": 1024
+    },
+    "labels": [
+      "CD",
+      "STTC"
+    ],
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "mappings": [
+      {
+        "a": -0.01918528099286903,
+        "b": -0.13879113954320274,
+        "status": "fitted",
+        "threshold": 0.42
+      },
+      {
+        "a": 0.30978942999540215,
+        "b": 0.4597957045659272,
+        "status": "fitted",
+        "threshold": 0.4
+      }
+    ],
+    "membership_hash": "9270a53e9bbb64ec6c748ce346f585b96a75f5c223675932132661befcd43e04",
+    "namespace": "real:phase2d-joint44301-v1",
+    "preprocessing_hash": "4651a624c594642636bc53c5e46024da3ce8eb2500897b59a52d68a5158589dd"
+  },
+  "checkpoint_sha256": "382311fd92ad4cf5a4ddb389b7e8a6758e210d159634751ffa73e802028c54bb",
+  "history": [
+    {
+      "ap": 0.7833462018038091,
+      "bce": 0.41463497281074524,
+      "eligible": true,
+      "look": 0
+    },
+    {
+      "ap": 0.7843533665605877,
+      "bce": 0.4113326966762543,
+      "eligible": true,
+      "look": 8
+    },
+    {
+      "ap": 0.7863079805135134,
+      "bce": 0.40709739923477173,
+      "eligible": true,
+      "look": 16
+    },
+    {
+      "ap": 0.7862862659349348,
+      "bce": 0.4025450348854065,
+      "eligible": true,
+      "look": 24
+    },
+    {
+      "ap": 0.7849404701089936,
+      "bce": 0.4003645181655884,
+      "eligible": true,
+      "look": 32
+    },
+    {
+      "ap": 0.785302554203618,
+      "bce": 0.397969126701355,
+      "eligible": true,
+      "look": 40
+    },
+    {
+      "ap": 0.7859007534111118,
+      "bce": 0.3961024582386017,
+      "eligible": true,
+      "look": 48
+    },
+    {
+      "ap": 0.7867513403165471,
+      "bce": 0.395358681678772,
+      "eligible": true,
+      "look": 56
+    },
+    {
+      "ap": 0.7878166724613301,
+      "bce": 0.3950892984867096,
+      "eligible": true,
+      "look": 64
+    },
+    {
+      "ap": 0.7888446810821317,
+      "bce": 0.3941271901130676,
+      "eligible": true,
+      "look": 72
+    },
+    {
+      "ap": 0.7856764944216365,
+      "bce": 0.3941183388233185,
+      "eligible": true,
+      "look": 80
+    },
+    {
+      "ap": 0.7848866685463154,
+      "bce": 0.39386752247810364,
+      "eligible": true,
+      "look": 88
+    },
+    {
+      "ap": 0.7851137044242477,
+      "bce": 0.39511075615882874,
+      "eligible": true,
+      "look": 96
+    },
+    {
+      "ap": 0.7857236901633239,
+      "bce": 0.3943425714969635,
+      "eligible": true,
+      "look": 104
+    },
+    {
+      "ap": 0.785628053645758,
+      "bce": 0.3934400677680969,
+      "eligible": true,
+      "look": 112
+    }
+  ],
+  "identity": {
+    "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+    "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+    "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "namespace": "real:phase2d-joint44301-v1"
+  },
+  "initial_state_hash": "358601f862321ab2860937c0df985d66a171acc5f8e524c8e9b160cf897b4b33",
+  "job": "d4101:n512:selective_a",
+  "label_cost_before_C": {
+    "by_role": {
+      "E": {
+        "observed_labels": 256,
+        "records": 128
+      },
+      "d4101:n512:F": {
+        "observed_labels": 1024,
+        "records": 512
+      },
+      "d4101:n512:G": {
+        "observed_labels": 512,
+        "records": 256
+      },
+      "source_train": {
+        "observed_labels": 12984,
+        "records": 6492
+      }
+    },
+    "evaluation_records": 0,
+    "target_observed_labels": 1792,
+    "target_records": 896
+  },
+  "launcher_sha256": "36d166dfc66c245fd360cf56e668e0e534720cd1e1d379625f9c02cbdf82f6a7",
+  "mask": {
+    "fusion_1": "ADAPT",
+    "fusion_2": "ADAPT",
+    "view_1": "SHARE",
+    "view_2": "SHARE",
+    "view_3": "ADAPT",
+    "view_4": "SHARE",
+    "view_5": "ADAPT"
+  },
+  "metrics": {
+    "labels": {
+      "CD": {
+        "ap": 0.8377832986898089,
+        "auroc": 0.9250384024577573,
+        "balanced_accuracy": 0.8141321044546851,
+        "brier": 0.10070903599262238,
+        "confusion": {
+          "fn": 10,
+          "fp": 8,
+          "tn": 85,
+          "tp": 25
+        },
+        "ece10_equal_width": 0.07080628798576072,
+        "f1": 0.7352941176470589,
+        "log_loss": 0.321450794410986,
+        "patients": 128,
+        "positive": 35,
+        "precision": 0.7575757575757576,
+        "prevalence": 0.2734375,
+        "recall": 0.7142857142857143,
+        "specificity": 0.9139784946236559
+      },
+      "STTC": {
+        "ap": 0.7399060634744545,
+        "auroc": 0.8440492476060191,
+        "balanced_accuracy": 0.7320109439124487,
+        "brier": 0.14765289425849915,
+        "confusion": {
+          "fn": 19,
+          "fp": 8,
+          "tn": 77,
+          "tp": 24
+        },
+        "ece10_equal_width": 0.062260182632599026,
+        "f1": 0.64,
+        "log_loss": 0.4668035689646711,
+        "patients": 128,
+        "positive": 43,
+        "precision": 0.75,
+        "prevalence": 0.3359375,
+        "recall": 0.5581395348837209,
+        "specificity": 0.9058823529411765
+      }
+    },
+    "macro_ap": 0.7888446810821317,
+    "macro_auroc": 0.8845438250318882,
+    "threshold": 0.5
+  },
+  "parameter_drift": {
+    "fusion_1": 1.0723885297775269,
+    "fusion_2": 0.4783230721950531,
+    "prediction_head": 0.06817296892404556,
+    "view_1": 0.0,
+    "view_2": 0.0,
+    "view_3": 0.9699913859367371,
+    "view_4": 0.0,
+    "view_5": 1.1286967992782593
+  },
+  "parameters": 212066,
+  "preprocessing_hash": "4651a624c594642636bc53c5e46024da3ce8eb2500897b59a52d68a5158589dd",
+  "random_mask_matching": null,
+  "reporting_inference_seconds": 0.23736195778474212,
+  "retained_state_hash": "36fe17caccecbf13d255c22d938da22ae44104ab40072b7f4bb6530f80feb242",
+  "scope": "DEVELOPMENT ONLY \u2014 checkpoint-selection role, optimistic; no O",
+  "selected_update": 72,
+  "selector_seconds": 31.19812195794657,
+  "source_revision": "c7b795553ee9806caeb1835e7a829dc0469872eb",
+  "stopping_membership_hash": "8f5913ab428554a64aae3ed818cb2661e8fc695179c7305bfb0832f41fd2f309",
+  "stopping_role": "E",
+  "trainable_parameters": 115682,
+  "training_elapsed_seconds": 48.88509341701865,
+  "updates": 112
+}

@@ -1,0 +1,252 @@
+{
+  "attempt": "89b7538286f747dca0893492fd29ced5",
+  "calibration": {
+    "fit_role": "C",
+    "job_id": "d4101:n128:full_cost",
+    "label_cost": {
+      "by_role": {
+        "C": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "E": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "d4101:n128:F": {
+          "observed_labels": 256,
+          "records": 128
+        },
+        "d4101:n128:G": {
+          "observed_labels": 512,
+          "records": 256
+        }
+      },
+      "evaluation_records": 0,
+      "target_observed_labels": 1280,
+      "target_records": 640
+    },
+    "labels": [
+      "CD",
+      "STTC"
+    ],
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "mappings": [
+      {
+        "a": -0.12009515196729324,
+        "b": -0.09565494492924753,
+        "status": "fitted",
+        "threshold": 0.43
+      },
+      {
+        "a": 0.19309536402142816,
+        "b": 0.24810693860721944,
+        "status": "fitted",
+        "threshold": 0.56
+      }
+    ],
+    "membership_hash": "9270a53e9bbb64ec6c748ce346f585b96a75f5c223675932132661befcd43e04",
+    "namespace": "real:phase2d-joint44301-v1",
+    "preprocessing_hash": "4651a624c594642636bc53c5e46024da3ce8eb2500897b59a52d68a5158589dd"
+  },
+  "checkpoint_sha256": "49bd0b4fdb2a4c9119f48dd5f18f3532b816016ff316ddb3ec71d2d96404781a",
+  "history": [
+    {
+      "ap": 0.7833462018038091,
+      "bce": 0.41463497281074524,
+      "eligible": true,
+      "look": 0
+    },
+    {
+      "ap": 0.7832769971126888,
+      "bce": 0.41827720403671265,
+      "eligible": true,
+      "look": 2
+    },
+    {
+      "ap": 0.7833051732836229,
+      "bce": 0.41725850105285645,
+      "eligible": true,
+      "look": 4
+    },
+    {
+      "ap": 0.7850865471551807,
+      "bce": 0.41729673743247986,
+      "eligible": true,
+      "look": 6
+    },
+    {
+      "ap": 0.7834638453557007,
+      "bce": 0.4156772494316101,
+      "eligible": true,
+      "look": 8
+    },
+    {
+      "ap": 0.782724603740029,
+      "bce": 0.4142572581768036,
+      "eligible": true,
+      "look": 10
+    },
+    {
+      "ap": 0.7859383401689057,
+      "bce": 0.41348886489868164,
+      "eligible": true,
+      "look": 12
+    },
+    {
+      "ap": 0.7853853324306284,
+      "bce": 0.4123215675354004,
+      "eligible": true,
+      "look": 14
+    },
+    {
+      "ap": 0.7862431873594622,
+      "bce": 0.4123196601867676,
+      "eligible": true,
+      "look": 16
+    },
+    {
+      "ap": 0.7838589028210928,
+      "bce": 0.4123040735721588,
+      "eligible": true,
+      "look": 18
+    },
+    {
+      "ap": 0.7825377260999596,
+      "bce": 0.41351813077926636,
+      "eligible": true,
+      "look": 20
+    },
+    {
+      "ap": 0.7824657314578662,
+      "bce": 0.4148533344268799,
+      "eligible": true,
+      "look": 22
+    },
+    {
+      "ap": 0.7825254136230677,
+      "bce": 0.41557544469833374,
+      "eligible": true,
+      "look": 24
+    },
+    {
+      "ap": 0.784827570767201,
+      "bce": 0.415884405374527,
+      "eligible": true,
+      "look": 26
+    }
+  ],
+  "identity": {
+    "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+    "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+    "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "namespace": "real:phase2d-joint44301-v1"
+  },
+  "initial_state_hash": "358601f862321ab2860937c0df985d66a171acc5f8e524c8e9b160cf897b4b33",
+  "job": "d4101:n128:full_cost",
+  "label_cost_before_C": {
+    "by_role": {
+      "E": {
+        "observed_labels": 256,
+        "records": 128
+      },
+      "d4101:n128:F": {
+        "observed_labels": 256,
+        "records": 128
+      },
+      "d4101:n128:G": {
+        "observed_labels": 512,
+        "records": 256
+      }
+    },
+    "evaluation_records": 0,
+    "target_observed_labels": 1024,
+    "target_records": 512
+  },
+  "launcher_sha256": "36d166dfc66c245fd360cf56e668e0e534720cd1e1d379625f9c02cbdf82f6a7",
+  "mask": {
+    "fusion_1": "ADAPT",
+    "fusion_2": "ADAPT",
+    "view_1": "ADAPT",
+    "view_2": "ADAPT",
+    "view_3": "ADAPT",
+    "view_4": "ADAPT",
+    "view_5": "ADAPT"
+  },
+  "metrics": {
+    "labels": {
+      "CD": {
+        "ap": 0.8473402585391923,
+        "auroc": 0.9284178187403994,
+        "balanced_accuracy": 0.8195084485407066,
+        "brier": 0.10066939145326614,
+        "confusion": {
+          "fn": 10,
+          "fp": 7,
+          "tn": 86,
+          "tp": 25
+        },
+        "ece10_equal_width": 0.07107850126340054,
+        "f1": 0.746268656716418,
+        "log_loss": 0.321628581298364,
+        "patients": 128,
+        "positive": 35,
+        "precision": 0.78125,
+        "prevalence": 0.2734375,
+        "recall": 0.7142857142857143,
+        "specificity": 0.9247311827956989
+      },
+      "STTC": {
+        "ap": 0.7251461161797322,
+        "auroc": 0.8303693570451436,
+        "balanced_accuracy": 0.7086183310533516,
+        "brier": 0.153225377202034,
+        "confusion": {
+          "fn": 20,
+          "fp": 10,
+          "tn": 75,
+          "tp": 23
+        },
+        "ece10_equal_width": 0.11730869754683226,
+        "f1": 0.6052631578947368,
+        "log_loss": 0.5030107349778292,
+        "patients": 128,
+        "positive": 43,
+        "precision": 0.696969696969697,
+        "prevalence": 0.3359375,
+        "recall": 0.5348837209302325,
+        "specificity": 0.8823529411764706
+      }
+    },
+    "macro_ap": 0.7862431873594622,
+    "macro_auroc": 0.8793935878927714,
+    "threshold": 0.5
+  },
+  "parameter_drift": {
+    "fusion_1": 0.36224162578582764,
+    "fusion_2": 0.1855160892009735,
+    "prediction_head": 0.027181364595890045,
+    "view_1": 0.33311983942985535,
+    "view_2": 0.3064449429512024,
+    "view_3": 0.32003650069236755,
+    "view_4": 0.35704636573791504,
+    "view_5": 0.38301292061805725
+  },
+  "parameters": 212066,
+  "preprocessing_hash": "4651a624c594642636bc53c5e46024da3ce8eb2500897b59a52d68a5158589dd",
+  "random_mask_matching": null,
+  "reporting_inference_seconds": 0.1543189170770347,
+  "retained_state_hash": "cc0927de04ddd32b48a0d1fbbb5b5335fe9ac0233846a83460815ab35fcb945d",
+  "scope": "DEVELOPMENT ONLY \u2014 checkpoint-selection role, optimistic; no O",
+  "selected_update": 16,
+  "selector_seconds": 0.0,
+  "source_revision": "c7b795553ee9806caeb1835e7a829dc0469872eb",
+  "stopping_membership_hash": "8f5913ab428554a64aae3ed818cb2661e8fc695179c7305bfb0832f41fd2f309",
+  "stopping_role": "E",
+  "trainable_parameters": 212066,
+  "training_elapsed_seconds": 7.133999000303447,
+  "updates": 26
+}

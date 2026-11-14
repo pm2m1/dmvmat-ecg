@@ -1,0 +1,68 @@
+{
+  "algorithm": "joint-pattern Hamilton20percent; hashed deterministic tie breaks; one seed only",
+  "domains": {
+    "CPSC": {
+      "EXPECTED_RESERVED_positive_CD_STTC": [
+        2023.737823834197,
+        1975.744041450777
+      ],
+      "FEAS_metadata_sha256": "6a258ac7d092c305a965f87e39d516cd51ead392e22f94c32e666252f95c853a",
+      "FEAS_positive_CD_STTC": [
+        506,
+        494
+      ],
+      "FEAS_prevalence_CD_STTC": [
+        0.2621761658031088,
+        0.2559585492227979
+      ],
+      "FEAS_records": 1930,
+      "FEAS_truncated_first10": 1203,
+      "RESERVED_records": 7719,
+      "all_short_excluded_before_split": 22,
+      "split_sha256": "84bea540fef6e04d5638f7b09f1107de5b0335a0e58df1d2b93007e8bed16cf1"
+    },
+    "Chapman-Ningbo": {
+      "EXPECTED_RESERVED_positive_CD_STTC": [
+        3356.0,
+        8044.0
+      ],
+      "FEAS_metadata_sha256": "bbd96501432a508d773214dcddd134bea1a0d0c62b6e63724bd712dc5f4f2994",
+      "FEAS_positive_CD_STTC": [
+        839,
+        2011
+      ],
+      "FEAS_prevalence_CD_STTC": [
+        0.09308776212138023,
+        0.22312215688450016
+      ],
+      "FEAS_records": 9013,
+      "FEAS_truncated_first10": 0,
+      "RESERVED_records": 36052,
+      "all_short_excluded_before_split": 0,
+      "split_sha256": "d325ee68a87c6e30ac5d05ff93444e4807b09852a121c69d303e49cc497fb9fb"
+    },
+    "Georgia": {
+      "EXPECTED_RESERVED_positive_CD_STTC": [
+        1496.1833333333332,
+        3596.4406862745095
+      ],
+      "FEAS_metadata_sha256": "49b163b61938a3d21bc0a2efd187349157ec66084324bbea1bc78571f18f78c0",
+      "FEAS_positive_CD_STTC": [
+        374,
+        899
+      ],
+      "FEAS_prevalence_CD_STTC": [
+        0.18333333333333332,
+        0.4406862745098039
+      ],
+      "FEAS_records": 2040,
+      "FEAS_truncated_first10": 0,
+      "RESERVED_records": 8161,
+      "all_short_excluded_before_split": 52,
+      "split_sha256": "dd1821af54d649b2f4d8b673ca4227cfa9b653a4feb9a34eeac6ddeb1a1f8af7"
+    }
+  },
+  "mapping_sha256": "ecce890b4678b8f2a06cf0796476221adceb8156c7d476ecfbeba910a43891d6",
+  "reserved_labels": "Used only to stratify; not retained in model-facing cache; expected counts are estimates",
+  "seed": 74301
+}

@@ -1,0 +1,46 @@
+{
+  "authorization_semantic_hash": "f48c313c7ff0f54ee95e37865b356880787c6a5e4820e98793ef048e3f83bec9",
+  "date": "2026-11-13",
+  "diagnostic_calibration": "diagnostic calibration statistics (not applied)",
+  "elapsed_seconds": 132.99405887490138,
+  "frozen_artifacts_reverified": 111,
+  "identity": {
+    "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+    "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+    "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+    "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+    "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+    "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+    "namespace": "real:phase2d-joint44301-v1"
+  },
+  "lock_hash": "1f31e3835fa3ee270d4866313af91107ac2d654b3832469a369bd08326a8d609",
+  "outcome_role_reads": 1,
+  "prediction_role_materializations": 1,
+  "prediction_seal": {
+    "path": "evaluation/3d3b0c32b91c4894bc5b476e2f1eb11e/seal.json",
+    "sha": "e535f30143e698097e803c31d9c9dcf33ef37e23f9a8664950e45f536a04f3b5"
+  },
+  "reviewer": "Parth Mishra",
+  "single_use_reentry_rejected": true,
+  "snapshot": {
+    "attempts": 33,
+    "development_authorized": true,
+    "evaluation_accesses": 1,
+    "evaluation_authorized": true,
+    "identity": {
+      "canonical_path": "/Users/kiyo/Desktop/dmvmat-ecg/private/phase2d_joint44301_v1/study.sqlite",
+      "code_hash": "ed812868495e91aac456f955315635932031a67e250c798fad5127a831bc3afa",
+      "contract_hash": "dbc0afe9bee29e7323a3a353b37660b8dff20733e3fe62fa94958d95400ecb28",
+      "dependency_hash": "195cd5ae983b6a3e196bc52ac0cf0997b26f60f45fb801e53256b8b57f881424",
+      "ledger_id": "d6f784e8-5073-4fad-a804-1011820f92ef",
+      "manifest_hash": "65cf652084396403077918e0e9be560eaedd009ab4fc8587260c833ddcf4f816",
+      "namespace": "real:phase2d-joint44301-v1"
+    },
+    "phase": "evaluated",
+    "preflight_blockers": [],
+    "statuses": {
+      "successful": 33
+    }
+  },
+  "status": "LOCKED EVALUATION COMPLETE"
+}

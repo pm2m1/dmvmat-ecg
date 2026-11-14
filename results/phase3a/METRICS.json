@@ -1,0 +1,2284 @@
+{
+  "analysis_seconds": 4.325236708391458,
+  "bootstrap_draws": 2000,
+  "drops": {
+    "CPSC": {
+      "flat_cnn": [
+        {
+          "ap_DROP": -0.0973536369063075,
+          "ap_DROP_CI95": {
+            "lower": -0.1502042743794585,
+            "undefined": 0,
+            "upper": -0.04676038392858543
+          },
+          "auroc_DROP": -0.056522136343088,
+          "auroc_DROP_CI95": {
+            "lower": -0.07898872213440464,
+            "undefined": 0,
+            "upper": -0.034321852816760284
+          },
+          "source_AP_prior_reweighted_to_target": 0.8484479447968565
+        },
+        {
+          "ap_DROP": -0.04284298805464748,
+          "ap_DROP_CI95": {
+            "lower": -0.10482356819343286,
+            "undefined": 0,
+            "upper": 0.021067161497278445
+          },
+          "auroc_DROP": -0.16015797023138267,
+          "auroc_DROP_CI95": {
+            "lower": -0.19210760696932436,
+            "undefined": 0,
+            "upper": -0.12684509509625952
+          },
+          "source_AP_prior_reweighted_to_target": 0.5737251973271611
+        }
+      ],
+      "multiview": [
+        {
+          "ap_DROP": -0.09757420814717843,
+          "ap_DROP_CI95": {
+            "lower": -0.1479777618453179,
+            "undefined": 0,
+            "upper": -0.04513072903274157
+          },
+          "auroc_DROP": -0.04675996497504076,
+          "auroc_DROP_CI95": {
+            "lower": -0.06791705746490212,
+            "undefined": 0,
+            "upper": -0.02577330551425114
+          },
+          "source_AP_prior_reweighted_to_target": 0.8487164348915524
+        },
+        {
+          "ap_DROP": -0.03959937304024791,
+          "ap_DROP_CI95": {
+            "lower": -0.09859069862941966,
+            "undefined": 0,
+            "upper": 0.021928458153817717
+          },
+          "auroc_DROP": -0.1505614311750505,
+          "auroc_DROP_CI95": {
+            "lower": -0.1817723445840852,
+            "undefined": 0,
+            "upper": -0.11942632151023304
+          },
+          "source_AP_prior_reweighted_to_target": 0.5701233669572592
+        }
+      ]
+    },
+    "Chapman-Ningbo": {
+      "flat_cnn": [
+        {
+          "ap_DROP": -0.23722025807829206,
+          "ap_DROP_CI95": {
+            "lower": -0.28409191125971023,
+            "undefined": 0,
+            "upper": -0.19312861747025573
+          },
+          "auroc_DROP": -0.05222827235877037,
+          "auroc_DROP_CI95": {
+            "lower": -0.07079795625956424,
+            "undefined": 0,
+            "upper": -0.0342860989232036
+          },
+          "source_AP_prior_reweighted_to_target": 0.689962395594957
+        },
+        {
+          "ap_DROP": 0.08881455994515997,
+          "ap_DROP_CI95": {
+            "lower": 0.03326963562758361,
+            "undefined": 0,
+            "upper": 0.14134355849923427
+          },
+          "auroc_DROP": -0.019394636460564496,
+          "auroc_DROP_CI95": {
+            "lower": -0.03862404247407475,
+            "undefined": 0,
+            "upper": 0.0018327600658935442
+          },
+          "source_AP_prior_reweighted_to_target": 0.5299892516435727
+        }
+      ],
+      "multiview": [
+        {
+          "ap_DROP": -0.2850219595567136,
+          "ap_DROP_CI95": {
+            "lower": -0.33171603938006616,
+            "undefined": 0,
+            "upper": -0.2418084737938486
+          },
+          "auroc_DROP": -0.053266172075925544,
+          "auroc_DROP_CI95": {
+            "lower": -0.07226577187737725,
+            "undefined": 0,
+            "upper": -0.03642071010977955
+          },
+          "source_AP_prior_reweighted_to_target": 0.6880115108465901
+        },
+        {
+          "ap_DROP": 0.10315926772534895,
+          "ap_DROP_CI95": {
+            "lower": 0.05172694095364477,
+            "undefined": 0,
+            "upper": 0.15445523731448133
+          },
+          "auroc_DROP": -0.018697785017976254,
+          "auroc_DROP_CI95": {
+            "lower": -0.03713201463339854,
+            "undefined": 0,
+            "upper": 0.001586561510256182
+          },
+          "source_AP_prior_reweighted_to_target": 0.5264885581179806
+        }
+      ]
+    },
+    "Georgia": {
+      "flat_cnn": [
+        {
+          "ap_DROP": -0.21115129293754875,
+          "ap_DROP_CI95": {
+            "lower": -0.26951499970761916,
+            "undefined": 0,
+            "upper": -0.15199544503718992
+          },
+          "auroc_DROP": -0.06834867894401497,
+          "auroc_DROP_CI95": {
+            "lower": -0.09250361394475999,
+            "undefined": 0,
+            "upper": -0.044632924791249654
+          },
+          "source_AP_prior_reweighted_to_target": 0.7973113002403283
+        },
+        {
+          "ap_DROP": 0.2906838942305495,
+          "ap_DROP_CI95": {
+            "lower": 0.23228573563832353,
+            "undefined": 0,
+            "upper": 0.3473999018592529
+          },
+          "auroc_DROP": -0.03274040844854931,
+          "auroc_DROP_CI95": {
+            "lower": -0.05738016805643195,
+            "undefined": 0,
+            "upper": -0.006277242842052546
+          },
+          "source_AP_prior_reweighted_to_target": 0.7520900515652194
+        }
+      ],
+      "multiview": [
+        {
+          "ap_DROP": -0.22807777399850482,
+          "ap_DROP_CI95": {
+            "lower": -0.2859582642695504,
+            "undefined": 0,
+            "upper": -0.16944562559373053
+          },
+          "auroc_DROP": -0.06149408825118219,
+          "auroc_DROP_CI95": {
+            "lower": -0.08368912299463252,
+            "undefined": 0,
+            "upper": -0.038863471702719546
+          },
+          "source_AP_prior_reweighted_to_target": 0.797541647357312
+        },
+        {
+          "ap_DROP": 0.28868901481447723,
+          "ap_DROP_CI95": {
+            "lower": 0.2324220486105854,
+            "undefined": 0,
+            "upper": 0.34242921293000145
+          },
+          "auroc_DROP": -0.04248955690992551,
+          "auroc_DROP_CI95": {
+            "lower": -0.06602334216647673,
+            "undefined": 0,
+            "upper": -0.016681928905427492
+          },
+          "source_AP_prior_reweighted_to_target": 0.7490804285243382
+        }
+      ]
+    }
+  },
+  "metrics": {
+    "CPSC": {
+      "flat_cnn": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.6861267631694002,
+              "undefined": 0,
+              "upper": 0.7667164873168076
+            },
+            "auroc": {
+              "lower": 0.8505184307346723,
+              "undefined": 0,
+              "upper": 0.8865680893884946
+            }
+          },
+          "ap": 0.7271147518817724,
+          "auroc": 0.8689726095838699,
+          "brier": 0.1376623809337616,
+          "mean_predicted": 0.29092739522457123,
+          "negative": 1424.0,
+          "positive": 506.0,
+          "prevalence_AP_reference": 0.2621761658031088
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.3693881701791532,
+              "undefined": 0,
+              "upper": 0.44839434429505937
+            },
+            "auroc": {
+              "lower": 0.6615659422927032,
+              "undefined": 0,
+              "upper": 0.7162323006668833
+            }
+          },
+          "ap": 0.4062047850789604,
+          "auroc": 0.6885967261736944,
+          "brier": 0.2097138613462448,
+          "mean_predicted": 0.2553166151046753,
+          "negative": 1436.0,
+          "positive": 494.0,
+          "prevalence_AP_reference": 0.2559585492227979
+        }
+      ],
+      "multiview": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.6890642529979993,
+              "undefined": 0,
+              "upper": 0.7643980075801498
+            },
+            "auroc": {
+              "lower": 0.8610452631985989,
+              "undefined": 0,
+              "upper": 0.8931304959489644
+            }
+          },
+          "ap": 0.7272039138268297,
+          "auroc": 0.8779335474308301,
+          "brier": 0.14587166905403137,
+          "mean_predicted": 0.33335958421230316,
+          "negative": 1424.0,
+          "positive": 506.0,
+          "prevalence_AP_reference": 0.2621761658031088
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.36927895946968875,
+              "undefined": 0,
+              "upper": 0.4483922227900348
+            },
+            "auroc": {
+              "lower": 0.6736708352062146,
+              "undefined": 0,
+              "upper": 0.7256105126831162
+            }
+          },
+          "ap": 0.4063806019177162,
+          "auroc": 0.6998903273826305,
+          "brier": 0.22030168771743774,
+          "mean_predicted": 0.2934035211801529,
+          "negative": 1436.0,
+          "positive": 494.0,
+          "prevalence_AP_reference": 0.2559585492227979
+        }
+      ]
+    },
+    "Chapman-Ningbo": {
+      "flat_cnn": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.5525406991779631,
+              "undefined": 0,
+              "upper": 0.6204164721130525
+            },
+            "auroc": {
+              "lower": 0.8606853158004255,
+              "undefined": 0,
+              "upper": 0.8854867236812314
+            }
+          },
+          "ap": 0.5872481307097879,
+          "auroc": 0.8732664735681875,
+          "brier": 0.09927381202578545,
+          "mean_predicted": 0.19317178428173065,
+          "negative": 8174.0,
+          "positive": 839.0,
+          "prevalence_AP_reference": 0.09308776212138023
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.5163932921214275,
+              "undefined": 0,
+              "upper": 0.562875267898594
+            },
+            "auroc": {
+              "lower": 0.8203442527377707,
+              "undefined": 0,
+              "upper": 0.8387309832532096
+            }
+          },
+          "ap": 0.5378623330787679,
+          "auroc": 0.8293600599445126,
+          "brier": 0.141767717897892,
+          "mean_predicted": 0.23577678203582764,
+          "negative": 7002.0,
+          "positive": 2011.0,
+          "prevalence_AP_reference": 0.22312215688450016
+        }
+      ],
+      "multiview": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.5059828032136294,
+              "undefined": 0,
+              "upper": 0.5735192419532744
+            },
+            "auroc": {
+              "lower": 0.8595239962989856,
+              "undefined": 0,
+              "upper": 0.8825630922319697
+            }
+          },
+          "ap": 0.5397561624172945,
+          "auroc": 0.8714273403299453,
+          "brier": 0.13119074702262878,
+          "mean_predicted": 0.23771677166223526,
+          "negative": 8174.0,
+          "positive": 839.0,
+          "prevalence_AP_reference": 0.09308776212138023
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.5262932159359678,
+              "undefined": 0,
+              "upper": 0.5728710231569922
+            },
+            "auroc": {
+              "lower": 0.822386766106293,
+              "undefined": 0,
+              "upper": 0.8412341933923385
+            }
+          },
+          "ap": 0.549139242683313,
+          "auroc": 0.8317539735397047,
+          "brier": 0.14722326397895813,
+          "mean_predicted": 0.27611443400382996,
+          "negative": 7002.0,
+          "positive": 2011.0,
+          "prevalence_AP_reference": 0.22312215688450016
+        }
+      ]
+    },
+    "Georgia": {
+      "flat_cnn": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.5649250445648804,
+              "undefined": 0,
+              "upper": 0.6623386584276932
+            },
+            "auroc": {
+              "lower": 0.8378201703024255,
+              "undefined": 0,
+              "upper": 0.876126806254974
+            }
+          },
+          "ap": 0.6133170958505312,
+          "auroc": 0.8571460669829429,
+          "brier": 0.13623006641864777,
+          "mean_predicted": 0.26600756496191025,
+          "negative": 1666.0,
+          "positive": 374.0,
+          "prevalence_AP_reference": 0.18333333333333332
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.7071629472821607,
+              "undefined": 0,
+              "upper": 0.7739291236023409
+            },
+            "auroc": {
+              "lower": 0.7970753772503057,
+              "undefined": 0,
+              "upper": 0.8345098100779155
+            }
+          },
+          "ap": 0.7397316673641574,
+          "auroc": 0.8160142879565278,
+          "brier": 0.22178704291582108,
+          "mean_predicted": 0.2637784332036972,
+          "negative": 1141.0,
+          "positive": 899.0,
+          "prevalence_AP_reference": 0.4406862745098039
+        }
+      ],
+      "multiview": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.5478172545082428,
+              "undefined": 0,
+              "upper": 0.6477208079200724
+            },
+            "auroc": {
+              "lower": 0.8443355320739553,
+              "undefined": 0,
+              "upper": 0.8812679722954397
+            }
+          },
+          "ap": 0.5967003479755033,
+          "auroc": 0.8631994241546886,
+          "brier": 0.16135728359222412,
+          "mean_predicted": 0.31812918186187744,
+          "negative": 1666.0,
+          "positive": 374.0,
+          "prevalence_AP_reference": 0.18333333333333332
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.7034025162536919,
+              "undefined": 0,
+              "upper": 0.7677247665283687
+            },
+            "auroc": {
+              "lower": 0.7896164310369443,
+              "undefined": 0,
+              "upper": 0.8263339101586896
+            }
+          },
+          "ap": 0.7346689897724413,
+          "auroc": 0.8079622016477555,
+          "brier": 0.21513854712247849,
+          "mean_predicted": 0.29652999341487885,
+          "negative": 1141.0,
+          "positive": 899.0,
+          "prevalence_AP_reference": 0.4406862745098039
+        }
+      ]
+    },
+    "fold9": {
+      "flat_cnn": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.795143055064742,
+              "undefined": 0,
+              "upper": 0.853541968767686
+            },
+            "auroc": {
+              "lower": 0.9119028019950062,
+              "undefined": 0,
+              "upper": 0.9385859089519835
+            }
+          },
+          "ap": 0.8244683887880799,
+          "auroc": 0.9254947459269579,
+          "brier": 0.08408024534583092,
+          "mean_predicted": 0.20286653190851212,
+          "negative": 1672.0,
+          "positive": 474.0,
+          "prevalence_AP_reference": 0.22087604846225536
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.40393160911455905,
+              "undefined": 0,
+              "upper": 0.5018217009198448
+            },
+            "auroc": {
+              "lower": 0.8295444634199219,
+              "undefined": 0,
+              "upper": 0.8663453309911427
+            }
+          },
+          "ap": 0.4490477731336079,
+          "auroc": 0.8487546964050771,
+          "brier": 0.126056969165802,
+          "mean_predicted": 0.19964486360549927,
+          "negative": 1779.0,
+          "positive": 367.0,
+          "prevalence_AP_reference": 0.17101584342963652
+        }
+      ],
+      "multiview": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.793455421813179,
+              "undefined": 0,
+              "upper": 0.8554273026417174
+            },
+            "auroc": {
+              "lower": 0.9110370544200903,
+              "undefined": 0,
+              "upper": 0.9378256963917392
+            }
+          },
+          "ap": 0.8247781219740081,
+          "auroc": 0.9246935124058708,
+          "brier": 0.094253059476614,
+          "mean_predicted": 0.2508789896965027,
+          "negative": 1672.0,
+          "positive": 474.0,
+          "prevalence_AP_reference": 0.22087604846225536
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.4009401070187014,
+              "undefined": 0,
+              "upper": 0.49417379859377464
+            },
+            "auroc": {
+              "lower": 0.8324156522844627,
+              "undefined": 0,
+              "upper": 0.8671502639231474
+            }
+          },
+          "ap": 0.4459799749579641,
+          "auroc": 0.850451758557681,
+          "brier": 0.13237334787845612,
+          "mean_predicted": 0.22941207885742188,
+          "negative": 1779.0,
+          "positive": 367.0,
+          "prevalence_AP_reference": 0.17101584342963652
+        }
+      ]
+    },
+    "fold9_full_superclass": {
+      "flat_cnn": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.8265820942646095,
+              "undefined": 0,
+              "upper": 0.8762423192028874
+            },
+            "auroc": {
+              "lower": 0.9144023149637385,
+              "undefined": 0,
+              "upper": 0.9411588230526821
+            }
+          },
+          "ap": 0.8513526468870846,
+          "auroc": 0.9276379788190812,
+          "brier": 0.08228139951825142,
+          "mean_predicted": 0.20286653190851212,
+          "negative": 1651.0,
+          "positive": 495.0,
+          "prevalence_AP_reference": 0.23066169023513794
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.7411265952673198,
+              "undefined": 0,
+              "upper": 0.8175944314968749
+            },
+            "auroc": {
+              "lower": 0.9160430353281448,
+              "undefined": 0,
+              "upper": 0.938705946196895
+            }
+          },
+          "ap": 0.7798268842880456,
+          "auroc": 0.9275339925834363,
+          "brier": 0.09649551659822464,
+          "mean_predicted": 0.19964486360549927,
+          "negative": 1618.0,
+          "positive": 528.0,
+          "prevalence_AP_reference": 0.24603913724422455
+        }
+      ],
+      "multiview": [
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.8297274824951151,
+              "undefined": 0,
+              "upper": 0.8777587848492715
+            },
+            "auroc": {
+              "lower": 0.9123907925313894,
+              "undefined": 0,
+              "upper": 0.939765075096322
+            }
+          },
+          "ap": 0.8541635791159823,
+          "auroc": 0.9261696308940404,
+          "brier": 0.09226900711655617,
+          "mean_predicted": 0.2508789896965027,
+          "negative": 1651.0,
+          "positive": 495.0,
+          "prevalence_AP_reference": 0.23066169023513794
+        },
+        {
+          "CI95": {
+            "ap": {
+              "lower": 0.7534479235193768,
+              "undefined": 0,
+              "upper": 0.8207181147832929
+            },
+            "auroc": {
+              "lower": 0.91440695978337,
+              "undefined": 0,
+              "upper": 0.9368441203440918
+            }
+          },
+          "ap": 0.7881417445071962,
+          "auroc": 0.9257377935723115,
+          "brier": 0.0949799045920372,
+          "mean_predicted": 0.22941207885742188,
+          "negative": 1618.0,
+          "positive": 528.0,
+          "prevalence_AP_reference": 0.24603913724422455
+        }
+      ]
+    }
+  },
+  "per_code_descriptive": {
+    "CPSC": {
+      "164930006": {
+        "annotation_prevalence": 0.04870466321243523,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.040691542261083874,
+            "auroc": 0.42521612663978126,
+            "brier": 0.1957346796989441,
+            "mean_predicted": 0.2553166151046753,
+            "negative": 1836.0,
+            "positive": 94.0,
+            "prevalence_AP_reference": 0.04870466321243523
+          },
+          "multiview": {
+            "ap": 0.041477564620615345,
+            "auroc": 0.4449224725351133,
+            "brier": 0.22974014282226562,
+            "mean_predicted": 0.2934035211801529,
+            "negative": 1836.0,
+            "positive": 94.0,
+            "prevalence_AP_reference": 0.04870466321243523
+          }
+        },
+        "name": "ST elevation",
+        "positive": 94,
+        "score_output": "STTC"
+      },
+      "164934002": {
+        "annotation_prevalence": 0.0031088082901554403,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.0044726843503712695,
+            "auroc": 0.5673510048510049,
+            "brier": 0.16798976063728333,
+            "mean_predicted": 0.2553166151046753,
+            "negative": 1924.0,
+            "positive": 6.0,
+            "prevalence_AP_reference": 0.0031088082901554403
+          },
+          "multiview": {
+            "ap": 0.004981365245615073,
+            "auroc": 0.6196292446292446,
+            "brier": 0.20392665266990662,
+            "mean_predicted": 0.2934035211801529,
+            "negative": 1924.0,
+            "positive": 6.0,
+            "prevalence_AP_reference": 0.0031088082901554403
+          }
+        },
+        "name": "T-wave abnormality",
+        "positive": 6,
+        "score_output": "STTC"
+      },
+      "270492004": {
+        "annotation_prevalence": 0.07150259067357513,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.07487129730068934,
+            "auroc": 0.5668328642598344,
+            "brier": 0.2680296003818512,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1792.0,
+            "positive": 138.0,
+            "prevalence_AP_reference": 0.07150259067357513
+          },
+          "multiview": {
+            "ap": 0.0809939241145664,
+            "auroc": 0.5987379496635611,
+            "brier": 0.28562331199645996,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1792.0,
+            "positive": 138.0,
+            "prevalence_AP_reference": 0.07150259067357513
+          }
+        },
+        "name": "IAVB",
+        "positive": 138,
+        "score_output": "CD"
+      },
+      "428750005": {
+        "annotation_prevalence": 0.12072538860103627,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.34837964613637323,
+            "auroc": 0.8165937870668005,
+            "brier": 0.1430652216076851,
+            "mean_predicted": 0.2553166151046753,
+            "negative": 1697.0,
+            "positive": 233.0,
+            "prevalence_AP_reference": 0.12072538860103627
+          },
+          "multiview": {
+            "ap": 0.33644357730459873,
+            "auroc": 0.8096843457654381,
+            "brier": 0.16796278953552246,
+            "mean_predicted": 0.2934035211801529,
+            "negative": 1697.0,
+            "positive": 233.0,
+            "prevalence_AP_reference": 0.12072538860103627
+          }
+        },
+        "name": "nonspecific ST/T annotation",
+        "positive": 233,
+        "score_output": "STTC"
+      },
+      "429622005": {
+        "annotation_prevalence": 0.08341968911917098,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.09100073375028458,
+            "auroc": 0.5723484861784564,
+            "brier": 0.2034592255949974,
+            "mean_predicted": 0.2553166151046753,
+            "negative": 1769.0,
+            "positive": 161.0,
+            "prevalence_AP_reference": 0.08341968911917098
+          },
+          "multiview": {
+            "ap": 0.09585766353040637,
+            "auroc": 0.597288007050339,
+            "brier": 0.2281651422381401,
+            "mean_predicted": 0.2934035211801529,
+            "negative": 1769.0,
+            "positive": 161.0,
+            "prevalence_AP_reference": 0.08341968911917098
+          }
+        },
+        "name": "ST depression",
+        "positive": 161,
+        "score_output": "STTC"
+      },
+      "445118002": {
+        "annotation_prevalence": 0.0,
+        "models": {
+          "flat_cnn": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.23098064213991165,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1930.0,
+            "positive": 0.0,
+            "prevalence_AP_reference": 0.0
+          },
+          "multiview": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.26146208494901657,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1930.0,
+            "positive": 0.0,
+            "prevalence_AP_reference": 0.0
+          }
+        },
+        "name": "LAFB",
+        "positive": 0,
+        "score_output": "CD"
+      },
+      "59118001": {
+        "annotation_prevalence": 0.17927461139896372,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.754542134117858,
+            "auroc": 0.9285156478075554,
+            "brier": 0.10941193252801895,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1584.0,
+            "positive": 346.0,
+            "prevalence_AP_reference": 0.17927461139896372
+          },
+          "multiview": {
+            "ap": 0.7422086335202233,
+            "auroc": 0.9262079793600747,
+            "brier": 0.1312001384794712,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1584.0,
+            "positive": 346.0,
+            "prevalence_AP_reference": 0.17927461139896372
+          }
+        },
+        "name": "recorded unspecified RBBB",
+        "positive": 346,
+        "score_output": "CD"
+      },
+      "59931005": {
+        "annotation_prevalence": 0.0005181347150259067,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.00510811090420029,
+            "auroc": 0.8981337480559876,
+            "brier": 0.16645506024360657,
+            "mean_predicted": 0.2553166151046753,
+            "negative": 1929.0,
+            "positive": 1.0,
+            "prevalence_AP_reference": 0.0005181347150259067
+          },
+          "multiview": {
+            "ap": 0.0018145257057808318,
+            "auroc": 0.7034733022291343,
+            "brier": 0.2033117637038231,
+            "mean_predicted": 0.2934035211801529,
+            "negative": 1929.0,
+            "positive": 1.0,
+            "prevalence_AP_reference": 0.0005181347150259067
+          }
+        },
+        "name": "T-wave inversion",
+        "positive": 1,
+        "score_output": "STTC"
+      },
+      "698252002": {
+        "annotation_prevalence": 0.0005181347150259067,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.0028852513227513228,
+            "auroc": 0.8195956454121307,
+            "brier": 0.23053843528032303,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1929.0,
+            "positive": 1.0,
+            "prevalence_AP_reference": 0.0005181347150259067
+          },
+          "multiview": {
+            "ap": 0.003011803011803012,
+            "auroc": 0.8278900984966304,
+            "brier": 0.260965459048748,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1929.0,
+            "positive": 1.0,
+            "prevalence_AP_reference": 0.0005181347150259067
+          }
+        },
+        "name": "IVCD",
+        "positive": 1,
+        "score_output": "CD"
+      },
+      "713426002": {
+        "annotation_prevalence": 0.007772020725388601,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.023610112667659,
+            "auroc": 0.834029590948651,
+            "brier": 0.2255336418747902,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1915.0,
+            "positive": 15.0,
+            "prevalence_AP_reference": 0.007772020725388601
+          },
+          "multiview": {
+            "ap": 0.022299864673900154,
+            "auroc": 0.8286684073107049,
+            "brier": 0.25540291517972946,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1915.0,
+            "positive": 15.0,
+            "prevalence_AP_reference": 0.007772020725388601
+          }
+        },
+        "name": "IRBBB",
+        "positive": 15,
+        "score_output": "CD"
+      },
+      "713427006": {
+        "annotation_prevalence": 0.006735751295336788,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.026007082041150542,
+            "auroc": 0.872055695999358,
+            "brier": 0.22499696910381317,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1917.0,
+            "positive": 13.0,
+            "prevalence_AP_reference": 0.006735751295336788
+          },
+          "multiview": {
+            "ap": 0.02499645795513438,
+            "auroc": 0.8669194655110148,
+            "brier": 0.25516418367624283,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1917.0,
+            "positive": 13.0,
+            "prevalence_AP_reference": 0.006735751295336788
+          }
+        },
+        "name": "CRBBB",
+        "positive": 13,
+        "score_output": "CD"
+      },
+      "733534002": {
+        "annotation_prevalence": 0.0,
+        "models": {
+          "flat_cnn": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.23098064213991165,
+            "mean_predicted": 0.29092739522457123,
+            "negative": 1930.0,
+            "positive": 0.0,
+            "prevalence_AP_reference": 0.0
+          },
+          "multiview": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.26146208494901657,
+            "mean_predicted": 0.33335958421230316,
+            "negative": 1930.0,
+            "positive": 0.0,
+            "prevalence_AP_reference": 0.0
+          }
+        },
+        "name": "complete LBBB",
+        "positive": 0,
+        "score_output": "CD"
+      }
+    },
+    "Chapman-Ningbo": {
+      "164930006": {
+        "annotation_prevalence": 0.016309774769776988,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.013598631357626956,
+            "auroc": 0.449342132521856,
+            "brier": 0.16534768790006638,
+            "mean_predicted": 0.23577678203582764,
+            "negative": 8866.0,
+            "positive": 147.0,
+            "prevalence_AP_reference": 0.016309774769776988
+          },
+          "multiview": {
+            "ap": 0.013709133962157904,
+            "auroc": 0.4596889285829378,
+            "brier": 0.1999344378709793,
+            "mean_predicted": 0.27611443400382996,
+            "negative": 8866.0,
+            "positive": 147.0,
+            "prevalence_AP_reference": 0.016309774769776988
+          }
+        },
+        "name": "ST elevation",
+        "positive": 147,
+        "score_output": "STTC"
+      },
+      "164934002": {
+        "annotation_prevalence": 0.15854876289803618,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.3626834624658344,
+            "auroc": 0.8130479797252808,
+            "brier": 0.1452164202928543,
+            "mean_predicted": 0.23577678203582764,
+            "negative": 7584.0,
+            "positive": 1429.0,
+            "prevalence_AP_reference": 0.15854876289803618
+          },
+          "multiview": {
+            "ap": 0.37045607789480356,
+            "auroc": 0.8148697960495817,
+            "brier": 0.15785696357488632,
+            "mean_predicted": 0.27611443400382996,
+            "negative": 7584.0,
+            "positive": 1429.0,
+            "prevalence_AP_reference": 0.15854876289803618
+          }
+        },
+        "name": "T-wave abnormality",
+        "positive": 1429,
+        "score_output": "STTC"
+      },
+      "270492004": {
+        "annotation_prevalence": 0.02374348163763453,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.04243118800422045,
+            "auroc": 0.7009684352406231,
+            "brier": 0.13766533508896828,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8799.0,
+            "positive": 214.0,
+            "prevalence_AP_reference": 0.02374348163763453
+          },
+          "multiview": {
+            "ap": 0.041917391046010805,
+            "auroc": 0.7228513648003756,
+            "brier": 0.17330868542194366,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8799.0,
+            "positive": 214.0,
+            "prevalence_AP_reference": 0.02374348163763453
+          }
+        },
+        "name": "IAVB",
+        "positive": 214,
+        "score_output": "CD"
+      },
+      "428750005": {
+        "annotation_prevalence": 0.023632530788860535,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.10398690459590455,
+            "auroc": 0.8286142232180965,
+            "brier": 0.14732061326503754,
+            "mean_predicted": 0.23577678203582764,
+            "negative": 8800.0,
+            "positive": 213.0,
+            "prevalence_AP_reference": 0.023632530788860535
+          },
+          "multiview": {
+            "ap": 0.10767575390556383,
+            "auroc": 0.8332809165599658,
+            "brier": 0.17991835623979568,
+            "mean_predicted": 0.27611443400382996,
+            "negative": 8800.0,
+            "positive": 213.0,
+            "prevalence_AP_reference": 0.023632530788860535
+          }
+        },
+        "name": "nonspecific ST/T annotation",
+        "positive": 213,
+        "score_output": "STTC"
+      },
+      "429622005": {
+        "annotation_prevalence": 0.03761233773438367,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.21351846906194713,
+            "auroc": 0.8643360315267612,
+            "brier": 0.13969985395669937,
+            "mean_predicted": 0.23577678203582764,
+            "negative": 8674.0,
+            "positive": 339.0,
+            "prevalence_AP_reference": 0.03761233773438367
+          },
+          "multiview": {
+            "ap": 0.2074300836857831,
+            "auroc": 0.8647575604848994,
+            "brier": 0.17077938467264175,
+            "mean_predicted": 0.27611443400382996,
+            "negative": 8674.0,
+            "positive": 339.0,
+            "prevalence_AP_reference": 0.03761233773438367
+          }
+        },
+        "name": "ST depression",
+        "positive": 339,
+        "score_output": "STTC"
+      },
+      "445118002": {
+        "annotation_prevalence": 0.008987018750693443,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.06072137359862928,
+            "auroc": 0.9194586809529338,
+            "brier": 0.1230669692158699,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8932.0,
+            "positive": 81.0,
+            "prevalence_AP_reference": 0.008987018750693443
+          },
+          "multiview": {
+            "ap": 0.10181996026304872,
+            "auroc": 0.9229787613408302,
+            "brier": 0.16051728650927544,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8932.0,
+            "positive": 81.0,
+            "prevalence_AP_reference": 0.008987018750693443
+          }
+        },
+        "name": "LAFB",
+        "positive": 81,
+        "score_output": "CD"
+      },
+      "59118001": {
+        "annotation_prevalence": 0.015311217130811051,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.27967114169281004,
+            "auroc": 0.968263319044703,
+            "brier": 0.1154724657535553,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8875.0,
+            "positive": 138.0,
+            "prevalence_AP_reference": 0.015311217130811051
+          },
+          "multiview": {
+            "ap": 0.24073264744116576,
+            "auroc": 0.9603804858134313,
+            "brier": 0.1536835953593254,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8875.0,
+            "positive": 138.0,
+            "prevalence_AP_reference": 0.015311217130811051
+          }
+        },
+        "name": "recorded unspecified RBBB",
+        "positive": 138,
+        "score_output": "CD"
+      },
+      "59931005": {
+        "annotation_prevalence": 0.06479529568401199,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.20687108806249738,
+            "auroc": 0.818728750790243,
+            "brier": 0.14323846250772476,
+            "mean_predicted": 0.23577678203582764,
+            "negative": 8429.0,
+            "positive": 584.0,
+            "prevalence_AP_reference": 0.06479529568401199
+          },
+          "multiview": {
+            "ap": 0.20726563965646172,
+            "auroc": 0.8142185755472382,
+            "brier": 0.17136786878108978,
+            "mean_predicted": 0.27611443400382996,
+            "negative": 8429.0,
+            "positive": 584.0,
+            "prevalence_AP_reference": 0.06479529568401199
+          }
+        },
+        "name": "T-wave inversion",
+        "positive": 584,
+        "score_output": "STTC"
+      },
+      "698252002": {
+        "annotation_prevalence": 0.01597692222345501,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.02355045795085292,
+            "auroc": 0.6715110998358829,
+            "brier": 0.13652697950601578,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8869.0,
+            "positive": 144.0,
+            "prevalence_AP_reference": 0.01597692222345501
+          },
+          "multiview": {
+            "ap": 0.022359381848875086,
+            "auroc": 0.6488516101652448,
+            "brier": 0.17330455034971237,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8869.0,
+            "positive": 144.0,
+            "prevalence_AP_reference": 0.01597692222345501
+          }
+        },
+        "name": "IVCD",
+        "positive": 144,
+        "score_output": "CD"
+      },
+      "713426002": {
+        "annotation_prevalence": 0.00565849328747365,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.03401105496256513,
+            "auroc": 0.9184158823091835,
+            "brier": 0.12549734115600586,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8962.0,
+            "positive": 51.0,
+            "prevalence_AP_reference": 0.00565849328747365
+          },
+          "multiview": {
+            "ap": 0.0311139236571221,
+            "auroc": 0.9099963462287393,
+            "brier": 0.1632697843015194,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8962.0,
+            "positive": 51.0,
+            "prevalence_AP_reference": 0.00565849328747365
+          }
+        },
+        "name": "IRBBB",
+        "positive": 51,
+        "score_output": "CD"
+      },
+      "713427006": {
+        "annotation_prevalence": 0.025851547764340396,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.46517183330014195,
+            "auroc": 0.9781850332886877,
+            "brier": 0.1050841398537159,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8780.0,
+            "positive": 233.0,
+            "prevalence_AP_reference": 0.025851547764340396
+          },
+          "multiview": {
+            "ap": 0.39993682038225803,
+            "auroc": 0.9710057240900604,
+            "brier": 0.14351340755820274,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8780.0,
+            "positive": 233.0,
+            "prevalence_AP_reference": 0.025851547764340396
+          }
+        },
+        "name": "CRBBB",
+        "positive": 233,
+        "score_output": "CD"
+      },
+      "733534002": {
+        "annotation_prevalence": 0.004438033950959725,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.0597939206944323,
+            "auroc": 0.9550275827482447,
+            "brier": 0.12534073367714882,
+            "mean_predicted": 0.19317178428173065,
+            "negative": 8973.0,
+            "positive": 40.0,
+            "prevalence_AP_reference": 0.004438033950959725
+          },
+          "multiview": {
+            "ap": 0.08914848055067903,
+            "auroc": 0.959806502841859,
+            "brier": 0.16357716545462608,
+            "mean_predicted": 0.23771677166223526,
+            "negative": 8973.0,
+            "positive": 40.0,
+            "prevalence_AP_reference": 0.004438033950959725
+          }
+        },
+        "name": "complete LBBB",
+        "positive": 40,
+        "score_output": "CD"
+      }
+    },
+    "Georgia": {
+      "164930006": {
+        "annotation_prevalence": 0.08480392156862746,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.1581960012658476,
+            "auroc": 0.6817945391667259,
+            "brier": 0.17811616510152817,
+            "mean_predicted": 0.2637784332036972,
+            "negative": 1867.0,
+            "positive": 173.0,
+            "prevalence_AP_reference": 0.08480392156862746
+          },
+          "multiview": {
+            "ap": 0.14822365479132965,
+            "auroc": 0.6787727831425644,
+            "brier": 0.19889506697654724,
+            "mean_predicted": 0.29652999341487885,
+            "negative": 1867.0,
+            "positive": 173.0,
+            "prevalence_AP_reference": 0.08480392156862746
+          }
+        },
+        "name": "ST elevation",
+        "positive": 173,
+        "score_output": "STTC"
+      },
+      "164934002": {
+        "annotation_prevalence": 0.23284313725490197,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.4672433580447968,
+            "auroc": 0.7880618799394652,
+            "brier": 0.17174161225557327,
+            "mean_predicted": 0.2637784332036972,
+            "negative": 1565.0,
+            "positive": 475.0,
+            "prevalence_AP_reference": 0.23284313725490197
+          },
+          "multiview": {
+            "ap": 0.45737426127014214,
+            "auroc": 0.7741436018160417,
+            "brier": 0.18276627361774445,
+            "mean_predicted": 0.29652999341487885,
+            "negative": 1565.0,
+            "positive": 475.0,
+            "prevalence_AP_reference": 0.23284313725490197
+          }
+        },
+        "name": "T-wave abnormality",
+        "positive": 475,
+        "score_output": "STTC"
+      },
+      "270492004": {
+        "annotation_prevalence": 0.075,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.12387949351084376,
+            "auroc": 0.6963884299524439,
+            "brier": 0.20680391788482666,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 1887.0,
+            "positive": 153.0,
+            "prevalence_AP_reference": 0.075
+          },
+          "multiview": {
+            "ap": 0.14109718352922987,
+            "auroc": 0.7174042554665392,
+            "brier": 0.23770251125097275,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 1887.0,
+            "positive": 153.0,
+            "prevalence_AP_reference": 0.075
+          }
+        },
+        "name": "IAVB",
+        "positive": 153,
+        "score_output": "CD"
+      },
+      "428750005": {
+        "annotation_prevalence": 0.17598039215686276,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.2738987177927583,
+            "auroc": 0.6968386638143167,
+            "brier": 0.19521955400705338,
+            "mean_predicted": 0.2637784332036972,
+            "negative": 1681.0,
+            "positive": 359.0,
+            "prevalence_AP_reference": 0.17598039215686276
+          },
+          "multiview": {
+            "ap": 0.28536883630745047,
+            "auroc": 0.7086833178950717,
+            "brier": 0.20165184140205383,
+            "mean_predicted": 0.29652999341487885,
+            "negative": 1681.0,
+            "positive": 359.0,
+            "prevalence_AP_reference": 0.17598039215686276
+          }
+        },
+        "name": "nonspecific ST/T annotation",
+        "positive": 359,
+        "score_output": "STTC"
+      },
+      "429622005": {
+        "annotation_prevalence": 0.00392156862745098,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.014310123954190512,
+            "auroc": 0.7390501968503937,
+            "brier": 0.16673701256513596,
+            "mean_predicted": 0.2637784332036972,
+            "negative": 2032.0,
+            "positive": 8.0,
+            "prevalence_AP_reference": 0.00392156862745098
+          },
+          "multiview": {
+            "ap": 0.014152970364457293,
+            "auroc": 0.6715366633858267,
+            "brier": 0.19324248284101486,
+            "mean_predicted": 0.29652999341487885,
+            "negative": 2032.0,
+            "positive": 8.0,
+            "prevalence_AP_reference": 0.00392156862745098
+          }
+        },
+        "name": "ST depression",
+        "positive": 8,
+        "score_output": "STTC"
+      },
+      "445118002": {
+        "annotation_prevalence": 0.020098039215686276,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.08141338657655584,
+            "auroc": 0.8856897961175709,
+            "brier": 0.18171533942222595,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 1999.0,
+            "positive": 41.0,
+            "prevalence_AP_reference": 0.020098039215686276
+          },
+          "multiview": {
+            "ap": 0.07255468139767524,
+            "auroc": 0.8735221269171172,
+            "brier": 0.22507410496473312,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 1999.0,
+            "positive": 41.0,
+            "prevalence_AP_reference": 0.020098039215686276
+          }
+        },
+        "name": "LAFB",
+        "positive": 41,
+        "score_output": "CD"
+      },
+      "59118001": {
+        "annotation_prevalence": 0.056372549019607844,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.5135363401406903,
+            "auroc": 0.9481264822134388,
+            "brier": 0.14867395907640457,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 1925.0,
+            "positive": 115.0,
+            "prevalence_AP_reference": 0.056372549019607844
+          },
+          "multiview": {
+            "ap": 0.4972550827591531,
+            "auroc": 0.9450965556182948,
+            "brier": 0.19089911878108978,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 1925.0,
+            "positive": 115.0,
+            "prevalence_AP_reference": 0.056372549019607844
+          }
+        },
+        "name": "recorded unspecified RBBB",
+        "positive": 115,
+        "score_output": "CD"
+      },
+      "59931005": {
+        "annotation_prevalence": 0.07254901960784314,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.10837668011327042,
+            "auroc": 0.6181914604879721,
+            "brier": 0.18505986034870148,
+            "mean_predicted": 0.2637784332036972,
+            "negative": 1892.0,
+            "positive": 148.0,
+            "prevalence_AP_reference": 0.07254901960784314
+          },
+          "multiview": {
+            "ap": 0.10525690586262093,
+            "auroc": 0.6046868750357122,
+            "brier": 0.20852665603160858,
+            "mean_predicted": 0.29652999341487885,
+            "negative": 1892.0,
+            "positive": 148.0,
+            "prevalence_AP_reference": 0.07254901960784314
+          }
+        },
+        "name": "T-wave inversion",
+        "positive": 148,
+        "score_output": "STTC"
+      },
+      "698252002": {
+        "annotation_prevalence": 0.018137254901960786,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.028428142004624395,
+            "auroc": 0.6801756824223124,
+            "brier": 0.19871247559785843,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 2003.0,
+            "positive": 37.0,
+            "prevalence_AP_reference": 0.018137254901960786
+          },
+          "multiview": {
+            "ap": 0.028535284772528115,
+            "auroc": 0.6854245658539218,
+            "brier": 0.24011724442243576,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 2003.0,
+            "positive": 37.0,
+            "prevalence_AP_reference": 0.018137254901960786
+          }
+        },
+        "name": "IVCD",
+        "positive": 37,
+        "score_output": "CD"
+      },
+      "713426002": {
+        "annotation_prevalence": 0.03823529411764706,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.17497263383353673,
+            "auroc": 0.8918375414935048,
+            "brier": 0.17076439410448074,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 1962.0,
+            "positive": 78.0,
+            "prevalence_AP_reference": 0.03823529411764706
+          },
+          "multiview": {
+            "ap": 0.15889809649036335,
+            "auroc": 0.8843409393868109,
+            "brier": 0.21307549625635147,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 1962.0,
+            "positive": 78.0,
+            "prevalence_AP_reference": 0.03823529411764706
+          }
+        },
+        "name": "IRBBB",
+        "positive": 78,
+        "score_output": "CD"
+      },
+      "713427006": {
+        "annotation_prevalence": 0.004901960784313725,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.03230306005604175,
+            "auroc": 0.9198275862068965,
+            "brier": 0.19223254173994064,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 2030.0,
+            "positive": 10.0,
+            "prevalence_AP_reference": 0.004901960784313725
+          },
+          "multiview": {
+            "ap": 0.029656040450617677,
+            "auroc": 0.910320197044335,
+            "brier": 0.23646103590726852,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 2030.0,
+            "positive": 10.0,
+            "prevalence_AP_reference": 0.004901960784313725
+          }
+        },
+        "name": "CRBBB",
+        "positive": 10,
+        "score_output": "CD"
+      },
+      "733534002": {
+        "annotation_prevalence": 0.0,
+        "models": {
+          "flat_cnn": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.19667264074087143,
+            "mean_predicted": 0.26600756496191025,
+            "negative": 2040.0,
+            "positive": 0.0,
+            "prevalence_AP_reference": 0.0
+          },
+          "multiview": {
+            "ap": null,
+            "auroc": null,
+            "brier": 0.24095012992620468,
+            "mean_predicted": 0.31812918186187744,
+            "negative": 2040.0,
+            "positive": 0.0,
+            "prevalence_AP_reference": 0.0
+          }
+        },
+        "name": "complete LBBB",
+        "positive": 0,
+        "score_output": "CD"
+      }
+    },
+    "fold9": {
+      "164930006": {
+        "annotation_prevalence": 0.0013979496738117428,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.14493313964118382,
+            "auroc": 0.8206564006843988,
+            "brier": 0.12687931582331657,
+            "mean_predicted": 0.19964486360549927,
+            "negative": 2143.0,
+            "positive": 3.0,
+            "prevalence_AP_reference": 0.0013979496738117428
+          },
+          "multiview": {
+            "ap": 0.19878648464863374,
+            "auroc": 0.8443770415305645,
+            "brier": 0.15104366093873978,
+            "mean_predicted": 0.22941207885742188,
+            "negative": 2143.0,
+            "positive": 3.0,
+            "prevalence_AP_reference": 0.0013979496738117428
+          }
+        },
+        "name": "ST elevation",
+        "positive": 3,
+        "score_output": "STTC"
+      },
+      "164934002": {
+        "annotation_prevalence": 0.09552656104380243,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.2107755989275621,
+            "auroc": 0.8074502707932798,
+            "brier": 0.13369220495224,
+            "mean_predicted": 0.19964486360549927,
+            "negative": 1941.0,
+            "positive": 205.0,
+            "prevalence_AP_reference": 0.09552656104380243
+          },
+          "multiview": {
+            "ap": 0.21762445526089463,
+            "auroc": 0.8133574596951534,
+            "brier": 0.14523983746767044,
+            "mean_predicted": 0.22941207885742188,
+            "negative": 1941.0,
+            "positive": 205.0,
+            "prevalence_AP_reference": 0.09552656104380243
+          }
+        },
+        "name": "T-wave abnormality",
+        "positive": 205,
+        "score_output": "STTC"
+      },
+      "270492004": {
+        "annotation_prevalence": 0.03727865796831314,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.09128893255792744,
+            "auroc": 0.7659910454985479,
+            "brier": 0.14772623032331467,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 2066.0,
+            "positive": 80.0,
+            "prevalence_AP_reference": 0.03727865796831314
+          },
+          "multiview": {
+            "ap": 0.10499098013035385,
+            "auroc": 0.7817249515972894,
+            "brier": 0.17946606129407883,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 2066.0,
+            "positive": 80.0,
+            "prevalence_AP_reference": 0.03727865796831314
+          }
+        },
+        "name": "IAVB",
+        "positive": 80,
+        "score_output": "CD"
+      },
+      "428750005": {
+        "annotation_prevalence": 0.12721342031686858,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.29620187697026595,
+            "auroc": 0.8291012244562699,
+            "brier": 0.13091207295656204,
+            "mean_predicted": 0.19964486360549927,
+            "negative": 1873.0,
+            "positive": 273.0,
+            "prevalence_AP_reference": 0.12721342031686858
+          },
+          "multiview": {
+            "ap": 0.3064988968039217,
+            "auroc": 0.8344070060567659,
+            "brier": 0.13866128772497177,
+            "mean_predicted": 0.22941207885742188,
+            "negative": 1873.0,
+            "positive": 273.0,
+            "prevalence_AP_reference": 0.12721342031686858
+          }
+        },
+        "name": "nonspecific ST/T annotation",
+        "positive": 273,
+        "score_output": "STTC"
+      },
+      "429622005": {
+        "annotation_prevalence": 0.046598322460391424,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.20816383944233294,
+            "auroc": 0.8397018572825024,
+            "brier": 0.11813827976584435,
+            "mean_predicted": 0.19964486360549927,
+            "negative": 2046.0,
+            "positive": 100.0,
+            "prevalence_AP_reference": 0.046598322460391424
+          },
+          "multiview": {
+            "ap": 0.18011860267154953,
+            "auroc": 0.8285043988269795,
+            "brier": 0.1415165551006794,
+            "mean_predicted": 0.22941207885742188,
+            "negative": 2046.0,
+            "positive": 100.0,
+            "prevalence_AP_reference": 0.046598322460391424
+          }
+        },
+        "name": "ST depression",
+        "positive": 100,
+        "score_output": "STTC"
+      },
+      "445118002": {
+        "annotation_prevalence": 0.07595526561043803,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.306605908453777,
+            "auroc": 0.9099554804797837,
+            "brier": 0.1060948371887207,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 1983.0,
+            "positive": 163.0,
+            "prevalence_AP_reference": 0.07595526561043803
+          },
+          "multiview": {
+            "ap": 0.3091964534156741,
+            "auroc": 0.9062197389466911,
+            "brier": 0.13490518555045128,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 1983.0,
+            "positive": 163.0,
+            "prevalence_AP_reference": 0.07595526561043803
+          }
+        },
+        "name": "LAFB",
+        "positive": 163,
+        "score_output": "CD"
+      },
+      "59118001": {
+        "annotation_prevalence": 0.07735321528424977,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.4783547601789043,
+            "auroc": 0.9180000304247292,
+            "brier": 0.1045420952141285,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 1980.0,
+            "positive": 166.0,
+            "prevalence_AP_reference": 0.07735321528424977
+          },
+          "multiview": {
+            "ap": 0.46817911927708095,
+            "auroc": 0.9156809054399416,
+            "brier": 0.1346694901585579,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 1980.0,
+            "positive": 166.0,
+            "prevalence_AP_reference": 0.07735321528424977
+          }
+        },
+        "name": "recorded unspecified RBBB",
+        "positive": 166,
+        "score_output": "CD"
+      },
+      "59931005": {
+        "annotation_prevalence": 0.013979496738117428,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.05819884867246554,
+            "auroc": 0.7995746691871456,
+            "brier": 0.12599560990929604,
+            "mean_predicted": 0.19964486360549927,
+            "negative": 2116.0,
+            "positive": 30.0,
+            "prevalence_AP_reference": 0.013979496738117428
+          },
+          "multiview": {
+            "ap": 0.045657177761788376,
+            "auroc": 0.7837744171392566,
+            "brier": 0.1494336687028408,
+            "mean_predicted": 0.22941207885742188,
+            "negative": 2116.0,
+            "positive": 30.0,
+            "prevalence_AP_reference": 0.013979496738117428
+          }
+        },
+        "name": "T-wave inversion",
+        "positive": 30,
+        "score_output": "STTC"
+      },
+      "698252002": {
+        "annotation_prevalence": 0.036346691519105315,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.05922776599111679,
+            "auroc": 0.6967713137925904,
+            "brier": 0.1548236832022667,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 2068.0,
+            "positive": 78.0,
+            "prevalence_AP_reference": 0.036346691519105315
+          },
+          "multiview": {
+            "ap": 0.05916376337045716,
+            "auroc": 0.6897752070624411,
+            "brier": 0.18665631115436554,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 2068.0,
+            "positive": 78.0,
+            "prevalence_AP_reference": 0.036346691519105315
+          }
+        },
+        "name": "IVCD",
+        "positive": 78,
+        "score_output": "CD"
+      },
+      "713426002": {
+        "annotation_prevalence": 0.0521901211556384,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.18726599605977942,
+            "auroc": 0.8669460686191881,
+            "brier": 0.12864411249756813,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 2034.0,
+            "positive": 112.0,
+            "prevalence_AP_reference": 0.0521901211556384
+          },
+          "multiview": {
+            "ap": 0.1903155167265035,
+            "auroc": 0.8658288997752493,
+            "brier": 0.15888715162873268,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 2034.0,
+            "positive": 112.0,
+            "prevalence_AP_reference": 0.0521901211556384
+          }
+        },
+        "name": "IRBBB",
+        "positive": 112,
+        "score_output": "CD"
+      },
+      "713427006": {
+        "annotation_prevalence": 0.025629077353215284,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.46193023504589387,
+            "auroc": 0.9765836267988348,
+            "brier": 0.11865292116999626,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 2091.0,
+            "positive": 55.0,
+            "prevalence_AP_reference": 0.025629077353215284
+          },
+          "multiview": {
+            "ap": 0.410924270664038,
+            "auroc": 0.9715903656362767,
+            "brier": 0.15619593486189842,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 2091.0,
+            "positive": 55.0,
+            "prevalence_AP_reference": 0.025629077353215284
+          }
+        },
+        "name": "CRBBB",
+        "positive": 55,
+        "score_output": "CD"
+      },
+      "733534002": {
+        "annotation_prevalence": 0.02516309412861137,
+        "models": {
+          "flat_cnn": {
+            "ap": 0.32875035709446754,
+            "auroc": 0.9589197825933008,
+            "brier": 0.12160738557577133,
+            "mean_predicted": 0.20286653190851212,
+            "negative": 2092.0,
+            "positive": 54.0,
+            "prevalence_AP_reference": 0.02516309412861137
+          },
+          "multiview": {
+            "ap": 0.3907877059421486,
+            "auroc": 0.964206677997309,
+            "brier": 0.15746894851326942,
+            "mean_predicted": 0.2508789896965027,
+            "negative": 2092.0,
+            "positive": 54.0,
+            "prevalence_AP_reference": 0.02516309412861137
+          }
+        },
+        "name": "complete LBBB",
+        "positive": 54,
+        "score_output": "CD"
+      }
+    }
+  },
+  "seedwise_metrics": {
+    "CPSC": {
+      "flat_cnn": {
+        "101": [
+          {
+            "ap": 0.7373105471431888,
+            "auroc": 0.8732346671403828,
+            "brier": 0.14120569825172424,
+            "mean_predicted": 0.3258340656757355,
+            "negative": 1424,
+            "positive": 506,
+            "prevalence_AP_reference": 0.2621761658031088
+          },
+          {
+            "ap": 0.4210152531977845,
+            "auroc": 0.6964972426781546,
+            "brier": 0.20547835528850555,
+            "mean_predicted": 0.24386098980903625,
+            "negative": 1436,
+            "positive": 494,
+            "prevalence_AP_reference": 0.2559585492227979
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.7169189566203561,
+            "auroc": 0.8647105520273571,
+            "brier": 0.13411906361579895,
+            "mean_predicted": 0.256020724773407,
+            "negative": 1424,
+            "positive": 506,
+            "prevalence_AP_reference": 0.2621761658031088
+          },
+          {
+            "ap": 0.3913943169601363,
+            "auroc": 0.6806962096692342,
+            "brier": 0.21394936740398407,
+            "mean_predicted": 0.26677224040031433,
+            "negative": 1436,
+            "positive": 494,
+            "prevalence_AP_reference": 0.2559585492227979
+          }
+        ]
+      },
+      "multiview": {
+        "101": [
+          {
+            "ap": 0.69741610961048,
+            "auroc": 0.8736648976328996,
+            "brier": 0.16101062297821045,
+            "mean_predicted": 0.4149283468723297,
+            "negative": 1424,
+            "positive": 506,
+            "prevalence_AP_reference": 0.2621761658031088
+          },
+          {
+            "ap": 0.42095741083702004,
+            "auroc": 0.7060985305560881,
+            "brier": 0.20851914584636688,
+            "mean_predicted": 0.2650984525680542,
+            "negative": 1436,
+            "positive": 494,
+            "prevalence_AP_reference": 0.2559585492227979
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.7569917180431794,
+            "auroc": 0.8822021972287606,
+            "brier": 0.1307327151298523,
+            "mean_predicted": 0.2517908215522766,
+            "negative": 1424,
+            "positive": 506,
+            "prevalence_AP_reference": 0.2621761658031088
+          },
+          {
+            "ap": 0.3918037929984124,
+            "auroc": 0.693682124209173,
+            "brier": 0.2320842295885086,
+            "mean_predicted": 0.3217085897922516,
+            "negative": 1436,
+            "positive": 494,
+            "prevalence_AP_reference": 0.2559585492227979
+          }
+        ]
+      }
+    },
+    "Chapman-Ningbo": {
+      "flat_cnn": {
+        "101": [
+          {
+            "ap": 0.5953829054193656,
+            "auroc": 0.8738565520547869,
+            "brier": 0.11414236575365067,
+            "mean_predicted": 0.22256748378276825,
+            "negative": 8174,
+            "positive": 839,
+            "prevalence_AP_reference": 0.09308776212138023
+          },
+          {
+            "ap": 0.5262291253721838,
+            "auroc": 0.8234669330109704,
+            "brier": 0.1448441445827484,
+            "mean_predicted": 0.22673460841178894,
+            "negative": 7002,
+            "positive": 2011,
+            "prevalence_AP_reference": 0.22312215688450016
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.5791133560002102,
+            "auroc": 0.8726763950815882,
+            "brier": 0.08440525829792023,
+            "mean_predicted": 0.16377608478069305,
+            "negative": 8174,
+            "positive": 839,
+            "prevalence_AP_reference": 0.09308776212138023
+          },
+          {
+            "ap": 0.5494955407853519,
+            "auroc": 0.8352531868780547,
+            "brier": 0.13869129121303558,
+            "mean_predicted": 0.24481895565986633,
+            "negative": 7002,
+            "positive": 2011,
+            "prevalence_AP_reference": 0.22312215688450016
+          }
+        ]
+      },
+      "multiview": {
+        "101": [
+          {
+            "ap": 0.537807921743719,
+            "auroc": 0.8802712633125819,
+            "brier": 0.1635352075099945,
+            "mean_predicted": 0.3110826015472412,
+            "negative": 8174,
+            "positive": 839,
+            "prevalence_AP_reference": 0.09308776212138023
+          },
+          {
+            "ap": 0.5367043689306672,
+            "auroc": 0.8216941923675711,
+            "brier": 0.14494110643863678,
+            "mean_predicted": 0.2505853772163391,
+            "negative": 7002,
+            "positive": 2011,
+            "prevalence_AP_reference": 0.22312215688450016
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.54170440309087,
+            "auroc": 0.8625834173473088,
+            "brier": 0.09884628653526306,
+            "mean_predicted": 0.1643509417772293,
+            "negative": 8174,
+            "positive": 839,
+            "prevalence_AP_reference": 0.09308776212138023
+          },
+          {
+            "ap": 0.5615741164359589,
+            "auroc": 0.8418137547118383,
+            "brier": 0.14950542151927948,
+            "mean_predicted": 0.3016434907913208,
+            "negative": 7002,
+            "positive": 2011,
+            "prevalence_AP_reference": 0.22312215688450016
+          }
+        ]
+      }
+    },
+    "Georgia": {
+      "flat_cnn": {
+        "101": [
+          {
+            "ap": 0.6140626047820068,
+            "auroc": 0.8613156492543541,
+            "brier": 0.14573229849338531,
+            "mean_predicted": 0.29581478238105774,
+            "negative": 1666,
+            "positive": 374,
+            "prevalence_AP_reference": 0.18333333333333332
+          },
+          {
+            "ap": 0.7391648611792936,
+            "auroc": 0.8148044521178951,
+            "brier": 0.23083344101905823,
+            "mean_predicted": 0.24703449010849,
+            "negative": 1141,
+            "positive": 899,
+            "prevalence_AP_reference": 0.4406862745098039
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.6125715869190554,
+            "auroc": 0.8529764847115316,
+            "brier": 0.12672783434391022,
+            "mean_predicted": 0.23620034754276276,
+            "negative": 1666,
+            "positive": 374,
+            "prevalence_AP_reference": 0.18333333333333332
+          },
+          {
+            "ap": 0.7402984735490213,
+            "auroc": 0.8172241237951605,
+            "brier": 0.21274064481258392,
+            "mean_predicted": 0.2805223762989044,
+            "negative": 1141,
+            "positive": 899,
+            "prevalence_AP_reference": 0.4406862745098039
+          }
+        ]
+      },
+      "multiview": {
+        "101": [
+          {
+            "ap": 0.5934520279832423,
+            "auroc": 0.868416617984092,
+            "brier": 0.19609743356704712,
+            "mean_predicted": 0.41485974192619324,
+            "negative": 1666,
+            "positive": 374,
+            "prevalence_AP_reference": 0.18333333333333332
+          },
+          {
+            "ap": 0.7186325733854885,
+            "auroc": 0.7942187199917329,
+            "brier": 0.23799046874046326,
+            "mean_predicted": 0.24861052632331848,
+            "negative": 1141,
+            "positive": 899,
+            "prevalence_AP_reference": 0.4406862745098039
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.5999486679677642,
+            "auroc": 0.8579822303252853,
+            "brier": 0.12661713361740112,
+            "mean_predicted": 0.22139862179756165,
+            "negative": 1666,
+            "positive": 374,
+            "prevalence_AP_reference": 0.18333333333333332
+          },
+          {
+            "ap": 0.7507054061593942,
+            "auroc": 0.8217056833037779,
+            "brier": 0.1922866255044937,
+            "mean_predicted": 0.3444494605064392,
+            "negative": 1141,
+            "positive": 899,
+            "prevalence_AP_reference": 0.4406862745098039
+          }
+        ]
+      }
+    },
+    "fold9": {
+      "flat_cnn": {
+        "101": [
+          {
+            "ap": 0.8287102940509798,
+            "auroc": 0.9286536248561567,
+            "brier": 0.08123648166656494,
+            "mean_predicted": 0.23101495206356049,
+            "negative": 1672,
+            "positive": 474,
+            "prevalence_AP_reference": 0.22087604846225536
+          },
+          {
+            "ap": 0.45737011240540787,
+            "auroc": 0.8520431372368826,
+            "brier": 0.12432454526424408,
+            "mean_predicted": 0.19243976473808289,
+            "negative": 1779,
+            "positive": 367,
+            "prevalence_AP_reference": 0.17101584342963652
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.82022648352518,
+            "auroc": 0.9223358669977592,
+            "brier": 0.0869240090250969,
+            "mean_predicted": 0.17471811175346375,
+            "negative": 1672,
+            "positive": 474,
+            "prevalence_AP_reference": 0.22087604846225536
+          },
+          {
+            "ap": 0.4407254338618079,
+            "auroc": 0.8454662555732715,
+            "brier": 0.12778939306735992,
+            "mean_predicted": 0.20684996247291565,
+            "negative": 1779,
+            "positive": 367,
+            "prevalence_AP_reference": 0.17101584342963652
+          }
+        ]
+      },
+      "multiview": {
+        "101": [
+          {
+            "ap": 0.8207248400221949,
+            "auroc": 0.9254348111360104,
+            "brier": 0.10160928964614868,
+            "mean_predicted": 0.3307841420173645,
+            "negative": 1672,
+            "positive": 474,
+            "prevalence_AP_reference": 0.22087604846225536
+          },
+          {
+            "ap": 0.43700465219900275,
+            "auroc": 0.8496231388604258,
+            "brier": 0.1258591264486313,
+            "mean_predicted": 0.2036915421485901,
+            "negative": 1779,
+            "positive": 367,
+            "prevalence_AP_reference": 0.17101584342963652
+          }
+        ],
+        "202": [
+          {
+            "ap": 0.8288314039258213,
+            "auroc": 0.9239522136757313,
+            "brier": 0.08689682930707932,
+            "mean_predicted": 0.17097383737564087,
+            "negative": 1672,
+            "positive": 474,
+            "prevalence_AP_reference": 0.22087604846225536
+          },
+          {
+            "ap": 0.45495529771692544,
+            "auroc": 0.8512803782549362,
+            "brier": 0.13888756930828094,
+            "mean_predicted": 0.25513261556625366,
+            "negative": 1779,
+            "positive": 367,
+            "prevalence_AP_reference": 0.17101584342963652
+          }
+        ]
+      }
+    }
+  },
+  "undefined_handling": "undefined resample metrics excluded from percentile calculation, counts reported; not replaced by zero",
+  "verdicts": {
+    "CPSC": {
+      "AP_prior_adjusted_condition": true,
+      "expected_reserved_support_at_least150_each": true,
+      "macro_proxy_matched_AUROC_DROP": -0.09866069807504563,
+      "scope": "annotation proxy feasibility only; external clinical validation out of scope",
+      "status": "SUITABLE"
+    },
+    "Chapman-Ningbo": {
+      "AP_prior_adjusted_condition": false,
+      "expected_reserved_support_at_least150_each": true,
+      "macro_proxy_matched_AUROC_DROP": -0.0359819785469509,
+      "scope": "annotation proxy feasibility only; external clinical validation out of scope",
+      "status": "BORDERLINE"
+    },
+    "Georgia": {
+      "AP_prior_adjusted_condition": false,
+      "expected_reserved_support_at_least150_each": true,
+      "macro_proxy_matched_AUROC_DROP": -0.05199182258055385,
+      "scope": "annotation proxy feasibility only; external clinical validation out of scope",
+      "status": "SUITABLE"
+    }
+  }
+}
