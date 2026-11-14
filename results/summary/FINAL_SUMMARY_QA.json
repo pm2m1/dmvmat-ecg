@@ -1,0 +1,15 @@
+{
+  "source_files_unchanged": 21,
+  "figure_source_references_verified": 389,
+  "figures": 7,
+  "PNG_dpi": 300,
+  "PDF_rendered_count": 7,
+  "markdown_links_exist": true,
+  "summary_words": 2671,
+  "supervisor_brief_words": 346,
+  "pytest": "333 passed,7 warnings in53.14s",
+  "ruff": "passed",
+  "format": "127 files already formatted",
+  "data_access": "Aggregate JSON/Markdown only; tests use synthetic fixtures; no raw or sealed-role data",
+  "tracked_existing_file_diff": ""
+}

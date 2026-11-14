@@ -1,0 +1,19 @@
+# Supervisor brief — multiview ECG classification and selective transfer
+
+**Recommended thesis emphasis:** evidence-guided selective adaptation under matched target-label budgets, with transparent negative findings. Use “ECG annotation classification/detection”; the project has no future-event endpoint.
+
+**Representation result.** Locked PTB-XL five-view macro AUROC **0.92139**, AP **0.81405**. Flat CNN AUROC **0.91733**; XResNet **0.92985**. Five-view−flat AUROC adjusted97.5% CI **[0.00009, 0.00786]** is positive but near zero at its lower end; the AP CI crosses zero. Thus there is limited conditional benefit over the matched flat control, not architecture supremacy. Source: [results/locked_metrics.json](../results/locked_metrics.json) → `/summary; /comparisons/multiview-minus-flat_cnn`.
+
+**Adaptation works; this selector does not beat Full-cost.** CPSC B128 Full-cost AP/AUROC **0.65101/0.84417**, versus Source-only **0.54051/0.78203**. Recovery is **+0.11049 AP / +0.06214 AUROC** using128 total labelled target records (all F∪G), not128 positive examples. Sources: [results/phase3b_eval_v2/AGGREGATE_METRICS.json](../results/phase3b_eval_v2/AGGREGATE_METRICS.json) → `/methods/B128~1{full_cost,source_only}/macro`; [results/phase3b_eval_v2/NEGATIVE_TRANSFER_AND_RECOVERY.json](../results/phase3b_eval_v2/NEGATIVE_TRANSFER_AND_RECOVERY.json) → `/recovery/B128~1full_cost-minus-source_only`.
+
+**Two locked negative primary results.** Age pilot A−Full-cost AP **-0.00628**,95% CI **[-0.00901, -0.00335]**; CPSC B128 **-0.04702**,95% CI **[-0.05299, -0.04072]**. Source: [results/phase2f/BOOTSTRAP_SUMMARIES.json](../results/phase2f/BOOTSTRAP_SUMMARIES.json) → `/primary/ap`; [results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json](../results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json) → `/comparisons/B128~1A-minus-full_cost`. A is numerically close to Random-A in CPSC but **worse**, ΔAP **-0.00436**, adjusted98.75% CI **[-0.00678, -0.00196]**; do not write “equivalent to random.” Source: [results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json](../results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json) → `/comparisons/B128~1A-minus-random_a`. Phase2 random comparison is inconclusive. Neither finding is a universal no-benefit theorem.
+
+**Integrity disclosure.** Phase3B O was read twice: first the decoder returned zero observed labels; the corrected human-authorized read used unchanged predictions sealed beforehand. The original markers/reports remain. No retraining or new inference followed outcome access. This is annotation-proxy, record-level CPSC evidence, not external clinical validation; patient IDs are unavailable. Phase2 holdout overlap and FEAS-informed target choice are disclosed in the full summary. Source: [results/phase3b_eval_v2/CORRECTED_FINAL_VERIFICATION_RECEIPT.json](../results/phase3b_eval_v2/CORRECTED_FINAL_VERIFICATION_RECEIPT.json) → `/{O_outcome_access_count,new_inference_runs,new_predictor_fits}`; [docs/phase2/INTERNAL_PILOT_LOCKED_EVALUATION_RESULTS.md](../docs/phase2/INTERNAL_PILOT_LOCKED_EVALUATION_RESULTS.md) → `Population, provenance and evidence limits`.
+
+**Three questions for supervision**
+
+1. Should the title explicitly use “annotation classification/detection” rather than “prediction”, given the absence of longitudinal event outcomes?
+2. Is a separately designed MK-MMD-aligned pretraining experiment scientifically necessary before submission, or should the thesis present the current negative selector result and defer that untested component?
+3. What is the write-up/submission deadline, and which additional analyses are essential within it?
+
+See [full source-cited summary](PROJECT_RESULTS_SUMMARY.md) and [aggregate-only figures/provenance](../results/summary/FIGURE_DATA_PROVENANCE.json). No new training or evaluation was run for this synthesis.

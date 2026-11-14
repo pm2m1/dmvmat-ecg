@@ -1,0 +1,86 @@
+{
+  "ecg": {
+    "path": "results/locked_metrics.json",
+    "sha256": "96d48da251496fc9e7a07d68e3bd6e3c0f4b207486ed3a06121f7a0214c94098"
+  },
+  "p2": {
+    "path": "results/phase2f/BOOTSTRAP_SUMMARIES.json",
+    "sha256": "f92b2b1652e616826022f4d01bedac76f1e72d3139845a2311e442e79b50de82"
+  },
+  "p2abs": {
+    "path": "results/phase2f/AGGREGATE_COMPARISON.json",
+    "sha256": "ae6d29454664123ffa682bab6b5d8c308d75ec6290dc88d50dfe944065e912ce"
+  },
+  "p2doc": {
+    "path": "docs/phase2/INTERNAL_PILOT_LOCKED_EVALUATION_RESULTS.md",
+    "sha256": "fcd385a7456cf3634448d99a32226884710778d7ba14e4b5fbe345e852103a6a"
+  },
+  "p3a": {
+    "path": "results/phase3a/METRICS.json",
+    "sha256": "b806f6c066ff4fab0979206ed375ff26eb59c6511d410b9128fe53b401b1d0d6"
+  },
+  "p3": {
+    "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+    "sha256": "e149c76203aadfeaf3bb1339d2cd1002f551d282cebbeee4930197d861da5f46"
+  },
+  "ci": {
+    "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+    "sha256": "d06e3330f0cc71faa25660a6fd7f8e9c2ef072275bb458e26df0692d9bec50ca"
+  },
+  "episodes": {
+    "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+    "sha256": "89c13a16f781ba495677e49fbc213f4df68ce1d935883327bc0f3151cf9f4944"
+  },
+  "gap": {
+    "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+    "sha256": "9fece52beec2da2d5c12f9053e5c7e94b252f4c89a52e7d9d1c9f6c54d997b70"
+  },
+  "recovery": {
+    "path": "results/phase3b_eval_v2/NEGATIVE_TRANSFER_AND_RECOVERY.json",
+    "sha256": "3089f7c83cc63adf4de2f27f8544f77a2f9129843f95d067e5013d00683fa36a"
+  },
+  "masks": {
+    "path": "results/phase3b/MODULE_EVIDENCE.json",
+    "sha256": "f0ed6d08dd041e6572ae01bdea02502678b56b2e5f311f8dd7bcaee2ce8701f3"
+  },
+  "dev": {
+    "path": "results/phase3b/DEVELOPMENT_SUMMARY.json",
+    "sha256": "7e3bf90388796fb4dc4c9ec39c4dbc4f75eafb8c31a7d4d2cfdfb40d3820a38d"
+  },
+  "receipt": {
+    "path": "results/phase3b_eval_v2/CORRECTED_FINAL_VERIFICATION_RECEIPT.json",
+    "sha256": "5d64a814d66d19aa826b1ce38bc2398d5c2d3fbc92a0dbeabdae5c26bf962978"
+  },
+  "headers": {
+    "path": "results/phase3b_eval/HEADER_ONLY_SUMMARY.json",
+    "sha256": "a9249487b9d64e69d9e268b09ad07a1e6e307d5221a20affe388927fd4ab62c6"
+  },
+  "k1": {
+    "path": "../cvd-70k-multiview-benchmark/docs/results.md",
+    "sha256": "d6ee7215b1f1f1bee673bf5ae1e4b602a0d44e4be59a1a6d8e80e5bac4ef1899"
+  },
+  "k1ci": {
+    "path": "../cvd-70k-multiview-benchmark/results/aggregate/bootstrap_primary.json",
+    "sha256": "5b023f7b8776a2d92ca3b754b995e1195671e7e45b543aeb0d46d4ec4e7d1744"
+  },
+  "k2": {
+    "path": "../cvd-70k-multiview-benchmark/docs/v2/OPTIMIZATION_RESULTS.md",
+    "sha256": "ff1321b9280365daf456bce5c487af201adec23faefcecd02ebb2da0e4492b3e"
+  },
+  "k3": {
+    "path": "../cvd-70k-multiview-benchmark/docs/v3/PREDICTIVE_OPTIMIZATION.md",
+    "sha256": "4101daa0f2cccc995dcd9b6103e9c5d7ff4fdae4674fbeac513523729f16e41f"
+  },
+  "k3age": {
+    "path": "../cvd-70k-multiview-benchmark/docs/v3/ABLATION_RESULTS.md",
+    "sha256": "27223faad14016328a693a55cff611d8d47da5550479fad822c635c3097d318b"
+  },
+  "k4": {
+    "path": "../cvd-70k-v4-synthetic/results/v4/evaluation/summary.json",
+    "sha256": "67e89bbe3302bbcfb9bee396938c8772eae4e452d26fec9231807f6f84e76a68"
+  },
+  "k4doc": {
+    "path": "../cvd-70k-v4-synthetic/docs/v4/FINAL_EVALUATION_REPORT.md",
+    "sha256": "a1ff0be984e337c6038d3820449f157b664d42ed4428b4c7f72a0035ec550d3d"
+  }
+}

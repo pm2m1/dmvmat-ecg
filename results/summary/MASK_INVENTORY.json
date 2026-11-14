@@ -1,0 +1,461 @@
+[
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/0/mask",
+    "source_seed": 15101,
+    "draw_seed": 16101,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/3/mask",
+    "source_seed": 15101,
+    "draw_seed": 16102,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "SHARE",
+      "fusion_2": "SHARE",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "SHARE"
+    },
+    "ADAPT_count": 0
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/6/mask",
+    "source_seed": 15101,
+    "draw_seed": 16103,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "SHARE",
+      "fusion_2": "SHARE",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 1
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/9/mask",
+    "source_seed": 15102,
+    "draw_seed": 16101,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "SHARE"
+    },
+    "ADAPT_count": 2
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/12/mask",
+    "source_seed": 15102,
+    "draw_seed": 16102,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "SHARE",
+      "fusion_2": "SHARE",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "SHARE"
+    },
+    "ADAPT_count": 0
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/15/mask",
+    "source_seed": 15102,
+    "draw_seed": 16103,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 3
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/18/mask",
+    "source_seed": 15103,
+    "draw_seed": 16101,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 5
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/21/mask",
+    "source_seed": 15103,
+    "draw_seed": 16102,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "SHARE",
+      "fusion_2": "SHARE",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "SHARE"
+    },
+    "ADAPT_count": 0
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/24/mask",
+    "source_seed": 15103,
+    "draw_seed": 16103,
+    "budget": 64,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "SHARE",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 3
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/1/mask",
+    "source_seed": 15101,
+    "draw_seed": 16101,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/4/mask",
+    "source_seed": 15101,
+    "draw_seed": 16102,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/7/mask",
+    "source_seed": 15101,
+    "draw_seed": 16103,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/10/mask",
+    "source_seed": 15102,
+    "draw_seed": 16101,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "SHARE"
+    },
+    "ADAPT_count": 3
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/13/mask",
+    "source_seed": 15102,
+    "draw_seed": 16102,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/16/mask",
+    "source_seed": 15102,
+    "draw_seed": 16103,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/19/mask",
+    "source_seed": 15103,
+    "draw_seed": 16101,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 5
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/22/mask",
+    "source_seed": 15103,
+    "draw_seed": 16102,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 5
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/25/mask",
+    "source_seed": 15103,
+    "draw_seed": 16103,
+    "budget": 128,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/2/mask",
+    "source_seed": 15101,
+    "draw_seed": 16101,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "SHARE",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 5
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/5/mask",
+    "source_seed": 15101,
+    "draw_seed": 16102,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 6
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/8/mask",
+    "source_seed": 15101,
+    "draw_seed": 16103,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 5
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/11/mask",
+    "source_seed": 15102,
+    "draw_seed": 16101,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "SHARE",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 4
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/14/mask",
+    "source_seed": 15102,
+    "draw_seed": 16102,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 6
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/17/mask",
+    "source_seed": 15102,
+    "draw_seed": 16103,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "SHARE",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 5
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/20/mask",
+    "source_seed": 15103,
+    "draw_seed": 16101,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 6
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/23/mask",
+    "source_seed": 15103,
+    "draw_seed": 16102,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 6
+  },
+  {
+    "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+    "source_key": "/episodes/26/mask",
+    "source_seed": 15103,
+    "draw_seed": 16103,
+    "budget": 256,
+    "mask": {
+      "fusion_1": "ADAPT",
+      "fusion_2": "ADAPT",
+      "view_1": "ADAPT",
+      "view_2": "SHARE",
+      "view_3": "ADAPT",
+      "view_4": "ADAPT",
+      "view_5": "ADAPT"
+    },
+    "ADAPT_count": 6
+  }
+]

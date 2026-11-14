@@ -1,0 +1,2883 @@
+{
+  "project_journey": {
+    "description": "Kaggle value is descriptive highest selected XGBoost AUROC across historical versions, not a new model choice.",
+    "numerical_data": [
+      {
+        "label": "Kaggle V3 XGBoost\ninternal CV, binary",
+        "value": 0.80338,
+        "path": "../cvd-70k-multiview-benchmark/docs/v3/PREDICTIVE_OPTIMIZATION.md",
+        "key": "table[row=selected_xgboost][column=2]"
+      },
+      {
+        "label": "PTB-XL five-view\nlocked, five labels",
+        "value": 0.9213895795600857,
+        "path": "results/locked_metrics.json",
+        "key": "/summary/multiview/macro_auroc"
+      },
+      {
+        "label": "CPSC Source-only\ntwo proxies",
+        "value": 0.7820310871660622,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1source_only/macro/AUROC"
+      },
+      {
+        "label": "CPSC Full-cost\nB128",
+        "value": 0.8441742646414828,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "CPSC Full-cost\nB256",
+        "value": 0.8547664746969406,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1full_cost/macro/AUROC"
+      }
+    ]
+  },
+  "transfer_gap": {
+    "description": "Exact per-seed values are the inputs to each documented mean.",
+    "numerical_data": [
+      {
+        "label": "CD-proxy",
+        "field": "source_fold9_AUROC",
+        "value": 0.930584997207249,
+        "operation": "arithmetic mean",
+        "inputs": [
+          {
+            "value": 0.9345537318555306,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/0/source_fold9_AUROC"
+          },
+          {
+            "value": 0.9329260291119051,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/2/source_fold9_AUROC"
+          },
+          {
+            "value": 0.9242752306543113,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/4/source_fold9_AUROC"
+          }
+        ]
+      },
+      {
+        "label": "CD-proxy",
+        "field": "O_AUROC",
+        "value": 0.8917325823275957,
+        "operation": "arithmetic mean",
+        "inputs": [
+          {
+            "value": 0.9063611188968763,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/0/O_AUROC"
+          },
+          {
+            "value": 0.8875748120424719,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/2/O_AUROC"
+          },
+          {
+            "value": 0.881261816043439,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/4/O_AUROC"
+          }
+        ]
+      },
+      {
+        "label": "STTC-proxy",
+        "field": "source_fold9_AUROC",
+        "value": 0.8751510584429608,
+        "operation": "arithmetic mean",
+        "inputs": [
+          {
+            "value": 0.8764590828818812,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/1/source_fold9_AUROC"
+          },
+          {
+            "value": 0.8776981833164087,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/3/source_fold9_AUROC"
+          },
+          {
+            "value": 0.8712959091305926,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/5/source_fold9_AUROC"
+          }
+        ]
+      },
+      {
+        "label": "STTC-proxy",
+        "field": "O_AUROC",
+        "value": 0.6723295920045286,
+        "operation": "arithmetic mean",
+        "inputs": [
+          {
+            "value": 0.6493562906274694,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/1/O_AUROC"
+          },
+          {
+            "value": 0.6788547255558515,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/3/O_AUROC"
+          },
+          {
+            "value": 0.688777759830265,
+            "path": "results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json",
+            "key": "/rows/5/O_AUROC"
+          }
+        ]
+      }
+    ]
+  },
+  "label_efficiency": {
+    "description": "Nine adapted episodes; three unique Source-only seeds repeated by design. Budget keys from DEVELOPMENT_SUMMARY.json/budgets.",
+    "numerical_data": [
+      {
+        "label": "B64/source_only/AP",
+        "value": 0.54051452055172,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1source_only/macro/AP"
+      },
+      {
+        "label": "64/source/15101/AP",
+        "value": 0.5395411751114174,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115101/macro/AP"
+      },
+      {
+        "label": "64/source/15102/AP",
+        "value": 0.546430427865932,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115102/macro/AP"
+      },
+      {
+        "label": "64/source/15103/AP",
+        "value": 0.5355719586778105,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115103/macro/AP"
+      },
+      {
+        "label": "B128/source_only/AP",
+        "value": 0.54051452055172,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1source_only/macro/AP"
+      },
+      {
+        "label": "128/source/15101/AP",
+        "value": 0.5395411751114174,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115101/macro/AP"
+      },
+      {
+        "label": "128/source/15102/AP",
+        "value": 0.546430427865932,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115102/macro/AP"
+      },
+      {
+        "label": "128/source/15103/AP",
+        "value": 0.5355719586778105,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115103/macro/AP"
+      },
+      {
+        "label": "B256/source_only/AP",
+        "value": 0.54051452055172,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1source_only/macro/AP"
+      },
+      {
+        "label": "256/source/15101/AP",
+        "value": 0.5395411751114174,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115101/macro/AP"
+      },
+      {
+        "label": "256/source/15102/AP",
+        "value": 0.546430427865932,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115102/macro/AP"
+      },
+      {
+        "label": "256/source/15103/AP",
+        "value": 0.5355719586778105,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115103/macro/AP"
+      },
+      {
+        "label": "B64/source_only/AUROC",
+        "value": 0.7820310871660622,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1source_only/macro/AUROC"
+      },
+      {
+        "label": "64/source/15101/AUROC",
+        "value": 0.7778587047621728,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115101/macro/AUROC"
+      },
+      {
+        "label": "64/source/15102/AUROC",
+        "value": 0.7832147687991617,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115102/macro/AUROC"
+      },
+      {
+        "label": "64/source/15103/AUROC",
+        "value": 0.785019787936852,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115103/macro/AUROC"
+      },
+      {
+        "label": "B128/source_only/AUROC",
+        "value": 0.7820310871660622,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1source_only/macro/AUROC"
+      },
+      {
+        "label": "128/source/15101/AUROC",
+        "value": 0.7778587047621728,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115101/macro/AUROC"
+      },
+      {
+        "label": "128/source/15102/AUROC",
+        "value": 0.7832147687991617,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115102/macro/AUROC"
+      },
+      {
+        "label": "128/source/15103/AUROC",
+        "value": 0.785019787936852,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115103/macro/AUROC"
+      },
+      {
+        "label": "B256/source_only/AUROC",
+        "value": 0.7820310871660622,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1source_only/macro/AUROC"
+      },
+      {
+        "label": "256/source/15101/AUROC",
+        "value": 0.7778587047621728,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115101/macro/AUROC"
+      },
+      {
+        "label": "256/source/15102/AUROC",
+        "value": 0.7832147687991617,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115102/macro/AUROC"
+      },
+      {
+        "label": "256/source/15103/AUROC",
+        "value": 0.785019787936852,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/source~115103/macro/AUROC"
+      },
+      {
+        "label": "B64/head_cost/AP",
+        "value": 0.5479707747581163,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16101/B64/head_cost/AP",
+        "value": 0.5513079171373799,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16102/B64/head_cost/AP",
+        "value": 0.5557040333884178,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16103/B64/head_cost/AP",
+        "value": 0.5438225629532856,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16101/B64/head_cost/AP",
+        "value": 0.5601185212056063,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16102/B64/head_cost/AP",
+        "value": 0.5588946995280466,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16103/B64/head_cost/AP",
+        "value": 0.5449995219255204,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16101/B64/head_cost/AP",
+        "value": 0.5444968876809783,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16102/B64/head_cost/AP",
+        "value": 0.5436741559377429,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16103/B64/head_cost/AP",
+        "value": 0.5287186730660691,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1head_cost/macro/AP"
+      },
+      {
+        "label": "B128/head_cost/AP",
+        "value": 0.5459911839203223,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16101/B128/head_cost/AP",
+        "value": 0.5474830863797151,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16102/B128/head_cost/AP",
+        "value": 0.5501948776667782,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16103/B128/head_cost/AP",
+        "value": 0.5486593391982448,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16101/B128/head_cost/AP",
+        "value": 0.5563315254009595,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16102/B128/head_cost/AP",
+        "value": 0.548033305978977,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16103/B128/head_cost/AP",
+        "value": 0.5496309856520848,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16101/B128/head_cost/AP",
+        "value": 0.5381635998801148,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16102/B128/head_cost/AP",
+        "value": 0.539760606042293,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16103/B128/head_cost/AP",
+        "value": 0.5356633290837334,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1head_cost/macro/AP"
+      },
+      {
+        "label": "B256/head_cost/AP",
+        "value": 0.5476476029596851,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16101/B256/head_cost/AP",
+        "value": 0.5516132841126067,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16102/B256/head_cost/AP",
+        "value": 0.5519203126376775,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16103/B256/head_cost/AP",
+        "value": 0.549636572558519,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16101/B256/head_cost/AP",
+        "value": 0.5553357900418305,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16102/B256/head_cost/AP",
+        "value": 0.5525925870960638,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16103/B256/head_cost/AP",
+        "value": 0.5508425682500733,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16101/B256/head_cost/AP",
+        "value": 0.5417110832637472,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16102/B256/head_cost/AP",
+        "value": 0.5399012638126138,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16103/B256/head_cost/AP",
+        "value": 0.5352749648640335,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1head_cost/macro/AP"
+      },
+      {
+        "label": "B64/head_cost/AUROC",
+        "value": 0.7934292685515258,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16101/B64/head_cost/AUROC",
+        "value": 0.7996199514559895,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16102/B64/head_cost/AUROC",
+        "value": 0.8022475993699847,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16103/B64/head_cost/AUROC",
+        "value": 0.7897026766993578,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16101/B64/head_cost/AUROC",
+        "value": 0.7940332520978337,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16102/B64/head_cost/AUROC",
+        "value": 0.7980309263774727,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16103/B64/head_cost/AUROC",
+        "value": 0.7843187337106309,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16101/B64/head_cost/AUROC",
+        "value": 0.7971149952750093,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16102/B64/head_cost/AUROC",
+        "value": 0.7966714497530616,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16103/B64/head_cost/AUROC",
+        "value": 0.7791238322243923,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "B128/head_cost/AUROC",
+        "value": 0.7919544774960242,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16101/B128/head_cost/AUROC",
+        "value": 0.7966665136875102,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16102/B128/head_cost/AUROC",
+        "value": 0.7963641144296546,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16103/B128/head_cost/AUROC",
+        "value": 0.7958605012206047,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16101/B128/head_cost/AUROC",
+        "value": 0.7886401291063265,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16102/B128/head_cost/AUROC",
+        "value": 0.7879454778263277,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16103/B128/head_cost/AUROC",
+        "value": 0.7892987301082401,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16101/B128/head_cost/AUROC",
+        "value": 0.793344742624781,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16102/B128/head_cost/AUROC",
+        "value": 0.7911107242000226,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16103/B128/head_cost/AUROC",
+        "value": 0.7883593642607511,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "B256/head_cost/AUROC",
+        "value": 0.7938417942102602,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16101/B256/head_cost/AUROC",
+        "value": 0.7997184325422317,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16102/B256/head_cost/AUROC",
+        "value": 0.7990123793367914,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16103/B256/head_cost/AUROC",
+        "value": 0.7971709261199373,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16101/B256/head_cost/AUROC",
+        "value": 0.789384357995605,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16102/B256/head_cost/AUROC",
+        "value": 0.7918106152999637,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16103/B256/head_cost/AUROC",
+        "value": 0.7907022669690987,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16101/B256/head_cost/AUROC",
+        "value": 0.7953224032858914,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16102/B256/head_cost/AUROC",
+        "value": 0.7932845698790028,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16103/B256/head_cost/AUROC",
+        "value": 0.7881701964638197,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1head_cost/macro/AUROC"
+      },
+      {
+        "label": "B64/full_cost/AP",
+        "value": 0.6105272872217843,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16101/B64/full_cost/AP",
+        "value": 0.5981418784748036,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16102/B64/full_cost/AP",
+        "value": 0.6328881004713328,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16103/B64/full_cost/AP",
+        "value": 0.6230100299533472,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16101/B64/full_cost/AP",
+        "value": 0.6442019893490987,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16102/B64/full_cost/AP",
+        "value": 0.6201368781786344,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16103/B64/full_cost/AP",
+        "value": 0.6403055411844375,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16101/B64/full_cost/AP",
+        "value": 0.5681032815952218,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16102/B64/full_cost/AP",
+        "value": 0.5790958847290439,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16103/B64/full_cost/AP",
+        "value": 0.5888620010601383,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1full_cost/macro/AP"
+      },
+      {
+        "label": "B128/full_cost/AP",
+        "value": 0.651007009969719,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16101/B128/full_cost/AP",
+        "value": 0.6616168884850411,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16102/B128/full_cost/AP",
+        "value": 0.6829529374819037,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16103/B128/full_cost/AP",
+        "value": 0.6400729021586316,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16101/B128/full_cost/AP",
+        "value": 0.6698782868275948,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16102/B128/full_cost/AP",
+        "value": 0.6659748643478787,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16103/B128/full_cost/AP",
+        "value": 0.6554891943218355,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16101/B128/full_cost/AP",
+        "value": 0.6306099277935353,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16102/B128/full_cost/AP",
+        "value": 0.6413218623070129,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16103/B128/full_cost/AP",
+        "value": 0.6111462260040381,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1full_cost/macro/AP"
+      },
+      {
+        "label": "B256/full_cost/AP",
+        "value": 0.6783969150168507,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16101/B256/full_cost/AP",
+        "value": 0.6995050175456656,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16102/B256/full_cost/AP",
+        "value": 0.7019800432003954,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16103/B256/full_cost/AP",
+        "value": 0.6749531666081705,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16101/B256/full_cost/AP",
+        "value": 0.697811913155339,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16102/B256/full_cost/AP",
+        "value": 0.6952947216470792,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16103/B256/full_cost/AP",
+        "value": 0.677204351236028,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16101/B256/full_cost/AP",
+        "value": 0.6758536890819558,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16102/B256/full_cost/AP",
+        "value": 0.6567937221451446,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16103/B256/full_cost/AP",
+        "value": 0.6261756105318794,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1full_cost/macro/AP"
+      },
+      {
+        "label": "B64/full_cost/AUROC",
+        "value": 0.8221234499261842,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16101/B64/full_cost/AUROC",
+        "value": 0.8105504977070737,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16102/B64/full_cost/AUROC",
+        "value": 0.8493666457126046,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16103/B64/full_cost/AUROC",
+        "value": 0.8344662781334318,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16101/B64/full_cost/AUROC",
+        "value": 0.8173414800437477,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16102/B64/full_cost/AUROC",
+        "value": 0.8306772647909704,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16103/B64/full_cost/AUROC",
+        "value": 0.8293645458859826,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16101/B64/full_cost/AUROC",
+        "value": 0.8001116481263308,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16102/B64/full_cost/AUROC",
+        "value": 0.8158195922777728,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16103/B64/full_cost/AUROC",
+        "value": 0.8114130966577451,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "B128/full_cost/AUROC",
+        "value": 0.8441742646414828,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16101/B128/full_cost/AUROC",
+        "value": 0.8498094505105651,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16102/B128/full_cost/AUROC",
+        "value": 0.8630121664423286,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16103/B128/full_cost/AUROC",
+        "value": 0.8446691745042743,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16101/B128/full_cost/AUROC",
+        "value": 0.8444580926956724,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16102/B128/full_cost/AUROC",
+        "value": 0.8498840374857736,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16103/B128/full_cost/AUROC",
+        "value": 0.8411439640595104,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16101/B128/full_cost/AUROC",
+        "value": 0.8371911713268279,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16102/B128/full_cost/AUROC",
+        "value": 0.8417217494201616,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16103/B128/full_cost/AUROC",
+        "value": 0.8256785753282321,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "B256/full_cost/AUROC",
+        "value": 0.8547664746969406,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16101/B256/full_cost/AUROC",
+        "value": 0.8674605409563785,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16102/B256/full_cost/AUROC",
+        "value": 0.8655198197868824,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16103/B256/full_cost/AUROC",
+        "value": 0.8581001013352398,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16101/B256/full_cost/AUROC",
+        "value": 0.8600167386558777,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16102/B256/full_cost/AUROC",
+        "value": 0.8565765852774968,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16103/B256/full_cost/AUROC",
+        "value": 0.8536049260506595,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16101/B256/full_cost/AUROC",
+        "value": 0.8568579483894254,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16102/B256/full_cost/AUROC",
+        "value": 0.8416037291674743,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16103/B256/full_cost/AUROC",
+        "value": 0.8331578826530307,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1full_cost/macro/AUROC"
+      },
+      {
+        "label": "B64/random_a/AP",
+        "value": 0.574192005381615,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15101/16101/B64/random_a/AP",
+        "value": 0.6005063526789465,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15101/16102/B64/random_a/AP",
+        "value": 0.5557040333884178,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15101/16103/B64/random_a/AP",
+        "value": 0.5878450903262566,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15102/16101/B64/random_a/AP",
+        "value": 0.5890045513324453,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15102/16102/B64/random_a/AP",
+        "value": 0.5588946995280466,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15102/16103/B64/random_a/AP",
+        "value": 0.5811471483186741,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15103/16101/B64/random_a/AP",
+        "value": 0.576417475641038,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15103/16102/B64/random_a/AP",
+        "value": 0.5436741559377429,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "64/15103/16103/B64/random_a/AP",
+        "value": 0.574534541282967,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1random_a/macro/AP"
+      },
+      {
+        "label": "B128/random_a/AP",
+        "value": 0.6083478729530524,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15101/16101/B128/random_a/AP",
+        "value": 0.6127631288515164,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15101/16102/B128/random_a/AP",
+        "value": 0.6121393383021687,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15101/16103/B128/random_a/AP",
+        "value": 0.6062439902129633,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15102/16101/B128/random_a/AP",
+        "value": 0.6364667809851141,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15102/16102/B128/random_a/AP",
+        "value": 0.6148242061219107,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15102/16103/B128/random_a/AP",
+        "value": 0.5941536690290651,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15103/16101/B128/random_a/AP",
+        "value": 0.620208612015345,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15103/16102/B128/random_a/AP",
+        "value": 0.6020974080480266,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "128/15103/16103/B128/random_a/AP",
+        "value": 0.5762337230113619,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1random_a/macro/AP"
+      },
+      {
+        "label": "B256/random_a/AP",
+        "value": 0.6451868767557722,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15101/16101/B256/random_a/AP",
+        "value": 0.659072877652519,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15101/16102/B256/random_a/AP",
+        "value": 0.6614308538009002,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15101/16103/B256/random_a/AP",
+        "value": 0.6382424547042331,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15102/16101/B256/random_a/AP",
+        "value": 0.6320786844526838,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15102/16102/B256/random_a/AP",
+        "value": 0.6886811696780232,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15102/16103/B256/random_a/AP",
+        "value": 0.6398235764912781,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15103/16101/B256/random_a/AP",
+        "value": 0.6651299013534058,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15103/16102/B256/random_a/AP",
+        "value": 0.6068218820558309,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "256/15103/16103/B256/random_a/AP",
+        "value": 0.6154004906130767,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1random_a/macro/AP"
+      },
+      {
+        "label": "B64/random_a/AUROC",
+        "value": 0.8076437416283542,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16101/B64/random_a/AUROC",
+        "value": 0.8233266466369581,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16102/B64/random_a/AUROC",
+        "value": 0.8022475993699847,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16103/B64/random_a/AUROC",
+        "value": 0.8166704601654863,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16101/B64/random_a/AUROC",
+        "value": 0.8124579986544866,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16102/B64/random_a/AUROC",
+        "value": 0.7980309263774727,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16103/B64/random_a/AUROC",
+        "value": 0.8088934978753054,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16101/B64/random_a/AUROC",
+        "value": 0.8098869759053233,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16102/B64/random_a/AUROC",
+        "value": 0.7966714497530616,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16103/B64/random_a/AUROC",
+        "value": 0.8006081199171091,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1random_a/macro/AUROC"
+      },
+      {
+        "label": "B128/random_a/AUROC",
+        "value": 0.8281930227009467,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16101/B128/random_a/AUROC",
+        "value": 0.832229334956206,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16102/B128/random_a/AUROC",
+        "value": 0.8382029945844175,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16103/B128/random_a/AUROC",
+        "value": 0.8258864249328546,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16101/B128/random_a/AUROC",
+        "value": 0.8274729237521217,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16102/B128/random_a/AUROC",
+        "value": 0.8354942119929347,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16103/B128/random_a/AUROC",
+        "value": 0.8217381381664743,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16101/B128/random_a/AUROC",
+        "value": 0.8293293368563197,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16102/B128/random_a/AUROC",
+        "value": 0.8316341385104205,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16103/B128/random_a/AUROC",
+        "value": 0.811749700556772,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1random_a/macro/AUROC"
+      },
+      {
+        "label": "B256/random_a/AUROC",
+        "value": 0.842338699541317,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16101/B256/random_a/AUROC",
+        "value": 0.8544326057859397,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16102/B256/random_a/AUROC",
+        "value": 0.849946990687947,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16103/B256/random_a/AUROC",
+        "value": 0.8400492329720151,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16101/B256/random_a/AUROC",
+        "value": 0.8280070325589397,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16102/B256/random_a/AUROC",
+        "value": 0.8545490417213086,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16103/B256/random_a/AUROC",
+        "value": 0.8379807629459111,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16101/B256/random_a/AUROC",
+        "value": 0.8526427112295631,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16102/B256/random_a/AUROC",
+        "value": 0.8351093076507178,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16103/B256/random_a/AUROC",
+        "value": 0.8283306103195116,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1random_a/macro/AUROC"
+      },
+      {
+        "label": "B64/selective_a/AP",
+        "value": 0.570906047441214,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15101/16101/B64/selective_a/AP",
+        "value": 0.5826346516518562,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15101/16102/B64/selective_a/AP",
+        "value": 0.5557040333884178,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15101/16103/B64/selective_a/AP",
+        "value": 0.5878450903262566,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15102/16101/B64/selective_a/AP",
+        "value": 0.5890045513324453,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15102/16102/B64/selective_a/AP",
+        "value": 0.5588946995280466,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15102/16103/B64/selective_a/AP",
+        "value": 0.5811471483186741,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15103/16101/B64/selective_a/AP",
+        "value": 0.5767857955496306,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15103/16102/B64/selective_a/AP",
+        "value": 0.5436741559377429,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "64/15103/16103/B64/selective_a/AP",
+        "value": 0.5624643009378565,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1selective_a/macro/AP"
+      },
+      {
+        "label": "B128/selective_a/AP",
+        "value": 0.6039912903153362,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15101/16101/B128/selective_a/AP",
+        "value": 0.623476558976684,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15101/16102/B128/selective_a/AP",
+        "value": 0.6121393383021687,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15101/16103/B128/selective_a/AP",
+        "value": 0.6068059642850535,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15102/16101/B128/selective_a/AP",
+        "value": 0.604650784846081,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15102/16102/B128/selective_a/AP",
+        "value": 0.6148242061219107,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15102/16103/B128/selective_a/AP",
+        "value": 0.5941536690290651,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15103/16101/B128/selective_a/AP",
+        "value": 0.6015399602176732,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15103/16102/B128/selective_a/AP",
+        "value": 0.6020974080480266,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "128/15103/16103/B128/selective_a/AP",
+        "value": 0.5762337230113619,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1selective_a/macro/AP"
+      },
+      {
+        "label": "B256/selective_a/AP",
+        "value": 0.6429887528104136,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15101/16101/B256/selective_a/AP",
+        "value": 0.659072877652519,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15101/16102/B256/selective_a/AP",
+        "value": 0.6706526897715077,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15101/16103/B256/selective_a/AP",
+        "value": 0.6503029350086247,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15102/16101/B256/selective_a/AP",
+        "value": 0.6274069290731394,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15102/16102/B256/selective_a/AP",
+        "value": 0.6886811696780232,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15102/16103/B256/selective_a/AP",
+        "value": 0.6305122850999004,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15103/16101/B256/selective_a/AP",
+        "value": 0.6491438571958852,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15103/16102/B256/selective_a/AP",
+        "value": 0.6068218820558309,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "256/15103/16103/B256/selective_a/AP",
+        "value": 0.6043041497582919,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1selective_a/macro/AP"
+      },
+      {
+        "label": "B64/selective_a/AUROC",
+        "value": 0.8060308307857971,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16101/B64/selective_a/AUROC",
+        "value": 0.8085414305441634,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16102/B64/selective_a/AUROC",
+        "value": 0.8022475993699847,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16103/B64/selective_a/AUROC",
+        "value": 0.8166704601654863,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16101/B64/selective_a/AUROC",
+        "value": 0.8124579986544866,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16102/B64/selective_a/AUROC",
+        "value": 0.7980309263774727,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16103/B64/selective_a/AUROC",
+        "value": 0.8088934978753054,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16101/B64/selective_a/AUROC",
+        "value": 0.8088843459450801,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16102/B64/selective_a/AUROC",
+        "value": 0.7966714497530616,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16103/B64/selective_a/AUROC",
+        "value": 0.8018797683871326,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "B128/selective_a/AUROC",
+        "value": 0.8286533932559467,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16101/B128/selective_a/AUROC",
+        "value": 0.8402249765541467,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16102/B128/selective_a/AUROC",
+        "value": 0.8382029945844175,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16103/B128/selective_a/AUROC",
+        "value": 0.8346458941633303,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16101/B128/selective_a/AUROC",
+        "value": 0.8137909139703918,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16102/B128/selective_a/AUROC",
+        "value": 0.8354942119929347,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16103/B128/selective_a/AUROC",
+        "value": 0.8217381381664743,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16101/B128/selective_a/AUROC",
+        "value": 0.8303995708046319,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16102/B128/selective_a/AUROC",
+        "value": 0.8316341385104205,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16103/B128/selective_a/AUROC",
+        "value": 0.811749700556772,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "B256/selective_a/AUROC",
+        "value": 0.8463015122656282,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16101/B256/selective_a/AUROC",
+        "value": 0.8544326057859397,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16102/B256/selective_a/AUROC",
+        "value": 0.8602735803247927,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16103/B256/selective_a/AUROC",
+        "value": 0.8545236533719559,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16101/B256/selective_a/AUROC",
+        "value": 0.8281793572013513,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16102/B256/selective_a/AUROC",
+        "value": 0.8545490417213086,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16103/B256/selective_a/AUROC",
+        "value": 0.843476679993064,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16101/B256/selective_a/AUROC",
+        "value": 0.8512343267933877,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16102/B256/selective_a/AUROC",
+        "value": 0.8351093076507178,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16103/B256/selective_a/AUROC",
+        "value": 0.8349350575481367,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1selective_a/macro/AUROC"
+      },
+      {
+        "label": "B64/target_only_cost/AP",
+        "value": 0.5622237938973843,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16101/B64/target_only_cost/AP",
+        "value": 0.5696157416733569,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16102/B64/target_only_cost/AP",
+        "value": 0.5458320554343482,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15101/16103/B64/target_only_cost/AP",
+        "value": 0.5568767135403461,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16101/B64/target_only_cost/AP",
+        "value": 0.5780931369905111,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16102/B64/target_only_cost/AP",
+        "value": 0.5859280374610871,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15102/16103/B64/target_only_cost/AP",
+        "value": 0.5387432271748556,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16101/B64/target_only_cost/AP",
+        "value": 0.5759254158573788,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16102/B64/target_only_cost/AP",
+        "value": 0.5649803486828442,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "64/15103/16103/B64/target_only_cost/AP",
+        "value": 0.544019468261731,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "B128/target_only_cost/AP",
+        "value": 0.5799986700697555,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16101/B128/target_only_cost/AP",
+        "value": 0.5655700987506502,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16102/B128/target_only_cost/AP",
+        "value": 0.5875876522412851,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15101/16103/B128/target_only_cost/AP",
+        "value": 0.5798725733873744,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16101/B128/target_only_cost/AP",
+        "value": 0.5867857449114992,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16102/B128/target_only_cost/AP",
+        "value": 0.5835797624271953,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15102/16103/B128/target_only_cost/AP",
+        "value": 0.5645738587894391,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16101/B128/target_only_cost/AP",
+        "value": 0.5874313014527226,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16102/B128/target_only_cost/AP",
+        "value": 0.5846396871243831,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "128/15103/16103/B128/target_only_cost/AP",
+        "value": 0.5799473515432495,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "B256/target_only_cost/AP",
+        "value": 0.6162705045963327,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16101/B256/target_only_cost/AP",
+        "value": 0.6281315626674031,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16102/B256/target_only_cost/AP",
+        "value": 0.6101036715395113,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15101/16103/B256/target_only_cost/AP",
+        "value": 0.5897518914009257,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16101/B256/target_only_cost/AP",
+        "value": 0.6364281628452485,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16102/B256/target_only_cost/AP",
+        "value": 0.6248398742624967,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15102/16103/B256/target_only_cost/AP",
+        "value": 0.6269479209119861,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16101/B256/target_only_cost/AP",
+        "value": 0.615301297499924,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16102/B256/target_only_cost/AP",
+        "value": 0.6212625027395963,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "256/15103/16103/B256/target_only_cost/AP",
+        "value": 0.5936676574999027,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1target_only_cost/macro/AP"
+      },
+      {
+        "label": "B64/target_only_cost/AUROC",
+        "value": 0.7341812474181069,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16101/B64/target_only_cost/AUROC",
+        "value": 0.7439716985310858,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16102/B64/target_only_cost/AUROC",
+        "value": 0.7358014950603702,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15101/16103/B64/target_only_cost/AUROC",
+        "value": 0.7236757486437194,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16101/B64/target_only_cost/AUROC",
+        "value": 0.747117804051608,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16102/B64/target_only_cost/AUROC",
+        "value": 0.752231906933633,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15102/16103/B64/target_only_cost/AUROC",
+        "value": 0.7072236917984001,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16101/B64/target_only_cost/AUROC",
+        "value": 0.7383822597916201,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16102/B64/target_only_cost/AUROC",
+        "value": 0.7485991725131123,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "64/15103/16103/B64/target_only_cost/AUROC",
+        "value": 0.7106274494394123,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B64~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "B128/target_only_cost/AUROC",
+        "value": 0.7441248256976114,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16101/B128/target_only_cost/AUROC",
+        "value": 0.7407034194023683,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16102/B128/target_only_cost/AUROC",
+        "value": 0.7510025639110327,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15101/16103/B128/target_only_cost/AUROC",
+        "value": 0.7407340483757927,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16101/B128/target_only_cost/AUROC",
+        "value": 0.7431626881111857,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16102/B128/target_only_cost/AUROC",
+        "value": 0.746016200532971,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15102/16103/B128/target_only_cost/AUROC",
+        "value": 0.7311360197500263,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16101/B128/target_only_cost/AUROC",
+        "value": 0.7487233080364722,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16102/B128/target_only_cost/AUROC",
+        "value": 0.7506561691253495,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "128/15103/16103/B128/target_only_cost/AUROC",
+        "value": 0.744989014033304,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B128~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "B256/target_only_cost/AUROC",
+        "value": 0.7737885969488102,
+        "path": "results/phase3b_eval_v2/AGGREGATE_METRICS.json",
+        "key": "/methods/B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16101/B256/target_only_cost/AUROC",
+        "value": 0.7805556435697354,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116101~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16102/B256/target_only_cost/AUROC",
+        "value": 0.7597704482094431,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116102~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15101/16103/B256/target_only_cost/AUROC",
+        "value": 0.7633092178004381,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15101~116103~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16101/B256/target_only_cost/AUROC",
+        "value": 0.7865192543787858,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116101~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16102/B256/target_only_cost/AUROC",
+        "value": 0.773852681320603,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116102~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15102/16103/B256/target_only_cost/AUROC",
+        "value": 0.7887884153165146,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15102~116103~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16101/B256/target_only_cost/AUROC",
+        "value": 0.771311631691217,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116101~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16102/B256/target_only_cost/AUROC",
+        "value": 0.7708339354490114,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116102~1B256~1target_only_cost/macro/AUROC"
+      },
+      {
+        "label": "256/15103/16103/B256/target_only_cost/AUROC",
+        "value": 0.7691561448035429,
+        "path": "results/phase3b_eval_v2/PER_EPISODE_METRICS.json",
+        "key": "/procedures/15103~116103~1B256~1target_only_cost/macro/AUROC"
+      }
+    ]
+  },
+  "contrast_forest": {
+    "description": "All adopted contrasts and budgets. Bonferroni intervals only for the four B128 secondary contrasts.",
+    "numerical_data": [
+      {
+        "value": -0.03962123978057017,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-full_cost/delta_AP"
+      },
+      {
+        "value": [
+          -0.04508620488837197,
+          -0.034136704987999957
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-full_cost/CI95/interval"
+      },
+      {
+        "value": 0.02293527268309776,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-head_cost/delta_AP"
+      },
+      {
+        "value": [
+          0.020086895206136893,
+          0.025921978568141393
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-head_cost/CI95/interval"
+      },
+      {
+        "value": -0.003285957940400899,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-random_a/delta_AP"
+      },
+      {
+        "value": [
+          -0.0046801696368452906,
+          -0.0018743126005024147
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-random_a/CI95/interval"
+      },
+      {
+        "value": 0.030391526889494116,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-source_only/delta_AP"
+      },
+      {
+        "value": [
+          0.027091836545496583,
+          0.033918637857505825
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-source_only/CI95/interval"
+      },
+      {
+        "value": 0.008682253543829751,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-target_only_cost/delta_AP"
+      },
+      {
+        "value": [
+          -0.00752831376444423,
+          0.025366530494133045
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B64~1A-minus-target_only_cost/CI95/interval"
+      },
+      {
+        "value": -0.04701571965438299,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/delta_AP"
+      },
+      {
+        "value": [
+          -0.052989915190468015,
+          -0.04072239536561018
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/CI95/interval"
+      },
+      {
+        "value": [
+          0.05124501091236244,
+          0.06514456163003443
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-head_cost/Bonferroni_CI9875/interval"
+      },
+      {
+        "value": 0.058000106395013774,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-head_cost/delta_AP"
+      },
+      {
+        "value": [
+          0.05256051670104342,
+          0.06346932600525912
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-head_cost/CI95/interval"
+      },
+      {
+        "value": [
+          -0.006779075800396453,
+          -0.0019612814391597303
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-random_a/Bonferroni_CI9875/interval"
+      },
+      {
+        "value": -0.004356582637716346,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-random_a/delta_AP"
+      },
+      {
+        "value": [
+          -0.0062201942771331065,
+          -0.00241455770691238
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-random_a/CI95/interval"
+      },
+      {
+        "value": [
+          0.055917884334932125,
+          0.0712067284704608
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-source_only/Bonferroni_CI9875/interval"
+      },
+      {
+        "value": 0.0634767697636161,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-source_only/delta_AP"
+      },
+      {
+        "value": [
+          0.057582281510410505,
+          0.06954951404962549
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-source_only/CI95/interval"
+      },
+      {
+        "value": [
+          0.002375980861518786,
+          0.04591691450452842
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-target_only_cost/Bonferroni_CI9875/interval"
+      },
+      {
+        "value": 0.023992620245580687,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-target_only_cost/delta_AP"
+      },
+      {
+        "value": [
+          0.007245688022273446,
+          0.04148900430565235
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-target_only_cost/CI95/interval"
+      },
+      {
+        "value": -0.03540816220643723,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-full_cost/delta_AP"
+      },
+      {
+        "value": [
+          -0.04142402178172542,
+          -0.028837154297674205
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-full_cost/CI95/interval"
+      },
+      {
+        "value": 0.09534114985072856,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-head_cost/delta_AP"
+      },
+      {
+        "value": [
+          0.08678556202874282,
+          0.10386307809521306
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-head_cost/CI95/interval"
+      },
+      {
+        "value": -0.0021981239453586886,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-random_a/delta_AP"
+      },
+      {
+        "value": [
+          -0.006429120567830658,
+          0.002022417887389448
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-random_a/CI95/interval"
+      },
+      {
+        "value": 0.10247423225869363,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-source_only/delta_AP"
+      },
+      {
+        "value": [
+          0.09355459720314381,
+          0.11147597529860702
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-source_only/CI95/interval"
+      },
+      {
+        "value": 0.026718248214080902,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-target_only_cost/delta_AP"
+      },
+      {
+        "value": [
+          0.010011611976245116,
+          0.04419159612492247
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B256~1A-minus-target_only_cost/CI95/interval"
+      }
+    ]
+  },
+  "primary_episodes": {
+    "description": "Seed identities are in the corresponding episode objects, not patient identifiers.",
+    "numerical_data": [
+      {
+        "value": -0.03814032950835711,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/0/delta_AP"
+      },
+      {
+        "value": -0.07081359917973495,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/1/delta_AP"
+      },
+      {
+        "value": -0.03326693787357804,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/2/delta_AP"
+      },
+      {
+        "value": -0.06522750198151372,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/3/delta_AP"
+      },
+      {
+        "value": -0.05115065822596798,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/4/delta_AP"
+      },
+      {
+        "value": -0.06133552529277042,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/5/delta_AP"
+      },
+      {
+        "value": -0.02906996757586211,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/6/delta_AP"
+      },
+      {
+        "value": -0.03922445425898635,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/7/delta_AP"
+      },
+      {
+        "value": -0.03491250299267623,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/episodes/8/delta_AP"
+      },
+      {
+        "value": -0.04701571965438299,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/delta_AP"
+      },
+      {
+        "value": [
+          -0.052989915190468015,
+          -0.04072239536561018
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/CI95/interval"
+      }
+    ]
+  },
+  "mask_heatmap": {
+    "description": "All registered masks, no outcome-selected subset. Zero/one colour encodes SHARE/ADAPT, not numeric evidence strength.",
+    "numerical_data": [
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/0/mask",
+        "source_seed": 15101,
+        "draw_seed": 16101,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/3/mask",
+        "source_seed": 15101,
+        "draw_seed": 16102,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "SHARE",
+          "fusion_2": "SHARE",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "SHARE"
+        },
+        "ADAPT_count": 0
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/6/mask",
+        "source_seed": 15101,
+        "draw_seed": 16103,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "SHARE",
+          "fusion_2": "SHARE",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 1
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/9/mask",
+        "source_seed": 15102,
+        "draw_seed": 16101,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "SHARE"
+        },
+        "ADAPT_count": 2
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/12/mask",
+        "source_seed": 15102,
+        "draw_seed": 16102,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "SHARE",
+          "fusion_2": "SHARE",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "SHARE"
+        },
+        "ADAPT_count": 0
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/15/mask",
+        "source_seed": 15102,
+        "draw_seed": 16103,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 3
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/18/mask",
+        "source_seed": 15103,
+        "draw_seed": 16101,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 5
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/21/mask",
+        "source_seed": 15103,
+        "draw_seed": 16102,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "SHARE",
+          "fusion_2": "SHARE",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "SHARE"
+        },
+        "ADAPT_count": 0
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/24/mask",
+        "source_seed": 15103,
+        "draw_seed": 16103,
+        "budget": 64,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "SHARE",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 3
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/1/mask",
+        "source_seed": 15101,
+        "draw_seed": 16101,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/4/mask",
+        "source_seed": 15101,
+        "draw_seed": 16102,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/7/mask",
+        "source_seed": 15101,
+        "draw_seed": 16103,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/10/mask",
+        "source_seed": 15102,
+        "draw_seed": 16101,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "SHARE"
+        },
+        "ADAPT_count": 3
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/13/mask",
+        "source_seed": 15102,
+        "draw_seed": 16102,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/16/mask",
+        "source_seed": 15102,
+        "draw_seed": 16103,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/19/mask",
+        "source_seed": 15103,
+        "draw_seed": 16101,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 5
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/22/mask",
+        "source_seed": 15103,
+        "draw_seed": 16102,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 5
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/25/mask",
+        "source_seed": 15103,
+        "draw_seed": 16103,
+        "budget": 128,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/2/mask",
+        "source_seed": 15101,
+        "draw_seed": 16101,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "SHARE",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 5
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/5/mask",
+        "source_seed": 15101,
+        "draw_seed": 16102,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 6
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/8/mask",
+        "source_seed": 15101,
+        "draw_seed": 16103,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 5
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/11/mask",
+        "source_seed": 15102,
+        "draw_seed": 16101,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "SHARE",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 4
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/14/mask",
+        "source_seed": 15102,
+        "draw_seed": 16102,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 6
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/17/mask",
+        "source_seed": 15102,
+        "draw_seed": 16103,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "SHARE",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 5
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/20/mask",
+        "source_seed": 15103,
+        "draw_seed": 16101,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 6
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/23/mask",
+        "source_seed": 15103,
+        "draw_seed": 16102,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 6
+      },
+      {
+        "source_path": "results/phase3b/MODULE_EVIDENCE.json",
+        "source_key": "/episodes/26/mask",
+        "source_seed": 15103,
+        "draw_seed": 16103,
+        "budget": 256,
+        "mask": {
+          "fusion_1": "ADAPT",
+          "fusion_2": "ADAPT",
+          "view_1": "ADAPT",
+          "view_2": "SHARE",
+          "view_3": "ADAPT",
+          "view_4": "ADAPT",
+          "view_5": "ADAPT"
+        },
+        "ADAPT_count": 6
+      }
+    ]
+  },
+  "phase2_vs_phase3b": {
+    "description": "No cross-study hypothesis test or meta-analysis; label budgets and source replication differ.",
+    "numerical_data": [
+      {
+        "value": {
+          "ci95": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.95,
+            "lower": -0.00900938422001486,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": -0.003350188406001367
+          },
+          "ci99": {
+            "conclusive_interpretation_allowed": true,
+            "confidence": 0.99,
+            "lower": -0.009854688044513435,
+            "undefined": 0,
+            "undefined_fraction": 0.0,
+            "upper": -0.002451133350096263
+          },
+          "difference": -0.00627930105040575
+        },
+        "path": "results/phase2f/BOOTSTRAP_SUMMARIES.json",
+        "key": "/primary/ap"
+      },
+      {
+        "value": -0.04701571965438299,
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/delta_AP"
+      },
+      {
+        "value": [
+          -0.052989915190468015,
+          -0.04072239536561018
+        ],
+        "path": "results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json",
+        "key": "/comparisons/B128~1A-minus-full_cost/CI95/interval"
+      }
+    ]
+  }
+}

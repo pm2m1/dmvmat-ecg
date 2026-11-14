@@ -1,0 +1,1 @@
+{"labels":[{"label":"CD-proxy","negative":2832,"observed_fraction":1.0,"passed":true,"positive":1028},{"label":"STTC-proxy","negative":2918,"observed_fraction":1.0,"passed":true,"positive":942}],"minimum_observed_fraction":0.95,"passed":true}

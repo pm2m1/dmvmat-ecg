@@ -1,0 +1,50 @@
+[
+  {
+    "claim": 1,
+    "status": "VERIFIED",
+    "finding": "CD-proxy: 0.93058 \u2192 0.89173, DROP -0.03885; STTC-proxy: 0.87515 \u2192 0.67233, DROP -0.20282; macro AP/AUROC 0.54051/0.78203",
+    "evidence": "[results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json](../results/phase3b_eval_v2/SOURCE_FOLD9_TRANSFER_REFERENCE.json) \u2192 `/rows/*/{source_fold9_AUROC,O_AUROC}; arithmetic means`; [results/phase3b_eval_v2/AGGREGATE_METRICS.json](../results/phase3b_eval_v2/AGGREGATE_METRICS.json) \u2192 `/methods/B128~1source_only/macro`"
+  },
+  {
+    "claim": 2,
+    "status": "VERIFIED",
+    "finding": "B128/source_only: 0.54051/0.78203; B128/target_only_cost: 0.58000/0.74412; B128/full_cost: 0.65101/0.84417; B256/full_cost: 0.67840/0.85477",
+    "evidence": "[results/phase3b_eval_v2/AGGREGATE_METRICS.json](../results/phase3b_eval_v2/AGGREGATE_METRICS.json) \u2192 `/methods/{listed keys}/macro/{AP,AUROC}`"
+  },
+  {
+    "claim": 3,
+    "status": "VERIFIED",
+    "finding": "Full-cost B128\u2212Source-only: \u0394AP 0.11049; \u0394AUROC 0.06214",
+    "evidence": "[results/phase3b_eval_v2/NEGATIVE_TRANSFER_AND_RECOVERY.json](../results/phase3b_eval_v2/NEGATIVE_TRANSFER_AND_RECOVERY.json) \u2192 `/recovery/B128~1full_cost-minus-source_only`"
+  },
+  {
+    "claim": 4,
+    "status": "VERIFIED",
+    "finding": "B128 \u0394AP -0.04702, CI [-0.05299, -0.04072]; all 9 episode AP effects negative (9/9). B64/B256: -0.03962/-0.03541",
+    "evidence": "[results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json](../results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json) \u2192 `/comparisons/B{64,128,256}~1A-minus-full_cost; /episodes`"
+  },
+  {
+    "claim": 5,
+    "status": "VERIFIED",
+    "finding": "A\u2212head_cost: 0.05800; adjusted CI [0.05125, 0.06514]; A\u2212random_a: -0.00436; adjusted CI [-0.00678, -0.00196]; A\u2212source_only: 0.06348; adjusted CI [0.05592, 0.07121]; A\u2212target_only_cost: 0.02399; adjusted CI [0.00238, 0.04592]. A is below Random-A on AP; this is not equivalence.",
+    "evidence": "[results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json](../results/phase3b_eval_v2/BOOTSTRAP_SUMMARIES.json) \u2192 `/comparisons/B128~1A-minus-{head_cost,random_a,source_only,target_only_cost}`"
+  },
+  {
+    "claim": 6,
+    "status": "CORRECTED",
+    "finding": "view_2 SHARE 27/27; Fusion1 ADAPT 23/27, Fusion2 22/27. Both always ADAPT at B128/B256; not at B64.",
+    "evidence": "[results/phase3b/MODULE_EVIDENCE.json](../results/phase3b/MODULE_EVIDENCE.json) \u2192 `/episodes/*/mask; counts derived without labels`"
+  },
+  {
+    "claim": 7,
+    "status": "VERIFIED",
+    "finding": "Phase2 \u0394AP -0.00628, CI [-0.00901, -0.00335]",
+    "evidence": "[results/phase2f/BOOTSTRAP_SUMMARIES.json](../results/phase2f/BOOTSTRAP_SUMMARIES.json) \u2192 `/primary/ap`"
+  },
+  {
+    "claim": 8,
+    "status": "VERIFIED",
+    "finding": "Locked five-view AUROC/AP 0.92139/0.81405; flat 0.91733/0.80657; adjusted AUROC CI [0.00009, 0.00786]; AP CI includes zero.",
+    "evidence": "[results/locked_metrics.json](../results/locked_metrics.json) \u2192 `/summary/{multiview,flat_cnn}; /comparisons/multiview-minus-flat_cnn`"
+  }
+]
