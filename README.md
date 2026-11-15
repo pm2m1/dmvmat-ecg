@@ -1,58 +1,165 @@
-# DMV-MAT ECG
+# Early Prediction of Cardiovascular Diseases using Deep Learning
 
-Independent PTB-XL1.0.3 research comparing a modern PyTorch XResNet1D101 adaptation, a capacity-matched flat CNN, and our modular five-view ECG network. The task is five-superclass multilabel ECG diagnosis; this is not future cardiovascular-event prediction, a clinical tool or an external transfer validation.
+**Authors:** Parth Mishra and Mohammed Abdul Muqsith Siddique  
+**Supervisor:** Prof. Pradeep Kumar Das  
+**Institution:** National Institute of Technology Warangal, 2026
 
-## Verified dataset and split
+This project develops diagnostic prediction models that estimate whether cardiovascular conditions are present in a routine 12-lead ECG. A compact five-view convolutional network combines anatomical lead groups with temporal and frequency representations. The experiments compare this network with flat CNN and XResNet references, then test whether DMV-MAT-inspired evidence-guided selective adaptation improves transfer to a new population or hospital with few labelled ECGs. The endpoints are ECG annotations and harmonised annotation proxies; this work does not predict future cardiovascular events or establish clinical utility.
 
-[PTB-XL1.0.3](https://physionet.org/content/ptb-xl/1.0.3/), CC-BY4.0, DOI10.13026/kfzx-aw45; Wagner et al., [dataset paper](https://doi.org/10.1038/s41597-020-0495-6). All43,598 required100Hz header/data files verified against publisher SHA256 checksums. Raw21,799 ECGs/18,869 patient IDs; eligible21,388 ECGs/18,617 patient IDs. Exclude411 recordings with no diagnostic superclass. Official train folds1–8:17,084; validation9:2,146; test10:2,158. No detected cross-role patient/exact-waveform overlap; unknown identity and near-duplicates remain limitations. No500Hz files downloaded.
+## Architecture
 
-## Architecture and training
+The five-view CNN has **212,261 parameters** for the five-label PTB-XL task:
 
-Five CNN views: limb leads; V1–V3; V4–V6; learned temporal/rhythm representation (no fabricated RR measurements); Hann-FFT spectrum0.5–40Hz. Five64-dimensional embeddings, concatenation320, fusion128→64, five sigmoid outputs. Seven named internal modules remain available for future selective-transfer studies.212,261 parameters versus206,117 for the matched flat control. Derived views do not add independent measurements.
+| View | Input |
+|---|---|
+| Limb leads | I, II, III, aVR, aVL and aVF |
+| Early precordial | V1–V3 |
+| Late precordial | V4–V6 |
+| Temporal | Lead II, across-lead RMS and mean absolute first difference |
+| Frequency | Twelve Hann-window log spectra, 0.5–40 Hz |
 
-Four prespecified variants ×two seeds101/202,50 epochs each, BCEWithLogitsLoss, AdamW lr0.01/weight decay0.01/betas0.9,0.99, OneCycleLR, batch128. Common CPU float32 after XResNet failed a preset synthetic MPS-gradient tolerance; Apple M5 Pro48GiB. Per-seed checkpoints selected by fold9record-level macro AUROC. Three training-only smoke fits precede eight full fits. No successful fit repeated, no test-guided tuning.
+Each view produces a 64-dimensional CNN embedding. Concatenation gives 320 features, followed by fusion layers of width 128 and 64 and an independent sigmoid output for each label. Five-class prediction uses NORM, MI, STTC, CD and HYP; transfer uses CD and STTC annotation proxies. The five encoders and two fusion modules are separately selectable, with the prediction head trainable during adaptation. Derived views are transformations of the same ECG, not independent clinical measurements.
 
-The [reference benchmark](https://github.com/helme/ecg_ptbxl_benchmarking) is pinned atcdbf4e66d7e57d9b6a2657b6024716212b8d0afa (GPL3). Its architecture is reused with a compatible head helper; obsolete FastAI1 training is adapted to modern PyTorch. Reference uses random2.5s training crops and max probabilities over seven held-out windows; flat/multiview controls use full10s. Thus reference comparisons are pipeline comparisons. Our implementation is not exact historical numerical reproduction. Published~0.928 macro AUROC is context, not our achieved metric or an AP value.
+See [architecture details](docs/ECG_ARCHITECTURE.md) and the [model implementation](src/dmvmat_ecg/models/networks.py).
 
-## Actual locked results
+## Results
 
-Same fold10recordings, mean seed-wise metrics, no probability ensemble. All ten registered checkpoint/seed prediction sets sealed before metrics. XResNet-final is a no-extra-fit alias of the original final-epoch convention.
+### Experiment 1 — PTB-XL diagnostic prediction
 
-| Procedure | Macro AUROC | Macro AP | Mean Brier | Mean ECE |
-|---|---|---|---|---|
-| xresnet101 | 0.92985 | 0.82759 | 0.08588 | 0.05153 |
-| xresnet101_final | 0.92800 | 0.82241 | 0.09258 | 0.06734 |
-| flat_cnn | 0.91733 | 0.80657 | 0.08811 | 0.04066 |
-| multiview | 0.92139 | 0.81405 | 0.08694 | 0.03775 |
-| multiview_aug | 0.92068 | 0.81698 | 0.08513 | 0.03789 |
+Macro metrics on the official held-out test set, averaged across the two training seeds:
 
-multiview-minus-flat_cnn: Δmacro AUROC=+0.00406, primary97.5% Bonferroni CI [+0.00009, +0.00786] (positive conditional evidence); Δmacro AP=+0.00748, exploratory95%CI [-0.00078, +0.01600].
+| Model | Macro AUROC | Macro AP |
+|---|---:|---:|
+| Flat CNN | 0.917 | 0.807 |
+| Five-view CNN | 0.921 | 0.814 |
+| XResNet | 0.930 | 0.828 |
 
-multiview-minus-xresnet101: Δmacro AUROC=-0.00847, primary97.5% Bonferroni CI [-0.01312, -0.00400] (negative conditional evidence); Δmacro AP=-0.01354, exploratory95%CI [-0.02253, -0.00408].
+The five-view model improves on the capacity-matched flat CNN but does not outperform the larger XResNet reference. The latter uses a different crop-based prediction pipeline, so its comparison is not capacity-matched.
 
-Primary AUROC intervals use97.5% Bonferroni coverage for two contrasts; AP intervals are exploratory95%. Patient-cluster bootstrap2,000 draws, paired seeds/shared test patients, conditional on fitted models. Positive point estimates alone do not establish superiority; inconclusive intervals do not establish equivalence. See complete per-label/threshold/calibration/seed results in the research report.
+### Experiments 2–4 — Population and hospital transfer
 
-## Reproduce and inspect
+Experiment 2 studies internal age-subgroup transfer. Experiment 3 measures zero-shot hospital shift. Experiment 4 compares adaptation methods on CPSC using **128 labelled target ECGs**:
 
-Python3.12.14 with uv and `uv.lock`.
+| Method | Macro AP | Macro AUROC |
+|---|---:|---:|
+| Source-only | 0.541 | 0.782 |
+| Head-only fine-tuning | 0.546 | 0.792 |
+| Full fine-tuning | 0.651 | 0.844 |
+| Random module selection | 0.608 | 0.828 |
+| Proposed selective adaptation | 0.604 | 0.829 |
+| Training from scratch | 0.580 | 0.744 |
+
+**Key finding:** proposed selective adaptation did not outperform full fine-tuning: ΔAP **−0.047**, with a conditional 95% confidence interval **[−0.053, −0.041]**. This is exploratory, record-level evidence for the specified CPSC annotation-proxy task. It does not establish external clinical validity or the value of evidence-guided selection over random selection.
+
+The protocol and analyses were fixed before held-out testing. An initial target-label parsing error was corrected under a documented review without changing predictions. Dataset reuse, annotation differences, unavailable CPSC patient identities and first-ten-second truncation limit interpretation.
+
+Research notes: [project summary](docs/PROJECT_RESULTS_SUMMARY.md), [PTB-XL comparison](docs/EXPERIMENT_RESULTS.md), [reference fidelity](docs/BASELINE_REPRODUCTION.md). Generated result files, fitted models, participant tables and the thesis report are excluded from the current source snapshot. Earlier research commits retain aggregate summaries and figures, not individual-record data.
+
+## Datasets
+
+Data are **not included**. Download them from the official sources and follow their respective licences, attribution requirements and access terms:
+
+- [PTB-XL v1.0.3](https://physionet.org/content/ptb-xl/1.0.3/).
+- [PhysioNet/Computing in Cardiology Challenge 2021 v1.0.3](https://physionet.org/content/challenge-2021/1.0.3/), including CPSC 2018, Georgia, and Chapman–Ningbo sources.
+
+The Challenge collection also contains PTB-XL copies; the collection as a whole is not independent of PTB-XL. The cross-hospital experiments exclude those copies. An absent diagnosis code means not annotated, not a clinically verified negative. See the [dataset instructions](data/README.md).
+
+## Setup
+
+Recorded environment: **Python 3.12.14**, **PyTorch 2.15.0**, macOS 26.6 on Apple Silicon. The dependency resolution is recorded in `uv.lock`; the research models used CPU float32.
+
+Preferred installation:
 
 ```bash
 uv sync --frozen
+```
+
+Alternatively, Python 3.12 users can install the package and its declared dependencies with pip:
+
+```bash
+python -m pip install -e .
+```
+
+For the exact resolved environment, use the frozen uv lockfile. There is no separate requirements file.
+
+```bash
 uv run pytest -q
 uv run ruff check src scripts tests
 uv run ruff format --check src scripts tests
 ```
 
-Data acquisition, one-time audit, finite training and single-use evaluation commands are documented in [reproducibility](docs/REPRODUCIBILITY.md). Reproduce in a new independent workspace/ledger; do not delete an evaluation receipt or rerun data preparation to reset the existing experiment.
+## Reproduction entry points
 
-Reports: [final summary](docs/FINAL_RESEARCH_SUMMARY.md), [complete results](docs/EXPERIMENT_RESULTS.md), [protocol](docs/EXPERIMENT_PROTOCOL.md), [data audit](docs/DATASET_AUDIT.md), [architecture](docs/ECG_ARCHITECTURE.md), [reference fidelity](docs/BASELINE_REPRODUCTION.md), [transfer feasibility](docs/TRANSFER_FEASIBILITY.md). FiguresPNG/PDF under `results/figures`, with captions/checksums in `results/figure_inventory.json`; aggregate histories and metrics under `results`.
+These are existing scripts and modules, not a promise of a one-command replay. Use a fresh, independently reviewed experiment workspace. Local membership files, fitted statistics, model weights and completed-study permissions are not distributed. Do not bypass the access checks or reuse completed experiments to tune against their held-out results. Some historical identities bind the original documentation as well as code; a new study needs its own reviewed identities.
 
-## Limits and future work
+### Experiment 1: PTB-XL
 
-Known published benchmark scores, two seeds, one official split, label uncertainty, repeated/unknown person linkage and limited tuning constrain inference. The lightweight CNN's local receptive field does not directly estimate RR intervals; view-specific usefulness requires separate ablations. Raw probabilities have not been recalibrated. Thresholds are validation-F1 choices, not clinical recommendations. No transfer superiority, external validity or clinical utility is established.
+The commands below are documented in [reproducibility](docs/REPRODUCIBILITY.md):
 
-CinC2021 contains PTB-XL/PTB; the full Challenge collection is not independent. Person/segment overlap and diagnostic-label harmonization must be resolved before a separately approved transfer study. Synthetic MMD/selector interfaces do not substitute for cross-cohort evidence.
+```bash
+uv run python scripts/download_ptbxl.py
+uv run python scripts/audit_dataset.py
+uv run python scripts/device_probe.py
+uv run python scripts/train_study.py --stage smoke
+uv run python scripts/train_study.py --stage full --seed 101
+uv run python scripts/train_study.py --stage full --seed 202
+# Run only after the experiment's development and test-access checks pass:
+uv run python scripts/locked_evaluate.py
+uv run python scripts/make_figures.py
+```
 
-## License and release boundaries
+### Experiment 2: internal age-subgroup transfer
 
-Code GPL-3.0-only, including attributed upstream architecture; source data CC-BY4.0 with separate attribution obligations. Raw signals/metadata, patient manifests, predictions, fitted checkpoints, local operational files and environments are ignored. `results/public_release_inventory.json` lists eligible aggregate/code artifacts for separate release review. No GitHub remote or publication authorization; previous cardiovascular repositories remain unchanged.
+The preparation script requires the reviewed patient-disjoint candidate memberships:
+
+```bash
+uv run python scripts/phase2d_prepare.py --prepare-only
+```
+
+It prepares the execution interface; it does not permit or start fitting. The existing programmatic fitting, calibration and prediction interfaces are `run_job`, `calibrate_job` and `predict_locked` in [the execution module](src/dmvmat_ecg/phase2d/execution.py). They require the reviewed local records. There is no standalone end-to-end fitting CLI for this experiment. See the [execution contract](docs/phase2/PILOT_EXECUTION_CONTRACT.md).
+
+### Experiment 3: zero-shot hospital assessment
+
+```bash
+uv run python scripts/phase3/download_cinc.py prepare
+uv run python scripts/phase3/download_cinc.py run
+uv run python scripts/phase3/download_cinc.py verify
+# Requires the completed source models and the prescribed local partitions:
+uv run python scripts/phase3/offline_feasibility.py
+```
+
+The offline script performs preparation, prediction and analysis; it is not a training command. The [hospital-assessment report](docs/phase3/CROSS_HOSPITAL_FEASIBILITY.md) documents its frozen proxy definitions and exclusions.
+
+### Experiment 4: CPSC adaptation
+
+After the reviewed local memberships and execution prerequisites have been prepared through `prepare` in [the preparation module](src/dmvmat_ecg/phase3b_real/prepare.py), the existing bounded development coordinator is:
+
+```bash
+uv run python -m dmvmat_ecg.phase3b_real.run
+```
+
+It refuses an already-started experiment. The held-out analysis is a separate, reviewed operation, not a continuation enabled by this README. See the [adopted experiment design](docs/phase3/PHASE3B_TRANSFER_PROTOCOL_DRAFT.md) and [development report](docs/phase3/PHASE3B_DEVELOPMENT_RESULTS.md).
+
+## Repository layout
+
+| Path | Contents |
+|---|---|
+| `src/dmvmat_ecg/` | Data interfaces, deterministic preprocessing, models, training, adaptation and evaluation |
+| `scripts/` | Dataset preparation and research execution entry points |
+| `configs/` | Versioned experiment specifications |
+| `tests/` | Synthetic architecture, statistics, access-control and execution tests |
+| `docs/` | Methods, experiment reports and limitations |
+| `data/README.md` | Public dataset download instructions only |
+| `pyproject.toml`, `uv.lock` | Package definition and resolved dependencies |
+
+Raw signals, participant assignments, individual labels or predictions, checkpoints, runtime databases, environments, download-session files and the thesis report remain local.
+
+## Research provenance
+
+Base paper: **Cui et al.**, “Deep Multiview Module Adaption Transfer Network for Subject-Specific EEG Recognition,” *IEEE Transactions on Neural Networks and Learning Systems*, 2025. [DOI: 10.1109/TNNLS.2024.3350085](https://doi.org/10.1109/TNNLS.2024.3350085). [Upstream DMV-MAT implementation](https://github.com/YangLibuaa/DMV-MAT).
+
+The ECG method is inspired by this work; its evidence-rule selector and classification-only pretraining do not reproduce every original component. The XResNet architecture is adapted from [helme/ecg_ptbxl_benchmarking](https://github.com/helme/ecg_ptbxl_benchmarking), revision `cdbf4e66d7e57d9b6a2657b6024716212b8d0afa`. Attribution is retained in the vendored source. The modern training implementation is not an exact reproduction of the original software environment.
+
+## License
+
+GPL-3.0-only (see LICENSE). Includes adapted XResNet code under GPL; see attribution in the source.
