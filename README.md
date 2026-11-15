@@ -4,7 +4,13 @@
 **Supervisor:** Prof. Pradeep Kumar Das  
 **Institution:** National Institute of Technology Warangal, 2026
 
-This project develops diagnostic prediction models that estimate whether cardiovascular conditions are present in a routine 12-lead ECG. A compact five-view convolutional network combines anatomical lead groups with temporal and frequency representations. The experiments compare this network with flat CNN and XResNet references, then test whether DMV-MAT-inspired evidence-guided selective adaptation improves transfer to a new population or hospital with few labelled ECGs. The endpoints are ECG annotations and harmonised annotation proxies; this work does not predict future cardiovascular events or establish clinical utility.
+This project uses a five-view CNN to predict cardiovascular conditions from routine 12-lead ECGs and studies how to adapt it to a new population or hospital with few labelled ECGs. On PTB-XL, it achieves macro AUROC **0.921** and AP **0.814** with **212K parameters**, about **8.8× fewer** than the project's XResNet reference. Its AUROC numerically matches the [published Inception1D result](https://doi.org/10.1109/JBHI.2020.3022989) of **0.921**.
+
+![PTB-XL macro AUROC and average precision across the evaluated models](docs/images/ptbxl_macro_comparison.png)
+
+*PTB-XL test performance, averaged across paired training seeds. The published Inception1D value is context, not a paired comparison; dataset releases and implementations differ.*
+
+The endpoints are ECG annotations and harmonised annotation proxies; this work does not predict future cardiovascular events or establish clinical utility.
 
 ## Architecture
 
@@ -49,6 +55,8 @@ Experiment 2 studies internal age-subgroup transfer. Experiment 3 measures zero-
 | Proposed selective adaptation | 0.604 | 0.829 |
 | Training from scratch | 0.580 | 0.744 |
 
+With 128 labelled ECGs from a new hospital, full fine-tuning recovers +0.110 AP (0.541 → 0.651).
+
 **Key finding:** proposed selective adaptation did not outperform full fine-tuning: ΔAP **−0.047**, with a conditional 95% confidence interval **[−0.053, −0.041]**. This is exploratory, record-level evidence for the specified CPSC annotation-proxy task. It does not establish external clinical validity or the value of evidence-guided selection over random selection.
 
 The protocol and analyses were fixed before held-out testing. An initial target-label parsing error was corrected under a documented review without changing predictions. Dataset reuse, annotation differences, unavailable CPSC patient identities and first-ten-second truncation limit interpretation.
@@ -64,81 +72,30 @@ Data are **not included**. Download them from the official sources and follow th
 
 The Challenge collection also contains PTB-XL copies; the collection as a whole is not independent of PTB-XL. The cross-hospital experiments exclude those copies. An absent diagnosis code means not annotated, not a clinically verified negative. See the [dataset instructions](data/README.md).
 
-## Setup
+## Quick start
 
-Recorded environment: **Python 3.12.14**, **PyTorch 2.15.0**, macOS 26.6 on Apple Silicon. The dependency resolution is recorded in `uv.lock`; the research models used CPU float32.
-
-Preferred installation:
+Recorded environment: **Python 3.12.14**, **PyTorch 2.15.0**, macOS 26.6 on Apple Silicon. The research models used CPU float32; `uv.lock` records the resolved dependencies.
 
 ```bash
 uv sync --frozen
-```
-
-Alternatively, Python 3.12 users can install the package and its declared dependencies with pip:
-
-```bash
-python -m pip install -e .
-```
-
-For the exact resolved environment, use the frozen uv lockfile. There is no separate requirements file.
-
-```bash
 uv run pytest -q
 uv run ruff check src scripts tests
 uv run ruff format --check src scripts tests
-```
 
-## Reproduction entry points
-
-These are existing scripts and modules, not a promise of a one-command replay. Use a fresh, independently reviewed experiment workspace. Local membership files, fitted statistics, model weights and completed-study permissions are not distributed. Do not bypass the access checks or reuse completed experiments to tune against their held-out results. Some historical identities bind the original documentation as well as code; a new study needs its own reviewed identities.
-
-### Experiment 1: PTB-XL
-
-The commands below are documented in [reproducibility](docs/REPRODUCIBILITY.md):
-
-```bash
 uv run python scripts/download_ptbxl.py
 uv run python scripts/audit_dataset.py
 uv run python scripts/device_probe.py
 uv run python scripts/train_study.py --stage smoke
 uv run python scripts/train_study.py --stage full --seed 101
 uv run python scripts/train_study.py --stage full --seed 202
-# Run only after the experiment's development and test-access checks pass:
+# Evaluate after finalising development and selecting the models:
 uv run python scripts/locked_evaluate.py
 uv run python scripts/make_figures.py
 ```
 
-### Experiment 2: internal age-subgroup transfer
+Python 3.12 users can alternatively install the package and its declared dependencies with `python -m pip install -e .`; use the frozen uv lockfile for the exact resolved environment. There is no separate requirements file.
 
-The preparation script requires the reviewed patient-disjoint candidate memberships:
-
-```bash
-uv run python scripts/phase2d_prepare.py --prepare-only
-```
-
-It prepares the execution interface; it does not permit or start fitting. The existing programmatic fitting, calibration and prediction interfaces are `run_job`, `calibrate_job` and `predict_locked` in [the execution module](src/dmvmat_ecg/phase2d/execution.py). They require the reviewed local records. There is no standalone end-to-end fitting CLI for this experiment. See the [execution contract](docs/phase2/PILOT_EXECUTION_CONTRACT.md).
-
-### Experiment 3: zero-shot hospital assessment
-
-```bash
-uv run python scripts/phase3/download_cinc.py prepare
-uv run python scripts/phase3/download_cinc.py run
-uv run python scripts/phase3/download_cinc.py verify
-# Requires the completed source models and the prescribed local partitions:
-uv run python scripts/phase3/offline_feasibility.py
-```
-
-The offline script performs preparation, prediction and analysis; it is not a training command. The [hospital-assessment report](docs/phase3/CROSS_HOSPITAL_FEASIBILITY.md) documents its frozen proxy definitions and exclusions.
-
-### Experiment 4: CPSC adaptation
-
-After the reviewed local memberships and execution prerequisites have been prepared through `prepare` in [the preparation module](src/dmvmat_ecg/phase3b_real/prepare.py), the existing bounded development coordinator is:
-
-```bash
-uv run python -m dmvmat_ecg.phase3b_real.run
-```
-
-It refuses an already-started experiment. The held-out analysis is a separate, reviewed operation, not a continuation enabled by this README. See the [adopted experiment design](docs/phase3/PHASE3B_TRANSFER_PROTOCOL_DRAFT.md) and [development report](docs/phase3/PHASE3B_DEVELOPMENT_RESULTS.md).
+See [the reproducibility guide](docs/REPRODUCIBILITY.md) for the transfer experiments and their preparation requirements.
 
 ## Repository layout
 
