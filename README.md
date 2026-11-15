@@ -6,13 +6,17 @@
 
 This project uses a five-view CNN to predict cardiovascular conditions from routine 12-lead ECGs and studies how to adapt it to a new population or hospital with few labelled ECGs. On PTB-XL, it achieves macro AUROC **0.921** and AP **0.814** with **212K parameters**, about **8.8× fewer** than the project's XResNet reference. Its AUROC numerically matches the [published Inception1D result](https://doi.org/10.1109/JBHI.2020.3022989) of **0.921**.
 
-![PTB-XL macro AUROC and average precision across the evaluated models](docs/images/ptbxl_macro_comparison.png)
+![PTB-XL macro AUROC and average precision across the evaluated models](docs/images/ptbxl_comparison.png)
 
-*PTB-XL test performance, averaged across paired training seeds. The published Inception1D value is context, not a paired comparison; dataset releases and implementations differ.*
+*Macro AUROC and AP on the PTB-XL held-out test set (mean of two training seeds).*
+
+The published Inception1D value is context, not a paired comparison; dataset releases and implementations differ.
 
 The endpoints are ECG annotations and harmonised annotation proxies; this work does not predict future cardiovascular events or establish clinical utility.
 
 ## Architecture
+
+![Five-view ECG network with five encoders and two fusion modules](docs/images/architecture.png)
 
 The five-view CNN has **212,261 parameters** for the five-label PTB-XL task:
 
