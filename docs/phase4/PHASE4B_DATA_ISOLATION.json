@@ -1,0 +1,36 @@
+{
+  "schema": "phase4b-aggregate-data-isolation-v1",
+  "adaptation_pool_records": 3859,
+  "excluded_unique_all_budget_label_draw_records": 711,
+  "validation_draw_eligible_records": 3148,
+  "unlabelled_signal_only_records": 2859,
+  "A_B_overlap": 0,
+  "validation_any_label_draw_overlap": 0,
+  "validation_U_overlap": 0,
+  "test_hash_exclusion_guard": "PASS",
+  "U_labels_read": false,
+  "roles": {
+    "A": {
+      "records": 500,
+      "CD_positive": 126,
+      "STTC_positive": 135,
+      "CD_STTC_combinations": {
+        "00": 243,
+        "01": 131,
+        "10": 122,
+        "11": 4
+      }
+    },
+    "B": {
+      "records": 500,
+      "CD_positive": 127,
+      "STTC_positive": 135,
+      "CD_STTC_combinations": {
+        "00": 243,
+        "01": 130,
+        "10": 122,
+        "11": 5
+      }
+    }
+  }
+}

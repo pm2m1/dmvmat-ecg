@@ -1,0 +1,10 @@
+{
+  "schema": "phase4b-filesystem-derived-elapsed-timing-v1",
+  "aligned_target_stage_elapsed_seconds": 693.3297786712646,
+  "oracle_contract_to_primary_result_elapsed_seconds": 15712.609501361847,
+  "method": "Mac filesystem creation time of the fresh aligned-stage lock to completion-marker modification; oracle identity modification to primary aggregate modification. Not CPU time, excludes initial coding/preparation before the oracle contract and later report QA.",
+  "oracle_contract_UTC": "2026-11-21T08:35:14.558244+00:00",
+  "primary_aggregate_UTC": "2026-11-21T12:57:07.167745+00:00",
+  "aligned_stage_start_UTC": "2026-11-21T12:42:49.272545+00:00",
+  "aligned_stage_end_UTC": "2026-11-21T12:54:22.602324+00:00"
+}

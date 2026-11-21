@@ -1,0 +1,194 @@
+{
+  "schema": "phase4b-completed-artifact-verification-v1",
+  "status": "PASS",
+  "retained_target_and_zero_update_evaluations": 1377,
+  "retained_target_gradient_fits": 1368,
+  "retained_zero_update_evaluations": 9,
+  "validation_prediction_files": 1377,
+  "all_validation_predictions_hash_and_shape_verified": true,
+  "oracle64_unique_fits": 1152,
+  "original_full128_references_matched": 9,
+  "new_aligned_source_checkpoints": 6,
+  "new_target_checkpoints": 0,
+  "checkpoint_state_file_and_fold9_prediction_hashes_verified": true,
+  "planned_verified_target_or_zero_update_repeats": 10,
+  "planned_verified_full_source_repeats": 1,
+  "failed_numerical_reproducibility_checks": 0,
+  "original_B128_control_replays_matched": 9,
+  "B64_selector_and_random_control_reconstructions": 9,
+  "original_B64_control_receipts_available": false,
+  "control_reconstruction_used_A_or_B": false,
+  "execution_incident": {
+    "schema": "phase4b-execution-only-stage-mutex-v1",
+    "demonstrated_defect": "duplicate controllers could compute same fit concurrently before exclusive artifact creation",
+    "baseline_duplicate_invocation_exit_code": 1,
+    "baseline_original_invocation_completed": true,
+    "later_duplicate_source_grid_stopped_exit_code": 143,
+    "redundant_completed_source_candidate_computations": 3,
+    "interrupted_redundant_source_candidate_computations": 2,
+    "discarded_duplicate_states_were_not_retained_or_compared": true,
+    "per_stage_OS_lock_added": true,
+    "numerical_code_changed": false,
+    "hyperparameters_or_selection_rules_changed": false,
+    "any_existing_output_deleted_or_overwritten": false,
+    "previous_code_bindings_preserved": true,
+    "original_baseline_completion_sha256": "0bc32f01367cd7b1c82d784b061802cf317e481131addf7bd175f5d64be51982",
+    "new_stage_wrapper_sha256": "3f097a421bf61a5c5fd4b438cb52ac774cb5f2540823f3c4115f094b9243e2c4",
+    "new_stage_lock_sha256": "4ca5d7286bd375b0fc42ae81acf1fdf52ee3972f13701be98a65b92b6f080bec"
+  },
+  "computation_count_note": "Retained unique fits and planned verified replays exclude redundant controller computations. The execution incident records three redundant full source-candidate computations, two stopped partial source computations, and a refused duplicate baseline invocation. Its source-only replay and AdaBN computation add at least two zero-update evaluations without new retained predictions. No duplicate result was selected by score or allowed to overwrite a prior artifact.",
+  "fit_counts": [
+    {
+      "method": "adabn",
+      "initialization": "original",
+      "count": 3
+    },
+    {
+      "method": "adabn_full",
+      "initialization": "original",
+      "count": 27
+    },
+    {
+      "method": "aligned_selector",
+      "initialization": "lambda0.1",
+      "count": 27
+    },
+    {
+      "method": "full",
+      "initialization": "lambda0.1",
+      "count": 27
+    },
+    {
+      "method": "full",
+      "initialization": "lambda1",
+      "count": 9
+    },
+    {
+      "method": "full",
+      "initialization": "original",
+      "count": 18
+    },
+    {
+      "method": "l2sp",
+      "initialization": "original",
+      "count": 81
+    },
+    {
+      "method": "lpft",
+      "initialization": "original",
+      "count": 27
+    },
+    {
+      "method": "oracle",
+      "initialization": "original",
+      "count": 1152
+    },
+    {
+      "method": "source",
+      "initialization": "lambda0.1",
+      "count": 3
+    },
+    {
+      "method": "source",
+      "initialization": "original",
+      "count": 3
+    }
+  ],
+  "stage_recorded_wall_seconds": {
+    "ORACLE64_COMPLETE": 10542.575542165898,
+    "BASELINES_COMPLETE": 1946.09269199986,
+    "ALIGNMENT_GRID_COMPLETE": 9708.460295583121
+  },
+  "sum_retained_target_evaluation_wall_seconds": 37713.65655872319,
+  "sum_repeated_target_evaluation_wall_seconds": 182.06038824887946,
+  "sum_retained_source_fit_wall_seconds": 29948.938473416027,
+  "repeated_source_fit_wall_seconds": 4496.726686957758,
+  "runtime_note": "Sums are worker wall-seconds with concurrent execution, not elapsed study wall time or CPU time; selector evidence extraction is not included in fit timers.",
+  "reproducibility": {
+    "ORACLE64_REPRODUCIBILITY": {
+      "status": "PASS",
+      "repeat_seconds": 11.639165540691465,
+      "predictions_bitwise_identical": true,
+      "state_and_history_identical": true
+    },
+    "BASELINE_REPRODUCIBILITY": {
+      "status": "PASS",
+      "methods": [
+        {
+          "method": "source",
+          "status": "PASS",
+          "repeat_seconds": 2.929388999938965,
+          "predictions_bitwise_identical": true,
+          "state_and_history_identical": true
+        },
+        {
+          "method": "adabn",
+          "status": "PASS",
+          "repeat_seconds": 11.298590207938105,
+          "predictions_bitwise_identical": true,
+          "state_and_history_identical": true
+        },
+        {
+          "method": "full",
+          "status": "PASS",
+          "repeat_seconds": 32.81172362482175,
+          "predictions_bitwise_identical": true,
+          "state_and_history_identical": true
+        },
+        {
+          "method": "adabn_full",
+          "status": "PASS",
+          "repeat_seconds": 40.562256125267595,
+          "predictions_bitwise_identical": true,
+          "state_and_history_identical": true
+        },
+        {
+          "method": "lpft",
+          "status": "PASS",
+          "repeat_seconds": 27.71592495823279,
+          "predictions_bitwise_identical": true,
+          "state_and_history_identical": true
+        },
+        {
+          "method": "l2sp",
+          "status": "PASS",
+          "repeat_seconds": 31.27556383330375,
+          "predictions_bitwise_identical": true,
+          "state_and_history_identical": true
+        }
+      ]
+    },
+    "ALIGNMENT_REPRODUCIBILITY": {
+      "status": "PASS",
+      "source_seed": 15101,
+      "lambda_value": 0.1,
+      "repeated_source_seconds": 4496.726686957758,
+      "source_state_and_history_bitwise_identical": true,
+      "fold9_predictions_bitwise_identical": true
+    },
+    "ALIGNED_FULL_REPRODUCIBILITY": {
+      "method": "full",
+      "status": "PASS",
+      "repeat_seconds": 13.624488916713744,
+      "A_B_predictions_bitwise_identical": true,
+      "state_history_identical": true
+    },
+    "ALIGNED_SOURCE_ONLY_REPRODUCIBILITY": {
+      "method": "source",
+      "status": "PASS",
+      "repeat_seconds": 1.2060205000452697,
+      "A_B_predictions_bitwise_identical": true,
+      "state_history_identical": true
+    },
+    "ALIGNED_SELECTOR_REPRODUCIBILITY": {
+      "method": "aligned_selector",
+      "status": "PASS",
+      "repeat_seconds": 8.997265541926026,
+      "A_B_predictions_bitwise_identical": true,
+      "state_history_identical": true
+    }
+  },
+  "validation_only": true,
+  "no_test_provider_loaded": true,
+  "U_labels_used": false
+}

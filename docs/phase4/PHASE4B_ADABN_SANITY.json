@@ -1,0 +1,8 @@
+{
+  "compared_episode_budget_pairs": 27,
+  "bitwise_identical_A_B_probability_pairs": 10,
+  "identical_200_update_loss_histories": 27,
+  "identical_module_parameter_drift_norms": 27,
+  "all_were_separate_recorded_200_update_fits": true,
+  "no_weights_or_predictions_retrained": true
+}
