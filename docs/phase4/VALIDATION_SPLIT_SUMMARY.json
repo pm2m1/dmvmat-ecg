@@ -1,0 +1,44 @@
+{
+  "eligible_pool_records": 3148,
+  "excluded_all_budget_records": 711,
+  "validation_overlap_with_label_draws": 0,
+  "validation_overlap_with_test_ids": 0,
+  "overlap_A_B": 0,
+  "bundle_sha256": "45b9913a5c7a14aa598448ceb7e0158e6e6f94ada6ed839c0081ee7a74a63dbc",
+  "A": {
+    "records": 500,
+    "positive_counts": [
+      126,
+      135
+    ],
+    "prevalence": [
+      0.25200000405311584,
+      0.27000001072883606
+    ],
+    "record_ids_sha256": "729a5be17cbfadabbfc93a4774257638c7c0c3d46847b6ae426dbd0200f23ab8",
+    "combination_counts": {
+      "00": 243,
+      "01": 131,
+      "10": 122,
+      "11": 4
+    }
+  },
+  "B": {
+    "records": 500,
+    "positive_counts": [
+      127,
+      135
+    ],
+    "prevalence": [
+      0.2540000081062317,
+      0.27000001072883606
+    ],
+    "record_ids_sha256": "6d921c6748f59a1fe1cbedb6adb82494a55f219d6139b2af7adf851947289383",
+    "combination_counts": {
+      "00": 243,
+      "01": 130,
+      "10": 122,
+      "11": 5
+    }
+  }
+}
