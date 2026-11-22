@@ -1,7 +1,6 @@
 # Early Prediction of Cardiovascular Diseases using Deep Learning
 
-**Authors:** Parth Mishra and Mohammed Abdul Muqsith Siddique  
-**Supervisor:** Prof. Pradeep Kumar Das  
+**Author:** Parth Mishra   
 **Institution:** National Institute of Technology Warangal, 2026
 
 This project uses a five-view CNN to predict cardiovascular conditions from routine 12-lead ECGs and studies how to adapt it to a new population or hospital with few labelled ECGs. On PTB-XL, it achieves macro AUROC **0.921** and AP **0.814** with **212K parameters**, about **8.8× fewer** than the project's XResNet reference. Its AUROC numerically matches the [published Inception1D result](https://doi.org/10.1109/JBHI.2020.3022989) of **0.921**.
