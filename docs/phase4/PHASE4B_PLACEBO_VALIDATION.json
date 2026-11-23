@@ -1,0 +1,41 @@
+{
+  "schema": "placebo-validation-integrity-v1",
+  "status": "PASS",
+  "source_models": 3,
+  "source_epochs": 50,
+  "source_pretraining_CPSC_data_used": false,
+  "source_replay": "PASS",
+  "target_fits": 27,
+  "target_updates": 200,
+  "target_replay": "PASS",
+  "A_B_arrays_verified": 27,
+  "target_checkpoints": 0,
+  "checkpoint_hashes_states_and_fold9_predictions_verified": true,
+  "future_replay_references_sealed": 27,
+  "previous_results_prefix_unchanged": true,
+  "test_access": false,
+  "confirmatory_replay_performed": false,
+  "source_rows": [
+    {
+      "source_seed": 15101,
+      "source_sha256": "0f41f198f06ab8c4767dfdccf6bff9d73b34ed0246fe42919909c2982fb1097c",
+      "fold9_macro_AUROC": 0.9033931939483804,
+      "runtime_seconds": 2797.357125583105
+    },
+    {
+      "source_seed": 15102,
+      "source_sha256": "5dcd0f5dd0ecf3a7ecb74cfd0c3903db1b14efd5f726ddfb089757f805dae5d5",
+      "fold9_macro_AUROC": 0.9031106422102697,
+      "runtime_seconds": 2683.557381125167
+    },
+    {
+      "source_seed": 15103,
+      "source_sha256": "d406ac66e20a133fa7fe4e1a7a1cf4a06ed5aa89623187e07510995da572b7a1",
+      "fold9_macro_AUROC": 0.9039534400875006,
+      "runtime_seconds": 2655.1871594577096
+    }
+  ],
+  "target_fit_worker_wall_seconds": 527.7616120413877,
+  "source_replay_seconds": 2719.4274897496216,
+  "target_replay_seconds": 11.386242750100791
+}
