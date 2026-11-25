@@ -1,0 +1,22 @@
+{
+  "scope": "NEW_PHASE4_SOURCE_TESTS_AGGREGATE_DOCS_FIGURES_ONLY",
+  "files": {
+    "docs/phase4/BUNDLE_MANIFEST_SUMMARY.json": "50b8367636ef8bdb5e34225f389aa13bd24d7f3430daeecc900b76478480aabf",
+    "docs/phase4/ORACLE_MASK_AGGREGATES.json": "c3c5810d797bbdb35a0e1634466378a24ca8edb464d3b5f7b67b7f95e3cea718",
+    "docs/phase4/ORACLE_MASK_PROTOCOL.md": "ed430a3a28d4bbbdbc70ca93e16181861ebbbe676200588feaae7400f47f5326",
+    "docs/phase4/ORACLE_MASK_RESULTS.md": "50d52de1076718561f643bb51815d180a6523e2b7e91018f625f63d2e42c8d6c",
+    "docs/phase4/README.md": "72ee6440586786c1783b2460879070f043031d102d5e30fb76e2b1346e7f3c8f",
+    "docs/phase4/VALIDATION_REPORT.md": "f7598e20106521e524c824183a32e02506e26fe2d8dadbfb2a181d9da8d3c9e0",
+    "docs/phase4/VALIDATION_SPLIT_SUMMARY.json": "72e0704e1eea5ea8aa126dab61a3094489bfe81a33775d69870395a1babf606a",
+    "figures/phase4/mask_distribution.svg": "b0f11cb333b16df6d4168dd377bc8e22522cfe4f9f8afdb627e1f3125d7a5768",
+    "figures/phase4/module_effects.svg": "202d37d9b2d97b3d01d249d94198750ea5b66fe2ba479b70f00a0c0381ce5323",
+    "src/dmvmat_ecg/phase4/__init__.py": "7c6ff6910950ae2a44320ffd867d9930961a28424bd11c7578c15eef259a4acb",
+    "src/dmvmat_ecg/phase4/analysis.py": "458dc2b952e994c8cbbbac1ec734f27714c7c061d537c7faf1d3c926ff157d76",
+    "src/dmvmat_ecg/phase4/build_bundle.py": "4ec89bb9a4b815fe3eb01c272e62240caae81aa0c097d5641c353820ef190ff4",
+    "src/dmvmat_ecg/phase4/runtime.py": "8981e8529ab63babcaedf4f24d5b12d1305ab36ec4aaa2cff9b3c5d733c7da9c",
+    "src/dmvmat_ecg/phase4/safety.py": "44283fe21955698cb1436f0784c12855b99523f34bb93337f5e2466172015e6d",
+    "src/dmvmat_ecg/phase4/study.py": "5248a780f8a7e3df50f4d1dccb941ae260d65bd8415d587647736f4eff07e4a5",
+    "tests/phase4/test_oracle_safety.py": "c4448f81d3bd3bf85cd4e51c0f9bbc858c77e8a566b6e0207d0a26fec4eb3875",
+    "tests/phase4/test_oracle_statistics.py": "e5eddaca1e21574359a2877ea6c9144512bd9c531bf2b5cfbf8fe50b7b1cf9bf"
+  }
+}

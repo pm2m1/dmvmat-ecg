@@ -1,0 +1,45 @@
+{
+  "schema": "retrain-validation-integrity-v1",
+  "lambda_value": 0.0,
+  "MMD_gradient_used": false,
+  "second_training_forward_retained": true,
+  "previous_code_and_validation_artifacts_unchanged": true,
+  "status": "PASS",
+  "source_models": 3,
+  "source_epochs": 50,
+  "source_pretraining_CPSC_data_used": false,
+  "source_replay": "PASS",
+  "target_fits": 27,
+  "target_updates": 200,
+  "target_replay": "PASS",
+  "A_B_arrays_verified": 27,
+  "target_checkpoints": 0,
+  "checkpoint_hashes_states_and_fold9_predictions_verified": true,
+  "future_replay_references_sealed": 27,
+  "previous_results_prefix_unchanged": true,
+  "test_access": false,
+  "confirmatory_replay_performed": false,
+  "source_rows": [
+    {
+      "source_seed": 15101,
+      "source_sha256": "e512dc60aebe1cd9d9e3b264918aaf24eb4642cd50c6233451dd4570f834ad5f",
+      "fold9_macro_AUROC": 0.8975499794534676,
+      "runtime_seconds": 2490.8987541249953
+    },
+    {
+      "source_seed": 15102,
+      "source_sha256": "a729709f889bd06e1f9d8fbced3d9e0844927346f2f48a991e6caca944714c3a",
+      "fold9_macro_AUROC": 0.9039629609783104,
+      "runtime_seconds": 2481.6877476251684
+    },
+    {
+      "source_seed": 15103,
+      "source_sha256": "b278a8fff4cb95af642a94052b9a2e3c3b65f03f71d4b86f63600bcb7244678c",
+      "fold9_macro_AUROC": 0.9015711205981363,
+      "runtime_seconds": 2413.3697561249137
+    }
+  ],
+  "target_fit_worker_wall_seconds": 505.11144591588527,
+  "source_replay_seconds": 2490.222114167176,
+  "target_replay_seconds": 11.538724416866899
+}

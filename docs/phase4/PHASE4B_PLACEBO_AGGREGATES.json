@@ -1,0 +1,499 @@
+{
+  "schema": "phase4c-placebo-validation-v1",
+  "lambda_value": 0.1,
+  "sources": [
+    {
+      "source_seed": 15101,
+      "original_macro_AUROC": 0.9055064073687059,
+      "aligned_macro_AUROC": 0.9080927828686032,
+      "placebo_macro_AUROC": 0.9033931939483804,
+      "placebo_per_label_AUROC": [
+        0.9348502513475865,
+        0.8719361365491743
+      ],
+      "selected_epoch": 16,
+      "source_sha256": "0f41f198f06ab8c4767dfdccf6bff9d73b34ed0246fe42919909c2982fb1097c",
+      "source_state_hash": "12d04ab0a7a102a81a9195c1553d16d60ceeef92cbf71c41480d477b44854665",
+      "source_runtime_seconds": 2797.357125583105
+    },
+    {
+      "source_seed": 15102,
+      "original_macro_AUROC": 0.9053121062141569,
+      "aligned_macro_AUROC": 0.9044022629040495,
+      "placebo_macro_AUROC": 0.9031106422102697,
+      "placebo_per_label_AUROC": [
+        0.9297867078513314,
+        0.8764345765692081
+      ],
+      "selected_epoch": 15,
+      "source_sha256": "5dcd0f5dd0ecf3a7ecb74cfd0c3903db1b14efd5f726ddfb089757f805dae5d5",
+      "source_state_hash": "62e746922c13894c55aec25cbcd38b74dc55ef04e84e06abf628c8dc6db53517",
+      "source_runtime_seconds": 2683.557381125167
+    },
+    {
+      "source_seed": 15103,
+      "original_macro_AUROC": 0.897785569892452,
+      "aligned_macro_AUROC": 0.9042336264779371,
+      "placebo_macro_AUROC": 0.9039534400875006,
+      "placebo_per_label_AUROC": [
+        0.9344666686855227,
+        0.8734402114894784
+      ],
+      "selected_epoch": 13,
+      "source_sha256": "d406ac66e20a133fa7fe4e1a7a1cf4a06ed5aa89623187e07510995da572b7a1",
+      "source_state_hash": "d2a537043f5884c08613ea6df6630dcb801f2314457c865bd057ea4c240b588d",
+      "source_runtime_seconds": 2655.1871594577096
+    }
+  ],
+  "metrics": [
+    {
+      "budget": 64,
+      "method": "full",
+      "macro_AP": 0.6118615411183888,
+      "macro_AUROC": 0.8118407411859314,
+      "A_macro_AP": 0.5950487512037475,
+      "A_macro_AUROC": 0.8164670201367759,
+      "A_CD_AP": 0.7304938695247887,
+      "A_STTC_AP": 0.4596036328827063,
+      "CD_AP": 0.7427294068498864,
+      "STTC_AP": 0.4809936753868911,
+      "CD_AUROC": 0.8712444791586039,
+      "STTC_AUROC": 0.752437003213259
+    },
+    {
+      "budget": 64,
+      "method": "aligned_full",
+      "macro_AP": 0.6255253676430443,
+      "macro_AUROC": 0.8248453689705665,
+      "A_macro_AP": 0.605269922658386,
+      "A_macro_AUROC": 0.8281641412311124,
+      "A_CD_AP": 0.7122732011550991,
+      "A_STTC_AP": 0.4982666441616728,
+      "CD_AP": 0.7385594210825892,
+      "STTC_AP": 0.5124913142034995,
+      "CD_AUROC": 0.882096172294817,
+      "STTC_AUROC": 0.767594565646316
+    },
+    {
+      "budget": 64,
+      "method": "placebo_full",
+      "macro_AP": 0.6282630595760333,
+      "macro_AUROC": 0.8240580678224885,
+      "A_macro_AP": 0.6156206753687139,
+      "A_macro_AUROC": 0.8264830808328436,
+      "A_CD_AP": 0.7205948751583284,
+      "A_STTC_AP": 0.5106464755790994,
+      "CD_AP": 0.7415053134596146,
+      "STTC_AP": 0.5150208056924521,
+      "CD_AUROC": 0.8814077529853004,
+      "STTC_AUROC": 0.7667083826596764
+    },
+    {
+      "budget": 128,
+      "method": "full",
+      "macro_AP": 0.6450892867428002,
+      "macro_AUROC": 0.8333425985823166,
+      "A_macro_AP": 0.6393413060380635,
+      "A_macro_AUROC": 0.8384985857879581,
+      "A_CD_AP": 0.7819479966204362,
+      "A_STTC_AP": 0.49673461545569075,
+      "CD_AP": 0.7770658930649779,
+      "STTC_AP": 0.5131126804206226,
+      "CD_AUROC": 0.8929865670276471,
+      "STTC_AUROC": 0.7736986301369863
+    },
+    {
+      "budget": 128,
+      "method": "aligned_full",
+      "macro_AP": 0.6666733697564577,
+      "macro_AUROC": 0.8406583852806604,
+      "A_macro_AP": 0.651544316339665,
+      "A_macro_AUROC": 0.8458506979502592,
+      "A_CD_AP": 0.7717683519962761,
+      "A_STTC_AP": 0.531320280683054,
+      "CD_AP": 0.7889246925385506,
+      "STTC_AP": 0.544422046974365,
+      "CD_AUROC": 0.8965893338399723,
+      "STTC_AUROC": 0.7847274367213484
+    },
+    {
+      "budget": 128,
+      "method": "placebo_full",
+      "macro_AP": 0.6634445655906394,
+      "macro_AUROC": 0.8396250363118655,
+      "A_macro_AP": 0.6575819118059596,
+      "A_macro_AUROC": 0.8479107656469104,
+      "A_CD_AP": 0.7766356311403062,
+      "A_STTC_AP": 0.5385281924716129,
+      "CD_AP": 0.7838103200683583,
+      "STTC_AP": 0.5430788111129206,
+      "CD_AUROC": 0.8969669676008998,
+      "STTC_AUROC": 0.7822831050228312
+    },
+    {
+      "budget": 256,
+      "method": "full",
+      "macro_AP": 0.666967641584038,
+      "macro_AUROC": 0.8429917235038316,
+      "A_macro_AP": 0.6694710188652588,
+      "A_macro_AUROC": 0.8474483805175899,
+      "A_CD_AP": 0.8286910986597422,
+      "A_STTC_AP": 0.5102509390707755,
+      "CD_AP": 0.8101140945089278,
+      "STTC_AP": 0.5238211886591481,
+      "CD_AUROC": 0.9076802732098166,
+      "STTC_AUROC": 0.7783031737978465
+    },
+    {
+      "budget": 256,
+      "method": "aligned_full",
+      "macro_AP": 0.6861992429717011,
+      "macro_AUROC": 0.8468872414312462,
+      "A_macro_AP": 0.6787616693519853,
+      "A_macro_AUROC": 0.8553740057589999,
+      "A_CD_AP": 0.8108041499889759,
+      "A_STTC_AP": 0.5467191887149947,
+      "CD_AP": 0.8232353067323,
+      "STTC_AP": 0.5491631792111021,
+      "CD_AUROC": 0.9087674362420515,
+      "STTC_AUROC": 0.7850070466204409
+    },
+    {
+      "budget": 256,
+      "method": "placebo_full",
+      "macro_AP": 0.6764364963928555,
+      "macro_AUROC": 0.844691274841517,
+      "A_macro_AP": 0.6795245588751999,
+      "A_macro_AUROC": 0.8556270523214743,
+      "A_CD_AP": 0.8154464414764476,
+      "A_STTC_AP": 0.5436026762739522,
+      "CD_AP": 0.8090940734278286,
+      "STTC_AP": 0.5437789193578825,
+      "CD_AUROC": 0.9069167962583765,
+      "STTC_AUROC": 0.7824657534246575
+    }
+  ],
+  "contrasts": [
+    {
+      "budget": 64,
+      "contrast": "aligned_full-minus-placebo_full",
+      "AP_difference": -0.002737691932989006,
+      "AP_ci": {
+        "low": -0.016482716760498065,
+        "high": 0.011288202356781173,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "AUROC_difference": 0.0007873011480780678,
+      "AUROC_ci": {
+        "low": -0.006072787566547899,
+        "high": 0.007931343255125674,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "AP_difference": -0.002945892377025361,
+          "AP_ci": {
+            "low": -0.022653941241462715,
+            "high": 0.017153254760992588,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.0006884193095165747,
+          "AUROC_ci": {
+            "low": -0.008017126290211974,
+            "high": 0.008951718338862104,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "AP_difference": -0.002529491488952651,
+          "AP_ci": {
+            "low": -0.0228497816589026,
+            "high": 0.0166957565382335,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.000886182986639561,
+          "AUROC_ci": {
+            "low": -0.009497435479841873,
+            "high": 0.01149840430149033,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    },
+    {
+      "budget": 64,
+      "contrast": "placebo_full-minus-full",
+      "AP_difference": 0.016401518457644593,
+      "AP_ci": {
+        "low": 9.67528697802127e-05,
+        "high": 0.03370987449878327,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "AUROC_difference": 0.012217326636556947,
+      "AUROC_ci": {
+        "low": 0.0023095708860362356,
+        "high": 0.02218147506204724,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "AP_difference": -0.001224093390271852,
+          "AP_ci": {
+            "low": -0.020930640187325426,
+            "high": 0.020259911516311065,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.010163273826696462,
+          "AUROC_ci": {
+            "low": -0.0019016419968037573,
+            "high": 0.022631894639940378,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "AP_difference": 0.03402713030556104,
+          "AP_ci": {
+            "low": 0.006750349225958961,
+            "high": 0.06142927052050665,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.014271379446417432,
+          "AUROC_ci": {
+            "low": -0.0016498160911537188,
+            "high": 0.030106647510538397,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    },
+    {
+      "budget": 128,
+      "contrast": "aligned_full-minus-placebo_full",
+      "AP_difference": 0.0032288041658183886,
+      "AP_ci": {
+        "low": -0.01035054298998293,
+        "high": 0.016689651931026124,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "AUROC_difference": 0.0010333489687948672,
+      "AUROC_ci": {
+        "low": -0.005711668625058536,
+        "high": 0.007799334584033072,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "AP_difference": 0.005114372470192308,
+          "AP_ci": {
+            "low": -0.012936446475408413,
+            "high": 0.023063987738913,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": -0.000377633760927476,
+          "AUROC_ci": {
+            "low": -0.008111106403047269,
+            "high": 0.007355513728735348,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "AP_difference": 0.0013432358614444695,
+          "AP_ci": {
+            "low": -0.017549362571741826,
+            "high": 0.02018371445123479,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.0024443316985172103,
+          "AUROC_ci": {
+            "low": -0.007689513215948335,
+            "high": 0.012656545116545105,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    },
+    {
+      "budget": 128,
+      "contrast": "placebo_full-minus-full",
+      "AP_difference": 0.018355278847839163,
+      "AP_ci": {
+        "low": 0.0015598826561377891,
+        "high": 0.03492160495202416,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "AUROC_difference": 0.006282437729548784,
+      "AUROC_ci": {
+        "low": -0.0026857434669415245,
+        "high": 0.0153867049235407,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "AP_difference": 0.006744427003380404,
+          "AP_ci": {
+            "low": -0.01224064814471264,
+            "high": 0.02656593673851188,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.003980400573252663,
+          "AUROC_ci": {
+            "low": -0.006636101644933223,
+            "high": 0.015170644710791104,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "AP_difference": 0.02996613069229792,
+          "AP_ci": {
+            "low": 0.0018896144789116197,
+            "high": 0.05739160797251516,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.008584474885844906,
+          "AUROC_ci": {
+            "low": -0.0056676077905491,
+            "high": 0.022952157543283797,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    },
+    {
+      "budget": 256,
+      "contrast": "aligned_full-minus-placebo_full",
+      "AP_difference": 0.009762746578845571,
+      "AP_ci": {
+        "low": -0.0030686382585675,
+        "high": 0.022789964764946418,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "AUROC_difference": 0.002195966589729148,
+      "AUROC_ci": {
+        "low": -0.004191508038384778,
+        "high": 0.008549670378189218,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "AP_difference": 0.014141233304471479,
+          "AP_ci": {
+            "low": -0.0022265606427611466,
+            "high": 0.030885390178190985,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.001850639983674962,
+          "AUROC_ci": {
+            "low": -0.006086065222239517,
+            "high": 0.009707085882101401,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "AP_difference": 0.005384259853219664,
+          "AP_ci": {
+            "low": -0.013181392545931193,
+            "high": 0.02456672382105003,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.002541293195783334,
+          "AUROC_ci": {
+            "low": -0.006742446816164496,
+            "high": 0.0119166808317931,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    },
+    {
+      "budget": 256,
+      "contrast": "placebo_full-minus-full",
+      "AP_difference": 0.009468854808817595,
+      "AP_ci": {
+        "low": -0.00645651555980485,
+        "high": 0.02496820258445538,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "AUROC_difference": 0.0016995513376854565,
+      "AUROC_ci": {
+        "low": -0.0062105125569794735,
+        "high": 0.00957641800107588,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "AP_difference": -0.0010200210810992205,
+          "AP_ci": {
+            "low": -0.015634718668984075,
+            "high": 0.013578769621731445,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": -0.0007634769514400785,
+          "AUROC_ci": {
+            "low": -0.00915613786954115,
+            "high": 0.0074903868467463865,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "AP_difference": 0.01995773069873441,
+          "AP_ci": {
+            "low": -0.008116110977706665,
+            "high": 0.04762070582131136,
+            "valid": 10000,
+            "undefined": 0
+          },
+          "AUROC_difference": 0.004162579626810992,
+          "AUROC_ci": {
+            "low": -0.009401313787292287,
+            "high": 0.017676808990455473,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    }
+  ],
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261127,
+    "unit": "same split-B record across all models/labels/episodes",
+    "pointwise": true
+  },
+  "CPSC_pretraining_inputs_used": false,
+  "test_access": false,
+  "selection_on_B": false
+}

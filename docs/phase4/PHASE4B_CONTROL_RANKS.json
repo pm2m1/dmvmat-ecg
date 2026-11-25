@@ -1,0 +1,287 @@
+{
+  "schema": "phase4b-reconstructed-control-ranks-v1",
+  "B64_original_receipts_available": false,
+  "all_nine_B128_replay_pairs_match_retained_records": true,
+  "masks_reconstructed_without_A_B": true,
+  "secondary_descriptive_analysis": true,
+  "rows": [
+    {
+      "source_seed": 15101,
+      "draw_seed": 16101,
+      "full_B_rank": 14,
+      "head_B_rank": 124,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 18,
+        "B_rank": 14,
+        "B_AP": 0.607426306857043
+      },
+      "selector": {
+        "mask": "0001111",
+        "A_rank": 28,
+        "B_rank": 86,
+        "B_AP": 0.5935215408601523
+      },
+      "random": {
+        "mask": "0010111",
+        "A_rank": 35,
+        "B_rank": 42,
+        "B_AP": 0.6009141255471342
+      }
+    },
+    {
+      "source_seed": 15101,
+      "draw_seed": 16102,
+      "full_B_rank": 9,
+      "head_B_rank": 124,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 21,
+        "B_rank": 9,
+        "B_AP": 0.6340659005790431
+      },
+      "selector": {
+        "mask": "0000000",
+        "A_rank": 124,
+        "B_rank": 124,
+        "B_AP": 0.5793091158608497
+      },
+      "random": {
+        "mask": "0000000",
+        "A_rank": 124,
+        "B_rank": 124,
+        "B_AP": 0.5793091158608497
+      }
+    },
+    {
+      "source_seed": 15101,
+      "draw_seed": 16103,
+      "full_B_rank": 3,
+      "head_B_rank": 128,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 26,
+        "B_rank": 3,
+        "B_AP": 0.6317790052175829
+      },
+      "selector": {
+        "mask": "0000100",
+        "A_rank": 103,
+        "B_rank": 103,
+        "B_AP": 0.5946389521884249
+      },
+      "random": {
+        "mask": "0000100",
+        "A_rank": 103,
+        "B_rank": 103,
+        "B_AP": 0.5946389521884249
+      }
+    },
+    {
+      "source_seed": 15102,
+      "draw_seed": 16101,
+      "full_B_rank": 21,
+      "head_B_rank": 128,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 7,
+        "B_rank": 21,
+        "B_AP": 0.6246575952203595
+      },
+      "selector": {
+        "mask": "0000011",
+        "A_rank": 120,
+        "B_rank": 115,
+        "B_AP": 0.5907356167501479
+      },
+      "random": {
+        "mask": "0000011",
+        "A_rank": 120,
+        "B_rank": 115,
+        "B_AP": 0.5907356167501479
+      }
+    },
+    {
+      "source_seed": 15102,
+      "draw_seed": 16102,
+      "full_B_rank": 12,
+      "head_B_rank": 127,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 92,
+        "B_rank": 12,
+        "B_AP": 0.63767335937013
+      },
+      "selector": {
+        "mask": "0000000",
+        "A_rank": 128,
+        "B_rank": 127,
+        "B_AP": 0.5494847169900425
+      },
+      "random": {
+        "mask": "0000000",
+        "A_rank": 128,
+        "B_rank": 127,
+        "B_AP": 0.5494847169900425
+      }
+    },
+    {
+      "source_seed": 15102,
+      "draw_seed": 16103,
+      "full_B_rank": 1,
+      "head_B_rank": 128,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 17,
+        "B_rank": 1,
+        "B_AP": 0.6442728460118139
+      },
+      "selector": {
+        "mask": "0000111",
+        "A_rank": 111,
+        "B_rank": 104,
+        "B_AP": 0.5925754782276558
+      },
+      "random": {
+        "mask": "0000111",
+        "A_rank": 111,
+        "B_rank": 104,
+        "B_AP": 0.5925754782276558
+      }
+    },
+    {
+      "source_seed": 15103,
+      "draw_seed": 16101,
+      "full_B_rank": 27,
+      "head_B_rank": 125,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 18,
+        "B_rank": 27,
+        "B_AP": 0.5591864940458009
+      },
+      "selector": {
+        "mask": "0011111",
+        "A_rank": 1,
+        "B_rank": 1,
+        "B_AP": 0.5756028457046825
+      },
+      "random": {
+        "mask": "0110111",
+        "A_rank": 2,
+        "B_rank": 13,
+        "B_AP": 0.5636500299911809
+      }
+    },
+    {
+      "source_seed": 15103,
+      "draw_seed": 16102,
+      "full_B_rank": 14,
+      "head_B_rank": 125,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 2,
+        "B_rank": 14,
+        "B_AP": 0.5739538832962534
+      },
+      "selector": {
+        "mask": "0000000",
+        "A_rank": 124,
+        "B_rank": 125,
+        "B_AP": 0.5318940692102314
+      },
+      "random": {
+        "mask": "0000000",
+        "A_rank": 124,
+        "B_rank": 125,
+        "B_AP": 0.5318940692102314
+      }
+    },
+    {
+      "source_seed": 15103,
+      "draw_seed": 16103,
+      "full_B_rank": 5,
+      "head_B_rank": 128,
+      "full": {
+        "mask": "1111111",
+        "A_rank": 6,
+        "B_rank": 5,
+        "B_AP": 0.593738479467472
+      },
+      "selector": {
+        "mask": "0010110",
+        "A_rank": 107,
+        "B_rank": 97,
+        "B_AP": 0.5548150880182285
+      },
+      "random": {
+        "mask": "0100110",
+        "A_rank": 79,
+        "B_rank": 86,
+        "B_AP": 0.5613907693379563
+      }
+    }
+  ],
+  "summaries": {
+    "selector": {
+      "macro_AP": 0.5736197137567128,
+      "difference": -0.038241827361675945,
+      "ci": {
+        "low": -0.0511423292486909,
+        "high": -0.024981359764801953,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "difference": -0.024619643666295765,
+          "ci": {
+            "low": -0.04350513732865514,
+            "high": -0.005892021044138233,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "difference": -0.051864011057056125,
+          "ci": {
+            "low": -0.07025563531317618,
+            "high": -0.033516644144373935,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    },
+    "random": {
+      "macro_AP": 0.5738436526781804,
+      "difference": -0.038017888440208314,
+      "ci": {
+        "low": -0.05044664023472397,
+        "high": -0.02534556850702264,
+        "valid": 10000,
+        "undefined": 0
+      },
+      "per_label": {
+        "CD": {
+          "difference": -0.022465899199752726,
+          "ci": {
+            "low": -0.03898593175564706,
+            "high": -0.00598666805267516,
+            "valid": 10000,
+            "undefined": 0
+          }
+        },
+        "STTC": {
+          "difference": -0.0535698776806639,
+          "ci": {
+            "low": -0.07300177658377463,
+            "high": -0.034769217029368416,
+            "valid": 10000,
+            "undefined": 0
+          }
+        }
+      }
+    }
+  }
+}

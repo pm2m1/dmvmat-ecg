@@ -1,0 +1,41 @@
+{
+  "schema": "phase4-adaptation-only-bundle-v1",
+  "adaptation_records": 3859,
+  "test_record_ids_in_bundle": 0,
+  "test_exclusion_hash_count": 3860,
+  "adaptation_membership_sha256": "0680114da598ba0aa09427c3b96dbdff8f7320a6dd766664dfe95ba0a0e36f51",
+  "test_overlap": 0,
+  "all_included_records_in_adaptation_pool": true,
+  "label_combination_counts": {
+    "00": 1866,
+    "01": 996,
+    "10": 961,
+    "11": 36
+  },
+  "v2_decoder_sha256": "61eec0fc45efea69409d2c5134cded6f82f81d0f010a3c779a253ac6a6e4d9ea",
+  "mapping_sha256": "ecce890b4678b8f2a06cf0796476221adceb8156c7d476ecfbeba910a43891d6",
+  "original_training_records_matched": 711,
+  "all_budget_draw_union_records": 711,
+  "source_checkpoint_hashes_match": true,
+  "source_seeds": [
+    15101,
+    15102,
+    15103
+  ],
+  "draw_seeds": [
+    16101,
+    16102,
+    16103
+  ],
+  "optimizer": {
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.99
+    ],
+    "eps": 1e-08
+  },
+  "updates": 200,
+  "batch_size": 32
+}
