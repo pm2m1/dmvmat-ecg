@@ -42,7 +42,11 @@ def test_fixed_primary_rule(lower, valid, bounds, expected):
     assert verdict(0.01, dict(interval=[lower, 0.02] if bounds else None, valid=valid)) == expected
 
 
-def test_no_test_capability_before_all180_replays():
+def test_no_test_capability_before_all180_replays(tmp_path, monkeypatch):
+    import dmvmat_ecg.phase5_confirm.contract as contract
+
+    # The completed real operation must never influence this invented fixture.
+    monkeypatch.setattr(contract, "RUN", tmp_path / "invented_run")
     s = Scope()
     for count in (0, 108, 179):
         with pytest.raises(PermissionError):
