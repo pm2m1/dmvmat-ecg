@@ -66,6 +66,26 @@ The protocol and analyses were fixed before held-out testing. An initial target-
 
 Research notes: [project summary](docs/PROJECT_RESULTS_SUMMARY.md), [PTB-XL comparison](docs/EXPERIMENT_RESULTS.md), [reference fidelity](docs/BASELINE_REPRODUCTION.md). Generated result files, fitted models, participant tables and the thesis report are excluded from the current source snapshot. Earlier research commits retain aggregate summaries and figures, not individual-record data.
 
+## After the report: Phases 4–5
+
+- **4A — 128-label oracle:** all 128 freeze/adapt masks were evaluated; full fine-tuning ranked **1/128 on both validation splits** for mean macro AP.
+- **4B — validation-only follow-up:** the 64-label oracle, AdaBN, LP-FT and L2-SP did not establish an improvement over full fine-tuning. A small post-hoc split-B advantage for one mask was not an independently validated freezing win.
+
+The pre-registered test comparisons at **128 labels** gave these mean CD/STTC macro-AP differences and 95% confidence intervals (rounded to three decimals):
+
+| Phase / test population | Contrast | AP difference [95% CI] |
+|---|---|---:|
+| 4C — CPSC | Aligned MMD − plain retrain | +0.010 [+0.003, +0.017] |
+| 4C — CPSC | Placebo MMD − plain retrain | +0.011 [+0.004, +0.017] |
+| 4C — CPSC | Aligned MMD − placebo MMD | −0.001 [−0.006, +0.005] |
+| 5 — Georgia, 10 source seeds | Placebo MMD − plain retrain | +0.004 [−0.014, +0.021] |
+
+Each contrast compares the corresponding source-pretraining procedures followed by full fine-tuning. The Georgia interval includes zero: the regulariser benefit was **not replicated** under the pre-registered criterion.
+
+**Conclusion:** module freezing did not establish an improvement over full fine-tuning; the MMD term helped at CPSC as a regulariser, without demonstrated additional target-alignment benefit, and did not replicate at Georgia.
+
+Details: [Phase 4 protocols and results](docs/phase4/), [Phase 5 protocols and results](docs/phase5/), and [consolidated confusion-matrix counts](docs/CONFUSION_MATRICES.md).
+
 ## Datasets
 
 Data are **not included**. Download them from the official sources and follow their respective licences, attribution requirements and access terms:
